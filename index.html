@@ -1,22 +1,48 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="description" content="Homepage of the 3D geoinformation research group at TU Delft">
-    <title>3D geoinformation research group at TU Delft</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.4.2/base-min.css&pure/0.4.2/buttons-min.css&pure/0.4.2/forms-nr-min.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Muli:600,600i">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-</head>
-<body>
-  <img id="fullscreen-bg-image" src="img/3dtop10nl.png" alt=""/>
-  <div class="overlay-download">
-    <div class="overlay">
-      <!-- <h2>We <i class="fa fa-heart"></i> CityGML</h2> -->
-      <!-- <h2>Coming soon!</h2> -->
-      <a href="https://3d.bk.tudelft.nl"><img id="logo-image" src="img/tudelft3d.png" alt=""/></a>
+---
+layout: page
+title: CityGML guru homepage
+---
+
+<div class="jumbotron">
+  <h2>Let's make CityGML great!</h2>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+	    <div class="panel panel-default">
+		    <div class="panel-heading">
+		    	<h4>Latest news <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss"></i></a></h4>
+		    </div>
+		    <div class="panel-body">
+		      <div class="firstpost">
+			      <a href="{{ site.posts[0].url | prepend: site.baseurl }}">{{ site.posts[0].title }}</a>
+			      <br><span>{{ site.posts[0].date | post.date | date_to_string }}</span>
+			      <br />{{ site.posts[0].excerpt | strip_html }}
+			      <br /><a href="{{ site.posts[0].url | prepend: site.baseurl }}">read more</a>
+			      <hr />
+		      </div>
+		      <ul class="posts">
+		        {% for post in site.posts offset:1 limit:5 %}
+		          <li><span>{{ post.date | date_to_string }}</span> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+		        {% endfor %}
+		      </ul>
+		      <a href="{{ site.baseurl }}/news">All news</a>
+		    </div>
+	    </div>
+      <div class="row">
+        <div class="col-sm-6"><a href="https://erc.europa.eu"><img class="img-responsive" src="{{ "/img/partners/erc.png" | prepend: site.baseurl }}"/></a></div>
+        <div class="col-sm-6"><a href="http://www.stw.nl"><img class="img-responsive" src="{{ "/img/partners/stw.png" | prepend: site.baseurl }}"/></a></div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-6"><a href="http://www.ams-institute.org"><img class="img-responsive" src="{{ "/img/partners/ams.png" | prepend: site.baseurl }}"/></a></div>
+        <div class="col-sm-6"><a href="http://www.kadaster.nl"><img class="img-responsive" src="{{ "/img/partners/kadaster.png" | prepend: site.baseurl }}"/></a></div>
+      </div>
+      <hr>
+    </div>
+    <div class="col-md-7">
+    <a href="{{ site.baseurl }}/about">Proposed structured</a> 
     </div>
   </div>
-</body>
+</div>
