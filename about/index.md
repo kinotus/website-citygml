@@ -4,6 +4,14 @@ title: About
 permalink: /about/
 ---
 
+# About
+
+  - what is CityGML
+  - who is responsible for it?
+  - copy stuff from Thomas here...
+  
+# Docs & schemas
+
 
 # CityGML classes
 

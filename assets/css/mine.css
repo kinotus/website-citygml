@@ -10,38 +10,16 @@ img {
   max-width: 100%;
 }
 
-.centred {
+/*.centred {
     margin: 0 auto;
 }
-
+*/
 ul.posts {
   padding-left: 0;
 }
 
 
-#map {
-  height: 400px;
-}
 
-.nopadding {
-   padding: 0 !important;
-   margin: 0 !important;
-}
-
-.soft-edges {
-  -webkit-box-shadow: inset 0 0 10px 25px white;
-  -moz-box-shadow: inset 0 0 10px 25px white;
-  box-shadow: inset 0 0 10px 25px white;
-}
-
-.soft-edges img {
-/*  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;*/
-  position: relative;
-  z-index: -10;
-  display: block;
-}
 
 /*footer {
   text-align: center;
