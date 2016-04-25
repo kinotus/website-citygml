@@ -10,7 +10,12 @@ permalink: /about/
   - who is responsible for it?
   - copy stuff from Thomas here...
   
-# Docs & schemas
+# Ressources
+
+  - Docs 
+  - schemas
+  - PPT
+  - videos
 
 
 # CityGML classes
