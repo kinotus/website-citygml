@@ -1,0 +1,14 @@
+ 
+- dataset: First v2.0 CityGML file
+  description: "This is the first publicly available CityGML v2.0 data set. It is a 3D model demonstrating nearly all CityGML feature classes from the CityGML 2.0 specification. Especially instances of the classes from the new thematic modules Bridge and Tunnel are included. SolitaryVegetationObjects (the trees) are using ImplicitGeometries with local coordinates to allow for reuse of the geometry definitions. The features also have old and new thematic attributes. Please note that the dataset has been created manually and represents an artificial scenery. Coordinates are not georeferenced and the scene is downscaled to around 1:220. The dataset is decomposed into 6 separate files."
+  link: "CityGML_2.0_Test_Dataset_2012-04-23.zip"
+  copyright: "Karl-Heinz Häfele, Research Center Karlsruhe, Institute for Applied Computer Science"
+  image: CityGML_2.0_Test_Dataset_FME2012_SP2_small.jpg
+  year: 2012
+ 
+- dataset: Three LOD3 Buildings
+  description: "This CityGML data set displays three LoD3 Building objects including the following feature types: GroundSurface, WallSurface, RoofSurface, BuildingInstallation, Window, Door. In addition, CityFurniture and SolitaryVegetation Object features have been modelled on the basis of CityGML's implicit geometry representation providing three levels of detail. The data set also includes a Road object that consists of various TrafficArea as well as AuxiliaryTrafficArea features. Considering the number of modelled objects and their detailed representation, the memory footprint of this CityGML file is relatively small. This is due to the usage of implicit geomety representations and the efficient data export from SketchUp™, which does not require face triangulation."
+  link: "buildingslod3.zip"
+  copyright: "[GEORES](http://www.geores.de): all data were generated using GEORES tools for SketchUp"
+  image: buildingslod3.jpg
+  year: 2012
