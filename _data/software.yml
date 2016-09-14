@@ -52,7 +52,7 @@
 - name: FME
   webpage: http://www.safe.com
   description: you best bet to visualise CityGML files under MacOS
-  foss: true
+  foss: false
   category: viewer
   starred: true
 

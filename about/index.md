@@ -15,6 +15,10 @@ CityGML has been implemented in many software solutions and is in use in many pr
 CityGML is realised as an open data model is implemented as an application schema for the Geography Markup Language 3 (GML3), the extendible international standard for spatial data exchange issued by the Open Geospatial Consortium (OGC) and the ISO TC211. Because CityGML is based on GML, it can be used with the whole family of GML compatible OGC web services for data accessing, processing, and cataloging like the Web Feature Service, Web Processing Service, and the Catalog Service. CityGML is an open standard that can be used free of charge.
 
 
+# Who is in charge?
+
+TODO
+
 # Background
 
 In recent years, most virtual 3D city models have been realised as purely graphical or geometrical models, neglecting the semantic and topological aspects. Thus, these models could almost only be used for visualization purposes but not for thematic queries, analysis tasks, or spatial data mining. Since the limited reusability of models inhibits the broader use of 3D city models, a more general modeling approach had to be taken in order to satisfy the information needs of the various application fields.
