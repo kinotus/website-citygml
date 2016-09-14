@@ -66,11 +66,12 @@
 - dataset: New York City by DoITT
   link: http://www1.nyc.gov/site/doitt/initiatives/3d-building.page
   country: United States
-  building_lod: LOD2 (buildings are modeled with thematic surfaces in LOD2, however, for most buildings the geometric shape is LOD1)
+  building_lod: LOD2 
   version: 2.0
   year: 2016
   acquisition: Cadastre footprints + LiDAR
   texture: no
+  notes: buildings are modeled with thematic surfaces in LOD2, however, for most buildings the geometric shape is LOD1
   
 - dataset: Rotterdam
   link: http://www.rotterdamopendata.nl/dataset/rotterdam-3d-bestanden

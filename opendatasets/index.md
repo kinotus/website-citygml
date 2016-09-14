@@ -4,6 +4,8 @@ title:  Open data initiatives
 permalink: /opendatasets/
 ---
 
+# Open data initiatives
+
 {% assign ds = site.data.opendatasets | sort: 'dataset' %}
 
 <table class="table table-striped">
