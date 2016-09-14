@@ -1,0 +1,24 @@
+
+- name: What is CityGML?
+  icon: fa-question-circle
+  link: /about/
+
+- name: Sample datasets
+  icon: fa-floppy-o
+  link: /datasets/
+
+- name: Software for CityGML
+  icon: fa-cog
+  link: /software/
+
+- name: Validation tools
+  icon: fa-wrench
+  link: /validation/
+
+- name: Example applications
+  icon: fa-hospital-o
+  link: /applications/
+
+- name: Ongoing developments
+  icon: fa-fast-forward
+  link: /ongoing/
