@@ -15,9 +15,9 @@
   icon: fa-wrench
   link: /validation/
 
-- name: ADE
+- name: 3D applications
   icon: fa-hospital-o
-  link: /ade/
+  link: /applications/
 
 - name: Ongoing developments
   icon: fa-fast-forward

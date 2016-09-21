@@ -4,7 +4,15 @@ title:  Application Domain Extensions (ADE)
 permalink: /ade/
 ---
 
-  - What is it?
-  - how to create one
-  - list of known ones
+# Application Domain Extensions (ADE)
+
+## What is it?
+
+## list of known ones
+
+## How to create one?
+
+
+
+
 

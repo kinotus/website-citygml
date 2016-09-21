@@ -16,7 +16,7 @@
 
 - name: OGR
   webpage: http://www.gdal.org/ogr/
-  description: could help in reading GML
+  description: could help in reading 'vanilla' GML
   foss: true
   category: parser
   starred: false
@@ -53,7 +53,7 @@
   webpage: http://www.safe.com
   description: you best bet to visualise CityGML files under MacOS
   foss: false
-  category: viewer
+  category: viewer;parser
   starred: true
 
 - name: Random3Dcity

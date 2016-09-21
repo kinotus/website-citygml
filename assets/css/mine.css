@@ -1,8 +1,18 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 75px;
-  /*padding-bottom: 20px;
-}*/
+  /*padding-bottom: 50px;*/
+}
+
+h1 {
+  /*padding-top: 25px;*/
+  padding-bottom: 20px;
+}
+
+h1 span {
+  color: #aaa;
+  font-size: 50%;
+}
 
 img {
   display: block;
@@ -11,10 +21,6 @@ img {
 }
 
 
-/*.centred {
-    margin: 0 auto;
-}
-*/
 ul.posts {
   padding-left: 0;
 }
@@ -22,28 +28,4 @@ ul.posts {
 
 
 
-/*footer {
-  text-align: center;
-  font-size: 1.5em;
-}
-*/
-
-footer {
-  margin:5em 0
-}
-
-footer li {
-  float:left;
-  margin-right:1.5em;
-  margin-bottom:1.5em
-}
-
-footer p {
-  clear:left;
-  margin-bottom:0
-}
-
-.thumbnail {
-  border: none;
-}
 

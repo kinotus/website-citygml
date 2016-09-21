@@ -1,13 +1,11 @@
 ---
 layout: post
-title:  "Hello World"
+title:  "www.citygml.org gets a makeover!"
 categories: news
-date: 2016-09-14 09:37
+date: 2016-09-21 15:55
 ---
 
-www.citygml.org got a makeover!
+Many of you have surely noticed that [www.citygml.org](http://www.citygml.org) wasn't updated as often as it should. But do not worry, it will from now on be frequently updated, and its content will be expanded.
 
-Bacon ipsum dolour sit amet porchetta beef turkey, bacon turducken boudin hamburger venison ball tip. Brisket pork loin bresaola short loin ground round leberkas pastrami tongue jerky cow turducken beef ribs. Pork ribeye landjaeger prosciutto pig venison tenderloin. Swine beef ribs kielbasa, porchetta tenderloin salami venison pork belly tail.
-
-Bacon ipsum dolour sit amet porchetta beef turkey, bacon turducken boudin hamburger venison ball tip. Brisket pork loin bresaola short loin ground round leberkas pastrami tongue jerky cow turducken beef ribs. Pork ribeye landjaeger prosciutto pig venison tenderloin. Swine beef ribs kielbasa, porchetta tenderloin salami venison pork belly tail.
+The [3D geoinformation research group at TU Delft](https://3d.bk.tudelft.nl) will be from now on responsible for the site.
 

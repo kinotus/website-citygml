@@ -4,4 +4,4 @@ title: 3D applications
 permalink: /applications/
 ---
 
-Here the list of Filip...
+Here a list/table of all potential applications, with links to papers/websites/software.
