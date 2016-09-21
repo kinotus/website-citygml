@@ -16,7 +16,6 @@
   year: 2014
   classes:  Building
   texture:   No
-  notes: EPSG:31370
   
 - dataset: Hamburg
   link: http://suche.transparenz.hamburg.de/dataset/3d-stadtmodell-hamburg
@@ -25,7 +24,6 @@
   version: 1.0
   year: 2015
   acquisition: Cadastre footprints + LiDAR
-
   
 - dataset: Linz
   link: http://geo.data.linz.gv.at/katalog/geodata/3d_geo_daten_lod2/
@@ -61,7 +59,7 @@
   acquisition: Photogrammetry in combination with existing public 2(.5)D datasets
   classes:  Roads, lots, parks, water, terrain
   texture:   No
-  notes: Very rich in attributes
+  notes: "[article with details](http://www.ifp.uni-stuttgart.de/publications/phowo15/330Kolbe.pdf)"
   
 - dataset: New York City by DoITT
   link: http://www1.nyc.gov/site/doitt/initiatives/3d-building.page
@@ -83,7 +81,7 @@
   texture:  Yes
   
 - dataset: The Hague
-  link:    https://data.overheid.nl/data/dataset/3d-model-denhaag
+  link:    https://data.overheid.nl/data/dataset/3d-model-den-haag
   country: Netherlands
   building_lod: LOD2
   version: 1.0
