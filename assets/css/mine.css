@@ -1,0 +1,31 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 75px;
+  /*padding-bottom: 50px;*/
+}
+
+h1 {
+  /*padding-top: 25px;*/
+  padding-bottom: 20px;
+}
+
+h1 span {
+  color: #aaa;
+  font-size: 50%;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+
+ul.posts {
+  padding-left: 0;
+}
+
+
+
+
+

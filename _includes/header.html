@@ -1,0 +1,44 @@
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">CityGML homepage</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-right" id="navbar">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">about <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="{{ "/about/" | prepend: site.baseurl }}">what is CityGML?</a></li>
+            <li><a href="{{ "/doc/" | prepend: site.baseurl }}">doc + schemas</a></li>
+            <li><a href="{{ "/material/" | prepend: site.baseurl }}">papers, videos, slides</a></li>
+            <li><a href="{{ "/faq/" | prepend: site.baseurl }}">FAQ</a></li>
+          </ul>
+        </li>
+        <li><a href="/software/">software</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">datasets <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="{{ "/samplefiles/" | prepend: site.baseurl }}">sample files</a></li>
+            <li><a href="{{ "/exampleclasses/" | prepend: site.baseurl }}">examples per class</a></li>
+            <li><a href="{{ "/opendatasets/" | prepend: site.baseurl }}">open datasets</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">applications <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="{{ "/applications/" | prepend: site.baseurl }}">list of 3D applications</a></li>
+            <li><a href="{{ "/ade/" | prepend: site.baseurl }}">ADE</a></li>
+          </ul>
+        </li>
+        <li><a href="/ongoingdev/">ongoing dev</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>

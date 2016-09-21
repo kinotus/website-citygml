@@ -1,0 +1,71 @@
+
+# Categories
+#   - viewer
+#   - generator
+#   - parser
+#   - validator
+#   - storage
+#   - applications
+
+- name: citygml4j
+  webpage: https://github.com/citygml4j
+  description: open source Java class library and API 
+  category: parser
+  foss: true
+  starred: true
+
+- name: OGR
+  webpage: http://www.gdal.org/ogr/
+  description: could help in reading 'vanilla' GML
+  foss: true
+  category: parser
+  starred: false
+
+- name: 3D City Database
+  webpage: http://www.3dcitydb.org
+  description:  free geo database to store, represent, and manage virtual 3D city models on top of a standard spatial relational database (PostGIS and Oracle)
+  foss: true
+  category: storage
+  starred: false
+
+- name: 3dfier
+  webpage: https://github.com/tudelft3d/3dfier
+  description: Takes 2D GIS datasets and "3dfies" them by lifting each polygon to its height (obtained with LiDAR)
+  foss: true
+  category: generator
+  starred: true
+
+- name: val3dity
+  webpage: http://geovalidation.bk.tudelft.nl/val3dity/
+  description: Validation of 3D GML primitives according to the international standard ISO19107
+  foss: true
+  category: validator
+  starred: true
+
+- name: FZKViewer
+  webpage: http://iai-typo3.iai.fzk.de/www-extern-kit/index.php?id=1134
+  description: The FZKViewer visualises the sematic data models IFC, CityGML and gbXML
+  foss: true
+  category: viewer
+  starred: true
+
+- name: FME
+  webpage: http://www.safe.com
+  description: you best bet to visualise CityGML files under MacOS
+  foss: false
+  category: viewer;parser
+  starred: true
+
+- name: Random3Dcity
+  webpage: https://github.com/tudelft3d/Random3Dcity
+  description: A basic procedural modelling engine for generating random (synthetic) buildings and other features in CityGML in multiple levels of detail (LOD)
+  foss: true
+  category: generator
+  starred: true
+
+- name: CodeSynthesis XSD
+  webpage: http://www.codesynthesis.com/products/xsd/
+  description: "XML Schema to C++ data binding compiler, see http://wiki.codesynthesis.com/Schemas/CityGML"
+  foss: true
+  category: parser
+  starred: false
