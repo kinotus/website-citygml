@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Proposal refined LODs for Buildings
-permalink: /ongoingdev/tudelft-lods
+permalink: /ongoingdev/tudelft-lods/
 ---
 
 
