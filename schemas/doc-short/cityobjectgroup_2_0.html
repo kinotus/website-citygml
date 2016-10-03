@@ -1,0 +1,2217 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title>Schema documentation for namespace http://www.opengis.net/citygml/cityobjectgroup/2.0</title>
+      <link rel="stylesheet" href="docHtml.css" type="text/css" /><script type="text/javascript">
+         <!--
+        var propertiesBoxes= new Array('properties_cityObjectGroup.xsd', 
+				'properties_CityObjectGroupType_class', 
+				'properties_CityObjectGroupType_function', 
+				'properties_CityObjectGroupType_usage', 
+				'properties_CityObjectGroupType_groupMember', 
+				'properties_CityObjectGroupType_parent', 
+				'properties_CityObjectGroupType_geometry', 
+				'properties__GenericApplicationPropertyOfCityObjectGroup', 
+				'properties_CityObjectGroup');
+var sourceBoxes= new Array('source_CityObjectGroupType_class', 
+				'source_CityObjectGroupType_function', 
+				'source_CityObjectGroupType_usage', 
+				'source_CityObjectGroupType_groupMember', 
+				'source_CityObjectGroupType_parent', 
+				'source_CityObjectGroupType_geometry', 
+				'source__GenericApplicationPropertyOfCityObjectGroup', 
+				'source_CityObjectGroup', 
+				'source_CityObjectGroupType', 
+				'source_CityObjectGroupMemberType', 
+				'source_CityObjectGroupParentType');
+var diagramBoxes= new Array('diagram_CityObjectGroupType_class', 
+				'diagram_CityObjectGroupType_function', 
+				'diagram_CityObjectGroupType_usage', 
+				'diagram_CityObjectGroupType_groupMember', 
+				'diagram_CityObjectGroupType_parent', 
+				'diagram_CityObjectGroupType_geometry', 
+				'diagram__GenericApplicationPropertyOfCityObjectGroup', 
+				'diagram_CityObjectGroup', 
+				'diagram_CityObjectGroupType', 
+				'diagram_CityObjectGroupMemberType', 
+				'diagram_CityObjectGroupParentType');
+var annotationBoxes= new Array('annotations_cityObjectGroup.xsd', 
+				'annotations_CityObjectGroupType', 
+				'annotations_CityObjectGroupMemberType', 
+				'annotations_CityObjectGroupParentType');
+var attributesBoxes= new Array('attributes_CityObjectGroupType_class', 
+				'attributes_CityObjectGroupType_function', 
+				'attributes_CityObjectGroupType_usage', 
+				'attributes_CityObjectGroupType_groupMember', 
+				'attributes_CityObjectGroupType_parent', 
+				'attributes_CityObjectGroupType_geometry', 
+				'attributes_CityObjectGroup', 
+				'attributes_CityObjectGroupType', 
+				'attributes_CityObjectGroupMemberType', 
+				'attributes_CityObjectGroupParentType');
+
+      
+        var button_prefix = 'button_';
+        
+        /**
+        * Returns an element in the current HTML document.
+        *
+        * @param elementID Identifier of HTML element
+        * @return               HTML element object
+        */
+        function getElementObject(elementID) {
+            var elemObj = null;
+            if (document.getElementById) {
+                elemObj = document.getElementById(elementID);
+            }
+            return elemObj;
+        }
+        
+        /**
+        * Switches the state of a collapseable box, e.g.
+        * if it's opened, it'll be closed, and vice versa.
+        *
+        * @param boxID Identifier of box
+        */
+        function switchState(boxID) {
+            var boxObj = getElementObject(boxID);
+            var buttonObj = getElementObject(button_prefix + boxID);
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else if (boxObj.style.display == "none") {
+                // Box is closed, so open it
+                openBox(boxObj, buttonObj);
+            } else if (boxObj.style.display == "block") {
+                // Box is opened, so close it
+                closeBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+        * Opens a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function openBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "block";
+                
+                // Change text of button
+                if (boxObj.style.display == "block") {
+                    buttonObj.src = "img/btM.gif";
+                }
+            }
+        }
+        
+        /**
+        * Closes a collapseable box.
+        *
+        * @param boxObj       Collapseable box
+        * @param buttonObj Button controlling box
+        */
+        function closeBox(boxObj, buttonObj) {
+            if (boxObj == null || buttonObj == null) {
+                // Box or button not found
+            } else {
+                // Change 'display' CSS property of box
+                boxObj.style.display = "none";
+                
+                // Change text of button
+                if (boxObj.style.display == "none") {
+                    buttonObj.src = "img/btP.gif";
+                }
+            }
+        }
+    
+       function switchStateForAll(buttonObj, boxList) {
+            if (buttonObj == null) {
+                // button not found
+            } else if (buttonObj.value == "+") {
+                // Expand all
+                expandAll(boxList);
+                buttonObj.value = "-";
+            } else if (buttonObj.value == "-") {
+                // Collapse all
+                collapseAll(boxList);
+                buttonObj.value = "+";
+            }
+        }
+        
+        /**
+        * Closes all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function collapseAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                closeBox(boxObj, buttonObj);
+            }
+        }
+            
+        /**
+        * Open all boxes in a given list.
+        *
+        * @param boxList Array of box IDs
+        */
+        function expandAll(boxList) {
+            var idx;
+            for (idx = 0; idx < boxList.length; idx++) {
+                var boxObj = getElementObject(boxList[idx]);
+                var buttonObj = getElementObject(button_prefix + boxList[idx]);
+                openBox(boxObj, buttonObj);
+            }
+        }
+        
+        /**
+         * Update the message presented in the title of the html page.
+         * - If the documentation was splited by namespace we present something like: "Documentation for namespace 'ns'"
+         * - If the documentation was splited by location we present somehing like: "Documentation for 'Schema.xsd'"
+         * - If no split we always present: "Documentation for 'MainSchema.xsd'"
+         */
+        function updatePageTitle(message) {
+            top.document.title = message;
+        }
+        
+          
+                    
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function findAndFloat(id, x_displacement, y_displacement){
+
+            var element = getElementObject(id);            
+            
+            window[id + "_obj"] = element;
+            
+            if(document.layers) {
+               element.style = element;
+            }
+            
+            element.current_y = y_displacement;      
+            element.first_time = true;
+         
+            element.floatElement = function(){
+               // It may be closed by an user action.
+                
+               // Target X and Y coordinates.
+               var x, y;
+               
+               var myWidth = 0, myHeight = 0;
+               if( typeof( window.innerWidth ) == 'number' ) {
+                  //Non-IE
+                  myWidth = window.innerWidth;
+                  myHeight = window.innerHeight;
+               } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+                  //IE 6+ in 'standards compliant mode'
+                  myWidth = document.documentElement.clientWidth;
+                  myHeight = document.documentElement.clientHeight;
+               } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+                  //IE 4 compatible
+                  myWidth = document.body.clientWidth;
+                  myHeight = document.body.clientHeight;
+               }
+               
+               
+               x = myWidth - x_displacement;
+               
+               var ns = (navigator.appName.indexOf("Netscape") != -1);               
+               y = ns ? pageYOffset : document.documentElement && document.documentElement.scrollTop ? 
+                  document.documentElement.scrollTop : document.body.scrollTop;               
+               y = y + y_displacement;               
+               
+               // The current y is the current coordinate of the floating element.
+               // This should be at the limit the y target coordinate.
+               this.current_y += (y - this.current_y)/1.25;
+               
+               // Add the pixels constant after the values
+               // and move the element.
+               var px = document.layers ? "" : "px";
+               this.style.left =  x + px;
+               this.style.top =  this.current_y + px;
+                              
+               setTimeout(this.id + "_obj.floatElement()", 100);
+            }
+            
+            element.floatElement();
+            return element;
+          }
+
+         /**
+          * Finds an HTML element by its ID and makes it floatable over the normal content.
+          *
+          * @param x_displacement The difference in pixels to the right side of the window from 
+          *           the left side of the element.
+          * @param y_displacement The difference in pixels to the right side of the window from 
+          *           the top of the element.          
+          */
+         function selectTOCGroupBy(id, isChunked, indexFileLocation, indexFileNamespace, indexFileComponent){
+
+            if (!isChunked) {
+             var selectIds = new Array('toc_group_by_namespace', 'toc_group_by_location', 'toc_group_by_component_type');
+             // Make all the tabs invisible.
+               for (i = 0; i < 3; i++){
+                  var tab = getElementObject(selectIds[i]);
+                  tab.style.display = 'none';
+               }
+               var selTab = getElementObject(id);
+               selTab.style.display = 'block';
+            } else {
+             if (id == 'toc_group_by_namespace') {
+               parent.indexFrame.location = indexFileNamespace;
+             } else  if (id == 'toc_group_by_location') {
+               parent.indexFrame.location = indexFileLocation;
+             } else  if (id == 'toc_group_by_component_type') {
+              parent.indexFrame.location = indexFileComponent;
+             }
+            }
+         }
+          
+
+    
+                    //--></script></head>
+   <body>
+      <!-- <div id="global_controls" class="globalControls" style="position:absolute;right:0;">
+         <table class="rt">
+            <tr>
+               <td class="rt_cornerTopLeft"></td>
+               <td class="rt_lineTop"></td>
+               <td class="rt_cornerTopRight"></td>
+            </tr>
+            <tr>
+               <td class="rt_lineLeft"></td>
+               <td class="rt_content">
+                  <h3>Showing:</h3>
+                  <table>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, annotationBoxes);" class="control" /></span><span class="globalControlName">Annotations</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, attributesBoxes);" class="control" /></span><span class="globalControlName">Attributes </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, diagramBoxes);" class="control" /></span><span class="globalControlName">Diagrams</span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, propertiesBoxes);" class="control" /></span><span class="globalControlName">Properties </span></td>
+                     </tr>
+                     <tr>
+                        <td><span><input type="checkbox" value="-" checked="checked" onclick="switchStateForAll(this, sourceBoxes);" class="control" /></span><span class="globalControlName">Source</span></td>
+                     </tr>
+                  </table>
+                  <div align="right"><span><input type="button" onclick="getElementObject('global_controls').style.display = 'none';" value="Close" /></span></div>
+               </td>
+               <td class="rt_lineRight"></td>
+            </tr>
+            <tr>
+               <td class="rt_cornerBottomLeft"></td>
+               <td class="rt_lineBottom"></td>
+               <td class="rt_cornerBottomRight"></td>
+            </tr>
+         </table>
+      </div> -->
+      <a id="cityObjectGroup.xsd"></a><div class="componentTitle">Imported schema <span class="qname">cityObjectGroup.xsd</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://www.opengis.net/citygml/cityobjectgroup/2.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Annotations</b></div>
+                           <div class="floatRight"><input id="button_annotations_cityObjectGroup.xsd" type="image" src="img/btM.gif" value="-" onclick="switchState('annotations_cityObjectGroup.xsd');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="annotations_cityObjectGroup.xsd" style="display:block">
+                              <div class="annotation">
+                                 <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                    <tr>
+                                       <td width="100%"><pre><span class="tT">CityGML is an OGC Standard.</span><span class="tI">
+</span><span class="tT">Copyright (c) 2012 Open Geospatial Consortium.</span><span class="tI">
+</span><span class="tT">To obtain additional rights of use, visit http://www.opengeospatial.org/legal/ .</span></pre></td>
+                                    </tr>
+                                 </table>
+                              </div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_cityObjectGroup.xsd" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_cityObjectGroup.xsd');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_cityObjectGroup.xsd" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">attribute form default</td>
+                                    <td><b>unqualified</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">element form default</td>
+                                    <td><b>qualified</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">version</td>
+                                    <td><b>2.0.0</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="CityObjectGroupType_class"></a><div class="componentTitle">Element <span class="qname"><b><a href="cityobjectgroup_2_0.html#CityObjectGroupType" target="mainFrame" title="http://www.opengis.net/citygml/cityobjectgroup/2.0" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/citygml/cityobjectgroup/2.0')">CityObjectGroupType</a></b> / class</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://www.opengis.net/citygml/cityobjectgroup/2.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_CityObjectGroupType_class" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_CityObjectGroupType_class');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_CityObjectGroupType_class" style="display:block"><img alt="Diagram" border="0" src="img/cityObjectGroup_xsd_Element_class.jpeg" usemap="#cityObjectGroup_xsd_Element_class" /><map name="cityObjectGroup_xsd_Element_class" id="cityObjectGroup_xsd_Element_class">
+                                 <area alt="NO_NAMESPACE.tmp#CodeType_codeSpace" href="NO_NAMESPACE.html#CodeType_codeSpace" coords="114,114,219,138" />
+                                 <area alt="gml.tmp#CodeType" href="gml.html#CodeType" coords="89,3,217,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="gml.html#CodeType" target="mainFrame" title="http://www.opengis.net/gml" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/gml')">gml:CodeType</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_CityObjectGroupType_class" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_CityObjectGroupType_class');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_CityObjectGroupType_class" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">minOccurs</td>
+                                    <td><b>0</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Attributes</b></div>
+                           <div class="floatRight"><input id="button_attributes_CityObjectGroupType_class" type="image" src="img/btM.gif" value="-" onclick="switchState('attributes_CityObjectGroupType_class');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="attributes_CityObjectGroupType_class" style="display:block">
+                              <table class="attributesTable">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th width="10%">Type</th>
+                                       <th width="5%">Use</th>
+                                       <th></th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="NO_NAMESPACE.html#CodeType_codeSpace" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">codeSpace</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_CityObjectGroupType_class" type="image" src="img/btM.gif" value="-" onclick="switchState('source_CityObjectGroupType_class');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_CityObjectGroupType_class" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%"><pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"class"</span><span class="tAN"> type=</span><span class="tAV">"gml:CodeType"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tEl">/&gt;</span></pre></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="CityObjectGroupType_function"></a><div class="componentTitle">Element <span class="qname"><b><a href="cityobjectgroup_2_0.html#CityObjectGroupType" target="mainFrame" title="http://www.opengis.net/citygml/cityobjectgroup/2.0" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/citygml/cityobjectgroup/2.0')">CityObjectGroupType</a></b> / function</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://www.opengis.net/citygml/cityobjectgroup/2.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_CityObjectGroupType_function" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_CityObjectGroupType_function');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_CityObjectGroupType_function" style="display:block"><img alt="Diagram" border="0" src="img/cityObjectGroup_xsd_Element_function.jpeg" usemap="#cityObjectGroup_xsd_Element_function" /><map name="cityObjectGroup_xsd_Element_function" id="cityObjectGroup_xsd_Element_function">
+                                 <area alt="NO_NAMESPACE.tmp#CodeType_codeSpace" href="NO_NAMESPACE.html#CodeType_codeSpace" coords="132,114,237,138" />
+                                 <area alt="gml.tmp#CodeType" href="gml.html#CodeType" coords="107,3,235,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="gml.html#CodeType" target="mainFrame" title="http://www.opengis.net/gml" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/gml')">gml:CodeType</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_CityObjectGroupType_function" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_CityObjectGroupType_function');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_CityObjectGroupType_function" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">minOccurs</td>
+                                    <td><b>0</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">maxOccurs</td>
+                                    <td><b>unbounded</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Attributes</b></div>
+                           <div class="floatRight"><input id="button_attributes_CityObjectGroupType_function" type="image" src="img/btM.gif" value="-" onclick="switchState('attributes_CityObjectGroupType_function');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="attributes_CityObjectGroupType_function" style="display:block">
+                              <table class="attributesTable">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th width="10%">Type</th>
+                                       <th width="5%">Use</th>
+                                       <th></th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="NO_NAMESPACE.html#CodeType_codeSpace" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">codeSpace</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_CityObjectGroupType_function" type="image" src="img/btM.gif" value="-" onclick="switchState('source_CityObjectGroupType_function');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_CityObjectGroupType_function" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%"><pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"function"</span><span class="tAN"> type=</span><span class="tAV">"gml:CodeType"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tEl">/&gt;</span></pre></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="CityObjectGroupType_usage"></a><div class="componentTitle">Element <span class="qname"><b><a href="cityobjectgroup_2_0.html#CityObjectGroupType" target="mainFrame" title="http://www.opengis.net/citygml/cityobjectgroup/2.0" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/citygml/cityobjectgroup/2.0')">CityObjectGroupType</a></b> / usage</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://www.opengis.net/citygml/cityobjectgroup/2.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_CityObjectGroupType_usage" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_CityObjectGroupType_usage');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_CityObjectGroupType_usage" style="display:block"><img alt="Diagram" border="0" src="img/cityObjectGroup_xsd_Element_usage.jpeg" usemap="#cityObjectGroup_xsd_Element_usage" /><map name="cityObjectGroup_xsd_Element_usage" id="cityObjectGroup_xsd_Element_usage">
+                                 <area alt="NO_NAMESPACE.tmp#CodeType_codeSpace" href="NO_NAMESPACE.html#CodeType_codeSpace" coords="119,114,224,138" />
+                                 <area alt="gml.tmp#CodeType" href="gml.html#CodeType" coords="94,3,222,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="gml.html#CodeType" target="mainFrame" title="http://www.opengis.net/gml" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/gml')">gml:CodeType</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_CityObjectGroupType_usage" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_CityObjectGroupType_usage');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_CityObjectGroupType_usage" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">minOccurs</td>
+                                    <td><b>0</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">maxOccurs</td>
+                                    <td><b>unbounded</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Attributes</b></div>
+                           <div class="floatRight"><input id="button_attributes_CityObjectGroupType_usage" type="image" src="img/btM.gif" value="-" onclick="switchState('attributes_CityObjectGroupType_usage');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="attributes_CityObjectGroupType_usage" style="display:block">
+                              <table class="attributesTable">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th width="10%">Type</th>
+                                       <th width="5%">Use</th>
+                                       <th></th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="NO_NAMESPACE.html#CodeType_codeSpace" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">codeSpace</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_CityObjectGroupType_usage" type="image" src="img/btM.gif" value="-" onclick="switchState('source_CityObjectGroupType_usage');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_CityObjectGroupType_usage" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%"><pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"usage"</span><span class="tAN"> type=</span><span class="tAV">"gml:CodeType"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tEl">/&gt;</span></pre></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="CityObjectGroupType_groupMember"></a><div class="componentTitle">Element <span class="qname"><b><a href="cityobjectgroup_2_0.html#CityObjectGroupType" target="mainFrame" title="http://www.opengis.net/citygml/cityobjectgroup/2.0" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/citygml/cityobjectgroup/2.0')">CityObjectGroupType</a></b> / groupMember</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://www.opengis.net/citygml/cityobjectgroup/2.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_CityObjectGroupType_groupMember" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_CityObjectGroupType_groupMember');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_CityObjectGroupType_groupMember" style="display:block"><img alt="Diagram" border="0" src="img/cityObjectGroup_xsd_Element_groupMember.jpeg" usemap="#cityObjectGroup_xsd_Element_groupMember" /><map name="cityObjectGroup_xsd_Element_groupMember" id="cityObjectGroup_xsd_Element_groupMember">
+                                 <area alt="NO_NAMESPACE.tmp#CityObjectGroupMemberType_role" href="NO_NAMESPACE.html#CityObjectGroupMemberType_role" coords="163,78,232,102" />
+                                 <area alt="gml.tmp#AssociationAttributeGroup" href="gml.html#AssociationAttributeGroup" coords="166,115,389,141" />
+                                 <area alt="citygml_2_0.tmp#_CityObject" href="citygml_2_0.html#_CityObject" coords="220,167,340,191" />
+                                 <area alt="cityobjectgroup_2_0.tmp#CityObjectGroupMemberType" href="cityobjectgroup_2_0.html#CityObjectGroupMemberType" coords="138,3,348,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="cityobjectgroup_2_0.html#CityObjectGroupMemberType" target="mainFrame" title="http://www.opengis.net/citygml/cityobjectgroup/2.0" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/citygml/cityobjectgroup/2.0')">CityObjectGroupMemberType</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_CityObjectGroupType_groupMember" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_CityObjectGroupType_groupMember');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_CityObjectGroupType_groupMember" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">minOccurs</td>
+                                    <td><b>0</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">maxOccurs</td>
+                                    <td><b>unbounded</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Attributes</b></div>
+                           <div class="floatRight"><input id="button_attributes_CityObjectGroupType_groupMember" type="image" src="img/btM.gif" value="-" onclick="switchState('attributes_CityObjectGroupType_groupMember');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="attributes_CityObjectGroupType_groupMember" style="display:block">
+                              <table class="attributesTable">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th width="10%">Type</th>
+                                       <th width="5%">Fixed</th>
+                                       <th width="5%">Use</th>
+                                       <th>Annotation</th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="gml.html#remoteSchema" target="mainFrame" title="http://www.opengis.net/gml" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/gml')">gml:remoteSchema</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%"><pre><span class="tT">Reference to an XML Schema fragment that specifies the content model of the propertys value. This is in conformance with the XML Schema Section 4.14 Referencing Schemas from Elsewhere.</span></pre></td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="NO_NAMESPACE.html#CityObjectGroupMemberType_role" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">role</a></b></td>
+                                    <td><b>xs:string</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#actuate" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:actuate</a></b></td>
+                                    <td>restriction of <b>string</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%"><pre><span class="tT">The 'actuate' attribute is used to communicate the desired timing </span><span class="tI">
+</span><span class="tT">of traversal from the starting resource to the ending resource; </span><span class="tI">
+</span><span class="tT">it's value should be treated as follows:</span><span class="tI">
+</span><span class="tT">onLoad - traverse to the ending resource immediately on loading </span><span class="tI">
+</span><span class="tT">         the starting resource </span><span class="tI">
+</span><span class="tT">onRequest - traverse from the starting resource to the ending </span><span class="tI">
+</span><span class="tT">            resource only on a post-loading event triggered for </span><span class="tI">
+</span><span class="tT">            this purpose </span><span class="tI">
+</span><span class="tT">other - behavior is unconstrained; examine other markup in link </span><span class="tI">
+</span><span class="tT">        for hints </span><span class="tI">
+</span><span class="tT">none - behavior is unconstrained</span></pre></td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#arcrole" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:arcrole</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#href" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:href</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#role" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:role</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#show" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:show</a></b></td>
+                                    <td>restriction of <b>string</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%"><pre><span class="tT">The 'show' attribute is used to communicate the desired presentation </span><span class="tI">
+</span><span class="tT">of the ending resource on traversal from the starting resource; it's </span><span class="tI">
+</span><span class="tT">value should be treated as follows: </span><span class="tI">
+</span><span class="tT">new - load ending resource in a new window, frame, pane, or other </span><span class="tI">
+</span><span class="tT">      presentation context</span><span class="tI">
+</span><span class="tT">replace - load the resource in the same window, frame, pane, or </span><span class="tI">
+</span><span class="tT">          other presentation context</span><span class="tI">
+</span><span class="tT">embed - load ending resource in place of the presentation of the </span><span class="tI">
+</span><span class="tT">        starting resource</span><span class="tI">
+</span><span class="tT">other - behavior is unconstrained; examine other markup in the </span><span class="tI">
+</span><span class="tT">        link for hints </span><span class="tI">
+</span><span class="tT">none - behavior is unconstrained</span></pre></td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#title" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:title</a></b></td>
+                                    <td><b>string</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#simpleLink_type" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:type</a></b></td>
+                                    <td><b>string</b></td>
+                                    <td>simple</td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_CityObjectGroupType_groupMember" type="image" src="img/btM.gif" value="-" onclick="switchState('source_CityObjectGroupType_groupMember');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_CityObjectGroupType_groupMember" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%"><pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"groupMember"</span><span class="tAN"> type=</span><span class="tAV">"CityObjectGroupMemberType"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tEl">/&gt;</span></pre></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="CityObjectGroupType_parent"></a><div class="componentTitle">Element <span class="qname"><b><a href="cityobjectgroup_2_0.html#CityObjectGroupType" target="mainFrame" title="http://www.opengis.net/citygml/cityobjectgroup/2.0" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/citygml/cityobjectgroup/2.0')">CityObjectGroupType</a></b> / parent</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://www.opengis.net/citygml/cityobjectgroup/2.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_CityObjectGroupType_parent" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_CityObjectGroupType_parent');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_CityObjectGroupType_parent" style="display:block"><img alt="Diagram" border="0" src="img/cityObjectGroup_xsd_Element_parent.jpeg" usemap="#cityObjectGroup_xsd_Element_parent" /><map name="cityObjectGroup_xsd_Element_parent" id="cityObjectGroup_xsd_Element_parent">
+                                 <area alt="gml.tmp#AssociationAttributeGroup" href="gml.html#AssociationAttributeGroup" coords="125,81,348,107" />
+                                 <area alt="citygml_2_0.tmp#_CityObject" href="citygml_2_0.html#_CityObject" coords="179,133,299,157" />
+                                 <area alt="cityobjectgroup_2_0.tmp#CityObjectGroupParentType" href="cityobjectgroup_2_0.html#CityObjectGroupParentType" coords="97,3,298,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="cityobjectgroup_2_0.html#CityObjectGroupParentType" target="mainFrame" title="http://www.opengis.net/citygml/cityobjectgroup/2.0" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/citygml/cityobjectgroup/2.0')">CityObjectGroupParentType</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_CityObjectGroupType_parent" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_CityObjectGroupType_parent');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_CityObjectGroupType_parent" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">minOccurs</td>
+                                    <td><b>0</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Attributes</b></div>
+                           <div class="floatRight"><input id="button_attributes_CityObjectGroupType_parent" type="image" src="img/btM.gif" value="-" onclick="switchState('attributes_CityObjectGroupType_parent');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="attributes_CityObjectGroupType_parent" style="display:block">
+                              <table class="attributesTable">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th width="10%">Type</th>
+                                       <th width="5%">Fixed</th>
+                                       <th width="5%">Use</th>
+                                       <th>Annotation</th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="gml.html#remoteSchema" target="mainFrame" title="http://www.opengis.net/gml" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/gml')">gml:remoteSchema</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%"><pre><span class="tT">Reference to an XML Schema fragment that specifies the content model of the propertys value. This is in conformance with the XML Schema Section 4.14 Referencing Schemas from Elsewhere.</span></pre></td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#actuate" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:actuate</a></b></td>
+                                    <td>restriction of <b>string</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%"><pre><span class="tT">The 'actuate' attribute is used to communicate the desired timing </span><span class="tI">
+</span><span class="tT">of traversal from the starting resource to the ending resource; </span><span class="tI">
+</span><span class="tT">it's value should be treated as follows:</span><span class="tI">
+</span><span class="tT">onLoad - traverse to the ending resource immediately on loading </span><span class="tI">
+</span><span class="tT">         the starting resource </span><span class="tI">
+</span><span class="tT">onRequest - traverse from the starting resource to the ending </span><span class="tI">
+</span><span class="tT">            resource only on a post-loading event triggered for </span><span class="tI">
+</span><span class="tT">            this purpose </span><span class="tI">
+</span><span class="tT">other - behavior is unconstrained; examine other markup in link </span><span class="tI">
+</span><span class="tT">        for hints </span><span class="tI">
+</span><span class="tT">none - behavior is unconstrained</span></pre></td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#arcrole" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:arcrole</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#href" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:href</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#role" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:role</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#show" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:show</a></b></td>
+                                    <td>restriction of <b>string</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%"><pre><span class="tT">The 'show' attribute is used to communicate the desired presentation </span><span class="tI">
+</span><span class="tT">of the ending resource on traversal from the starting resource; it's </span><span class="tI">
+</span><span class="tT">value should be treated as follows: </span><span class="tI">
+</span><span class="tT">new - load ending resource in a new window, frame, pane, or other </span><span class="tI">
+</span><span class="tT">      presentation context</span><span class="tI">
+</span><span class="tT">replace - load the resource in the same window, frame, pane, or </span><span class="tI">
+</span><span class="tT">          other presentation context</span><span class="tI">
+</span><span class="tT">embed - load ending resource in place of the presentation of the </span><span class="tI">
+</span><span class="tT">        starting resource</span><span class="tI">
+</span><span class="tT">other - behavior is unconstrained; examine other markup in the </span><span class="tI">
+</span><span class="tT">        link for hints </span><span class="tI">
+</span><span class="tT">none - behavior is unconstrained</span></pre></td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#title" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:title</a></b></td>
+                                    <td><b>string</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#simpleLink_type" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:type</a></b></td>
+                                    <td><b>string</b></td>
+                                    <td>simple</td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_CityObjectGroupType_parent" type="image" src="img/btM.gif" value="-" onclick="switchState('source_CityObjectGroupType_parent');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_CityObjectGroupType_parent" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%"><pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"parent"</span><span class="tAN"> type=</span><span class="tAV">"CityObjectGroupParentType"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tEl">/&gt;</span></pre></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="CityObjectGroupType_geometry"></a><div class="componentTitle">Element <span class="qname"><b><a href="cityobjectgroup_2_0.html#CityObjectGroupType" target="mainFrame" title="http://www.opengis.net/citygml/cityobjectgroup/2.0" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/citygml/cityobjectgroup/2.0')">CityObjectGroupType</a></b> / geometry</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://www.opengis.net/citygml/cityobjectgroup/2.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_CityObjectGroupType_geometry" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_CityObjectGroupType_geometry');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_CityObjectGroupType_geometry" style="display:block"><img alt="Diagram" border="0" src="img/cityObjectGroup_xsd_Element_geometry.jpeg" usemap="#cityObjectGroup_xsd_Element_geometry" /><map name="cityObjectGroup_xsd_Element_geometry" id="cityObjectGroup_xsd_Element_geometry">
+                                 <area alt="gml.tmp#AssociationAttributeGroup" href="gml.html#AssociationAttributeGroup" coords="141,81,364,107" />
+                                 <area alt="gml.tmp#_Geometry" href="gml.html#_Geometry" coords="195,133,307,157" />
+                                 <area alt="gml.tmp#GeometryPropertyType" href="gml.html#GeometryPropertyType" coords="113,3,311,25" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="gml.html#GeometryPropertyType" target="mainFrame" title="http://www.opengis.net/gml" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/gml')">gml:GeometryPropertyType</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_CityObjectGroupType_geometry" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_CityObjectGroupType_geometry');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_CityObjectGroupType_geometry" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">minOccurs</td>
+                                    <td><b>0</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Attributes</b></div>
+                           <div class="floatRight"><input id="button_attributes_CityObjectGroupType_geometry" type="image" src="img/btM.gif" value="-" onclick="switchState('attributes_CityObjectGroupType_geometry');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="attributes_CityObjectGroupType_geometry" style="display:block">
+                              <table class="attributesTable">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th width="10%">Type</th>
+                                       <th width="5%">Fixed</th>
+                                       <th width="5%">Use</th>
+                                       <th>Annotation</th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="gml.html#remoteSchema" target="mainFrame" title="http://www.opengis.net/gml" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/gml')">gml:remoteSchema</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%"><pre><span class="tT">Reference to an XML Schema fragment that specifies the content model of the propertys value. This is in conformance with the XML Schema Section 4.14 Referencing Schemas from Elsewhere.</span></pre></td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#actuate" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:actuate</a></b></td>
+                                    <td>restriction of <b>string</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%"><pre><span class="tT">The 'actuate' attribute is used to communicate the desired timing </span><span class="tI">
+</span><span class="tT">of traversal from the starting resource to the ending resource; </span><span class="tI">
+</span><span class="tT">it's value should be treated as follows:</span><span class="tI">
+</span><span class="tT">onLoad - traverse to the ending resource immediately on loading </span><span class="tI">
+</span><span class="tT">         the starting resource </span><span class="tI">
+</span><span class="tT">onRequest - traverse from the starting resource to the ending </span><span class="tI">
+</span><span class="tT">            resource only on a post-loading event triggered for </span><span class="tI">
+</span><span class="tT">            this purpose </span><span class="tI">
+</span><span class="tT">other - behavior is unconstrained; examine other markup in link </span><span class="tI">
+</span><span class="tT">        for hints </span><span class="tI">
+</span><span class="tT">none - behavior is unconstrained</span></pre></td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#arcrole" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:arcrole</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#href" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:href</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#role" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:role</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#show" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:show</a></b></td>
+                                    <td>restriction of <b>string</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%"><pre><span class="tT">The 'show' attribute is used to communicate the desired presentation </span><span class="tI">
+</span><span class="tT">of the ending resource on traversal from the starting resource; it's </span><span class="tI">
+</span><span class="tT">value should be treated as follows: </span><span class="tI">
+</span><span class="tT">new - load ending resource in a new window, frame, pane, or other </span><span class="tI">
+</span><span class="tT">      presentation context</span><span class="tI">
+</span><span class="tT">replace - load the resource in the same window, frame, pane, or </span><span class="tI">
+</span><span class="tT">          other presentation context</span><span class="tI">
+</span><span class="tT">embed - load ending resource in place of the presentation of the </span><span class="tI">
+</span><span class="tT">        starting resource</span><span class="tI">
+</span><span class="tT">other - behavior is unconstrained; examine other markup in the </span><span class="tI">
+</span><span class="tT">        link for hints </span><span class="tI">
+</span><span class="tT">none - behavior is unconstrained</span></pre></td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#title" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:title</a></b></td>
+                                    <td><b>string</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#simpleLink_type" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:type</a></b></td>
+                                    <td><b>string</b></td>
+                                    <td>simple</td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_CityObjectGroupType_geometry" type="image" src="img/btM.gif" value="-" onclick="switchState('source_CityObjectGroupType_geometry');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_CityObjectGroupType_geometry" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%"><pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"geometry"</span><span class="tAN"> type=</span><span class="tAV">"gml:GeometryPropertyType"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tEl">/&gt;</span></pre></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="_GenericApplicationPropertyOfCityObjectGroup"></a><div class="componentTitle">Element <span class="qname">_GenericApplicationPropertyOfCityObjectGroup</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://www.opengis.net/citygml/cityobjectgroup/2.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram__GenericApplicationPropertyOfCityObjectGroup" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram__GenericApplicationPropertyOfCityObjectGroup');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram__GenericApplicationPropertyOfCityObjectGroup" style="display:block"><img alt="Diagram" border="0" src="img/cityObjectGroup_xsd_Element__GenericApplicationPropertyOfCityObjectGroup.jpeg" /></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties__GenericApplicationPropertyOfCityObjectGroup" type="image" src="img/btM.gif" value="-" onclick="switchState('properties__GenericApplicationPropertyOfCityObjectGroup');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties__GenericApplicationPropertyOfCityObjectGroup" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">abstract</td>
+                                    <td><b>true</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source__GenericApplicationPropertyOfCityObjectGroup" type="image" src="img/btM.gif" value="-" onclick="switchState('source__GenericApplicationPropertyOfCityObjectGroup');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source__GenericApplicationPropertyOfCityObjectGroup" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%"><pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"_GenericApplicationPropertyOfCityObjectGroup"</span><span class="tAN"> type=</span><span class="tAV">"xs:anyType"</span><span class="tAN"> abstract=</span><span class="tAV">"true"</span><span class="tEl">/&gt;</span></pre></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="CityObjectGroup"></a><div class="componentTitle">Element <span class="qname">CityObjectGroup</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://www.opengis.net/citygml/cityobjectgroup/2.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_CityObjectGroup" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_CityObjectGroup');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_CityObjectGroup" style="display:block"><img alt="Diagram" border="0" src="img/cityObjectGroup_xsd_Element_CityObjectGroup.jpeg" usemap="#cityObjectGroup_xsd_Element_CityObjectGroup" /><map name="cityObjectGroup_xsd_Element_CityObjectGroup" id="cityObjectGroup_xsd_Element_CityObjectGroup">
+                                 <area alt="gml.tmp#id" href="gml.html#id" coords="219,198,300,222" />
+                                 <area alt="gml.tmp#metaDataProperty" href="gml.html#metaDataProperty" coords="382,283,532,307" />
+                                 <area alt="gml.tmp#description" href="gml.html#description" coords="382,317,497,341" />
+                                 <area alt="gml.tmp#name" href="gml.html#name" coords="382,351,465,375" />
+                                 <area alt="gml.tmp#StandardObjectProperties" href="gml.html#StandardObjectProperties" coords="279,242,495,268" />
+                                 <area alt="gml.tmp#AbstractGMLType" href="gml.html#AbstractGMLType" coords="194,123,455,145" />
+                                 <area alt="gml.tmp#boundedBy" href="gml.html#boundedBy" coords="262,399,376,423" />
+                                 <area alt="gml.tmp#location" href="gml.html#location" coords="262,433,359,457" />
+                                 <area alt="gml.tmp#AbstractFeatureType" href="gml.html#AbstractFeatureType" coords="180,83,458,105" />
+                                 <area alt="citygml_2_0.tmp#AbstractCityObjectType_creationDate" href="citygml_2_0.html#AbstractCityObjectType_creationDate" coords="269,474,368,498" />
+                                 <area alt="citygml_2_0.tmp#AbstractCityObjectType_terminationDate" href="citygml_2_0.html#AbstractCityObjectType_terminationDate" coords="269,508,386,532" />
+                                 <area alt="citygml_2_0.tmp#AbstractCityObjectType_externalReference" href="citygml_2_0.html#AbstractCityObjectType_externalReference" coords="269,542,397,566" />
+                                 <area alt="citygml_2_0.tmp#AbstractCityObjectType_generalizesTo" href="citygml_2_0.html#AbstractCityObjectType_generalizesTo" coords="269,576,375,600" />
+                                 <area alt="citygml_2_0.tmp#AbstractCityObjectType_relativeToTerrain" href="citygml_2_0.html#AbstractCityObjectType_relativeToTerrain" coords="269,610,392,634" />
+                                 <area alt="citygml_2_0.tmp#AbstractCityObjectType_relativeToWater" href="citygml_2_0.html#AbstractCityObjectType_relativeToWater" coords="269,644,383,668" />
+                                 <area alt="citygml_2_0.tmp#_GenericApplicationPropertyOfCityObject" href="citygml_2_0.html#_GenericApplicationPropertyOfCityObject" coords="269,678,523,702" />
+                                 <area alt="citygml_2_0.tmp#AbstractCityObjectType" href="citygml_2_0.html#AbstractCityObjectType" coords="166,43,464,65" />
+                                 <area alt="cityobjectgroup_2_0.tmp#CityObjectGroupType_class" href="cityobjectgroup_2_0.html#CityObjectGroupType_class" coords="255,719,313,743" />
+                                 <area alt="cityobjectgroup_2_0.tmp#CityObjectGroupType_function" href="cityobjectgroup_2_0.html#CityObjectGroupType_function" coords="255,753,331,777" />
+                                 <area alt="cityobjectgroup_2_0.tmp#CityObjectGroupType_usage" href="cityobjectgroup_2_0.html#CityObjectGroupType_usage" coords="255,787,318,811" />
+                                 <area alt="cityobjectgroup_2_0.tmp#CityObjectGroupType_groupMember" href="cityobjectgroup_2_0.html#CityObjectGroupType_groupMember" coords="255,821,362,845" />
+                                 <area alt="cityobjectgroup_2_0.tmp#CityObjectGroupType_parent" href="cityobjectgroup_2_0.html#CityObjectGroupType_parent" coords="255,855,321,879" />
+                                 <area alt="cityobjectgroup_2_0.tmp#CityObjectGroupType_geometry" href="cityobjectgroup_2_0.html#CityObjectGroupType_geometry" coords="255,889,337,913" />
+                                 <area alt="cityobjectgroup_2_0.tmp#_GenericApplicationPropertyOfCityObjectGroup" href="cityobjectgroup_2_0.html#_GenericApplicationPropertyOfCityObjectGroup" coords="255,923,543,947" />
+                                 <area alt="cityobjectgroup_2_0.tmp#CityObjectGroupType" href="cityobjectgroup_2_0.html#CityObjectGroupType" coords="152,3,319,25" />
+                                 <area alt="citygml_2_0.tmp#_CityObject" href="citygml_2_0.html#_CityObject" coords="163,1002,256,1026" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td><b><a href="cityobjectgroup_2_0.html#CityObjectGroupType" target="mainFrame" title="http://www.opengis.net/citygml/cityobjectgroup/2.0" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/citygml/cityobjectgroup/2.0')">CityObjectGroupType</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="gml.html#AbstractGMLType" target="mainFrame" title="http://www.opengis.net/gml" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/gml')">gml:AbstractGMLType</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="gml.html#AbstractFeatureType" target="mainFrame" title="http://www.opengis.net/gml" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/gml')">gml:AbstractFeatureType</a></b><ul class="internal">
+                                          <li class="internal"><b><a href="citygml_2_0.html#AbstractCityObjectType" target="mainFrame" title="http://www.opengis.net/citygml/2.0" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/citygml/2.0')">AbstractCityObjectType</a></b><ul class="internal">
+                                                <li class="internal"><b><a href="cityobjectgroup_2_0.html#CityObjectGroupType" target="mainFrame" title="http://www.opengis.net/citygml/cityobjectgroup/2.0" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/citygml/cityobjectgroup/2.0')">CityObjectGroupType</a></b></li>
+                                             </ul>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Properties</b></div>
+                           <div class="floatRight"><input id="button_properties_CityObjectGroup" type="image" src="img/btM.gif" value="-" onclick="switchState('properties_CityObjectGroup');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="properties_CityObjectGroup" style="display:block">
+                              <table class="propertiesTable">
+                                 <tr>
+                                    <td class="firstColumn" style="white-space: nowrap;">content</td>
+                                    <td><b>complex</b></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Substitution Group Affiliation</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="citygml_2_0.html#_CityObject" target="mainFrame" title="http://www.opengis.net/citygml/2.0" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/citygml/2.0')">_CityObject</a></b></li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Attributes</b></div>
+                           <div class="floatRight"><input id="button_attributes_CityObjectGroup" type="image" src="img/btM.gif" value="-" onclick="switchState('attributes_CityObjectGroup');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="attributes_CityObjectGroup" style="display:block">
+                              <table class="attributesTable">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th width="10%">Type</th>
+                                       <th width="5%">Use</th>
+                                       <th>Annotation</th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="gml.html#id" target="mainFrame" title="http://www.opengis.net/gml" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/gml')">gml:id</a></b></td>
+                                    <td><b>ID</b></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%"><pre><span class="tT">Database handle for the object.  It is of XML type ID, so is constrained to be unique in the XML document within which it occurs.  An external identifier for the object in the form of a URI may be constructed using standard XML and XPointer methods.  This is done by concatenating the URI for the document, a fragment separator, and the value of the id attribute.</span></pre></td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_CityObjectGroup" type="image" src="img/btM.gif" value="-" onclick="switchState('source_CityObjectGroup');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_CityObjectGroup" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%"><pre><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"CityObjectGroup"</span><span class="tAN"> type=</span><span class="tAV">"CityObjectGroupType"</span><span class="tAN"> substitutionGroup=</span><span class="tAV">"core:_CityObject"</span><span class="tEl">/&gt;</span></pre></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="CityObjectGroupType"></a><div class="componentTitle">Complex Type <span class="qname">CityObjectGroupType</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://www.opengis.net/citygml/cityobjectgroup/2.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Annotations</b></div>
+                           <div class="floatRight"><input id="button_annotations_CityObjectGroupType" type="image" src="img/btM.gif" value="-" onclick="switchState('annotations_CityObjectGroupType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="annotations_CityObjectGroupType" style="display:block">
+                              <div class="annotation">
+                                 <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                    <tr>
+                                       <td width="100%"><pre><span class="tT">A group may be used to aggregate arbitrary CityObjects according to some user-defined criteria. Examples</span><span class="tI">
+</span><span class="tT">for groups are the buildings in a specific region, the result of a query, or objects put together for visualization</span><span class="tI">
+</span><span class="tT">purposes. Each group has a name (inherited from AbstractGMLType), functions (e.g., building group), a class and zero or</span><span class="tI">
+</span><span class="tT">more usages. A geometry may optionally be attached to a group, if the geometry of the whole group differs from the</span><span class="tI">
+</span><span class="tT">geometry of the parts. Each member of a group may be qualified by a role name, reflecting the role each CityObject plays</span><span class="tI">
+</span><span class="tT">in the context of the group. As subclass of _CityObject, a CityObjectGroup inherits all attributes and relations, in</span><span class="tI">
+</span><span class="tT">particular an id, names, external references, and generalization relations. As CityObjectGroup itself is a CityObject, it</span><span class="tI">
+</span><span class="tT">may also be contained by another group.</span></pre></td>
+                                    </tr>
+                                 </table>
+                              </div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_CityObjectGroupType" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_CityObjectGroupType');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_CityObjectGroupType" style="display:block"><img alt="Diagram" border="0" src="img/cityObjectGroup_xsd_Complex_Type_CityObjectGroupType.jpeg" usemap="#cityObjectGroup_xsd_Complex_Type_CityObjectGroupType" /><map name="cityObjectGroup_xsd_Complex_Type_CityObjectGroupType" id="cityObjectGroup_xsd_Complex_Type_CityObjectGroupType">
+                                 <area alt="gml.tmp#id" href="gml.html#id" coords="255,158,336,182" />
+                                 <area alt="gml.tmp#metaDataProperty" href="gml.html#metaDataProperty" coords="418,243,568,267" />
+                                 <area alt="gml.tmp#description" href="gml.html#description" coords="418,277,533,301" />
+                                 <area alt="gml.tmp#name" href="gml.html#name" coords="418,311,501,335" />
+                                 <area alt="gml.tmp#StandardObjectProperties" href="gml.html#StandardObjectProperties" coords="315,202,531,228" />
+                                 <area alt="gml.tmp#AbstractGMLType" href="gml.html#AbstractGMLType" coords="230,83,491,105" />
+                                 <area alt="gml.tmp#boundedBy" href="gml.html#boundedBy" coords="298,359,412,383" />
+                                 <area alt="gml.tmp#location" href="gml.html#location" coords="298,393,395,417" />
+                                 <area alt="gml.tmp#AbstractFeatureType" href="gml.html#AbstractFeatureType" coords="216,43,494,65" />
+                                 <area alt="citygml_2_0.tmp#AbstractCityObjectType_creationDate" href="citygml_2_0.html#AbstractCityObjectType_creationDate" coords="305,434,404,458" />
+                                 <area alt="citygml_2_0.tmp#AbstractCityObjectType_terminationDate" href="citygml_2_0.html#AbstractCityObjectType_terminationDate" coords="305,468,422,492" />
+                                 <area alt="citygml_2_0.tmp#AbstractCityObjectType_externalReference" href="citygml_2_0.html#AbstractCityObjectType_externalReference" coords="305,502,433,526" />
+                                 <area alt="citygml_2_0.tmp#AbstractCityObjectType_generalizesTo" href="citygml_2_0.html#AbstractCityObjectType_generalizesTo" coords="305,536,411,560" />
+                                 <area alt="citygml_2_0.tmp#AbstractCityObjectType_relativeToTerrain" href="citygml_2_0.html#AbstractCityObjectType_relativeToTerrain" coords="305,570,428,594" />
+                                 <area alt="citygml_2_0.tmp#AbstractCityObjectType_relativeToWater" href="citygml_2_0.html#AbstractCityObjectType_relativeToWater" coords="305,604,419,628" />
+                                 <area alt="citygml_2_0.tmp#_GenericApplicationPropertyOfCityObject" href="citygml_2_0.html#_GenericApplicationPropertyOfCityObject" coords="305,638,559,662" />
+                                 <area alt="citygml_2_0.tmp#AbstractCityObjectType" href="citygml_2_0.html#AbstractCityObjectType" coords="202,3,500,25" />
+                                 <area alt="cityobjectgroup_2_0.tmp#CityObjectGroupType_class" href="cityobjectgroup_2_0.html#CityObjectGroupType_class" coords="291,679,349,703" />
+                                 <area alt="cityobjectgroup_2_0.tmp#CityObjectGroupType_function" href="cityobjectgroup_2_0.html#CityObjectGroupType_function" coords="291,713,367,737" />
+                                 <area alt="cityobjectgroup_2_0.tmp#CityObjectGroupType_usage" href="cityobjectgroup_2_0.html#CityObjectGroupType_usage" coords="291,747,354,771" />
+                                 <area alt="cityobjectgroup_2_0.tmp#CityObjectGroupType_groupMember" href="cityobjectgroup_2_0.html#CityObjectGroupType_groupMember" coords="291,781,398,805" />
+                                 <area alt="cityobjectgroup_2_0.tmp#CityObjectGroupType_parent" href="cityobjectgroup_2_0.html#CityObjectGroupType_parent" coords="291,815,357,839" />
+                                 <area alt="cityobjectgroup_2_0.tmp#CityObjectGroupType_geometry" href="cityobjectgroup_2_0.html#CityObjectGroupType_geometry" coords="291,849,373,873" />
+                                 <area alt="cityobjectgroup_2_0.tmp#_GenericApplicationPropertyOfCityObjectGroup" href="cityobjectgroup_2_0.html#_GenericApplicationPropertyOfCityObjectGroup" coords="291,883,579,907" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type</b></td>
+                        <td>extension of <b><a href="citygml_2_0.html#AbstractCityObjectType" target="mainFrame" title="http://www.opengis.net/citygml/2.0" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/citygml/2.0')">AbstractCityObjectType</a></b></td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn"><b>Type hierarchy</b></td>
+                        <td>
+                           <ul class="internal">
+                              <li class="internal"><b><a href="gml.html#AbstractGMLType" target="mainFrame" title="http://www.opengis.net/gml" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/gml')">gml:AbstractGMLType</a></b><ul class="internal">
+                                    <li class="internal"><b><a href="gml.html#AbstractFeatureType" target="mainFrame" title="http://www.opengis.net/gml" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/gml')">gml:AbstractFeatureType</a></b><ul class="internal">
+                                          <li class="internal"><b><a href="citygml_2_0.html#AbstractCityObjectType" target="mainFrame" title="http://www.opengis.net/citygml/2.0" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/citygml/2.0')">AbstractCityObjectType</a></b><ul class="internal">
+                                                <li class="internal"><b><a href="cityobjectgroup_2_0.html#CityObjectGroupType" target="mainFrame" title="http://www.opengis.net/citygml/cityobjectgroup/2.0" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/citygml/cityobjectgroup/2.0')">CityObjectGroupType</a></b></li>
+                                             </ul>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Attributes</b></div>
+                           <div class="floatRight"><input id="button_attributes_CityObjectGroupType" type="image" src="img/btM.gif" value="-" onclick="switchState('attributes_CityObjectGroupType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="attributes_CityObjectGroupType" style="display:block">
+                              <table class="attributesTable">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th width="10%">Type</th>
+                                       <th width="5%">Use</th>
+                                       <th>Annotation</th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="gml.html#id" target="mainFrame" title="http://www.opengis.net/gml" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/gml')">gml:id</a></b></td>
+                                    <td><b>ID</b></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%"><pre><span class="tT">Database handle for the object.  It is of XML type ID, so is constrained to be unique in the XML document within which it occurs.  An external identifier for the object in the form of a URI may be constructed using standard XML and XPointer methods.  This is done by concatenating the URI for the document, a fragment separator, and the value of the id attribute.</span></pre></td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_CityObjectGroupType" type="image" src="img/btM.gif" value="-" onclick="switchState('source_CityObjectGroupType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_CityObjectGroupType" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%"><pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"CityObjectGroupType"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">A group may be used to aggregate arbitrary CityObjects according to some user-defined criteria. Examples for groups are the buildings in a specific region, the result of a query, or objects put together for visualization purposes. Each group has a name (inherited from AbstractGMLType), functions (e.g., building group), a class and zero or more usages. A geometry may optionally be attached to a group, if the geometry of the whole group differs from the geometry of the parts. Each member of a group may be qualified by a role name, reflecting the role each CityObject plays in the context of the group. As subclass of _CityObject, a CityObjectGroup inherits all attributes and relations, in particular an id, names, external references, and generalization relations. As CityObjectGroup itself is a CityObject, it may also be contained by another group.</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:complexContent</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:extension</span><span class="tAN"> base=</span><span class="tAV">"core:AbstractCityObjectType"</span><span class="tEl">&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;xs:sequence</span><span class="tEl">&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"class"</span><span class="tAN"> type=</span><span class="tAV">"gml:CodeType"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"function"</span><span class="tAN"> type=</span><span class="tAV">"gml:CodeType"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"usage"</span><span class="tAN"> type=</span><span class="tAV">"gml:CodeType"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"groupMember"</span><span class="tAN"> type=</span><span class="tAV">"CityObjectGroupMemberType"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"parent"</span><span class="tAN"> type=</span><span class="tAV">"CityObjectGroupParentType"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> name=</span><span class="tAV">"geometry"</span><span class="tAN"> type=</span><span class="tAV">"gml:GeometryPropertyType"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tEl">/&gt;</span><span class="tI">
+        </span><span class="tEl">&lt;xs:element</span><span class="tAN"> ref=</span><span class="tAV">"_GenericApplicationPropertyOfCityObjectGroup"</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tAN"> maxOccurs=</span><span class="tAV">"unbounded"</span><span class="tEl">/&gt;</span><span class="tI">
+      </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;/xs:extension&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:complexContent&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="CityObjectGroupMemberType"></a><div class="componentTitle">Complex Type <span class="qname">CityObjectGroupMemberType</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://www.opengis.net/citygml/cityobjectgroup/2.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Annotations</b></div>
+                           <div class="floatRight"><input id="button_annotations_CityObjectGroupMemberType" type="image" src="img/btM.gif" value="-" onclick="switchState('annotations_CityObjectGroupMemberType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="annotations_CityObjectGroupMemberType" style="display:block">
+                              <div class="annotation">
+                                 <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                    <tr>
+                                       <td width="100%"><pre><span class="tT">Denotes the relation of a CityObjectGroup to its members, which are _CityObjects. The</span><span class="tI">
+</span><span class="tT">CityObjectGroupMemberType element must either carry a reference to a _CityObject object or contain a _CityObject object</span><span class="tI">
+</span><span class="tT">inline, but neither both nor none.</span></pre></td>
+                                    </tr>
+                                 </table>
+                              </div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_CityObjectGroupMemberType" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_CityObjectGroupMemberType');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_CityObjectGroupMemberType" style="display:block"><img alt="Diagram" border="0" src="img/cityObjectGroup_xsd_Complex_Type_CityObjectGroupMemberType.jpeg" usemap="#cityObjectGroup_xsd_Complex_Type_CityObjectGroupMemberType" /><map name="cityObjectGroup_xsd_Complex_Type_CityObjectGroupMemberType" id="cityObjectGroup_xsd_Complex_Type_CityObjectGroupMemberType">
+                                 <area alt="NO_NAMESPACE.tmp#CityObjectGroupMemberType_role" href="NO_NAMESPACE.html#CityObjectGroupMemberType_role" coords="256,38,325,62" />
+                                 <area alt="gml.tmp#AssociationAttributeGroup" href="gml.html#AssociationAttributeGroup" coords="259,75,482,101" />
+                                 <area alt="citygml_2_0.tmp#_CityObject" href="citygml_2_0.html#_CityObject" coords="313,127,433,151" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Attributes</b></div>
+                           <div class="floatRight"><input id="button_attributes_CityObjectGroupMemberType" type="image" src="img/btM.gif" value="-" onclick="switchState('attributes_CityObjectGroupMemberType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="attributes_CityObjectGroupMemberType" style="display:block">
+                              <table class="attributesTable">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th width="10%">Type</th>
+                                       <th width="5%">Fixed</th>
+                                       <th width="5%">Use</th>
+                                       <th>Annotation</th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="gml.html#remoteSchema" target="mainFrame" title="http://www.opengis.net/gml" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/gml')">gml:remoteSchema</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%"><pre><span class="tT">Reference to an XML Schema fragment that specifies the content model of the propertys value. This is in conformance with the XML Schema Section 4.14 Referencing Schemas from Elsewhere.</span></pre></td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="NO_NAMESPACE.html#CityObjectGroupMemberType_role" target="mainFrame" title="No namespace" onclick="updatePageTitle('Schema documentation for &#34;No namespace&#34;')">role</a></b></td>
+                                    <td><b>xs:string</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#actuate" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:actuate</a></b></td>
+                                    <td>restriction of <b>string</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%"><pre><span class="tT">The 'actuate' attribute is used to communicate the desired timing </span><span class="tI">
+</span><span class="tT">of traversal from the starting resource to the ending resource; </span><span class="tI">
+</span><span class="tT">it's value should be treated as follows:</span><span class="tI">
+</span><span class="tT">onLoad - traverse to the ending resource immediately on loading </span><span class="tI">
+</span><span class="tT">         the starting resource </span><span class="tI">
+</span><span class="tT">onRequest - traverse from the starting resource to the ending </span><span class="tI">
+</span><span class="tT">            resource only on a post-loading event triggered for </span><span class="tI">
+</span><span class="tT">            this purpose </span><span class="tI">
+</span><span class="tT">other - behavior is unconstrained; examine other markup in link </span><span class="tI">
+</span><span class="tT">        for hints </span><span class="tI">
+</span><span class="tT">none - behavior is unconstrained</span></pre></td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#arcrole" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:arcrole</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#href" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:href</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#role" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:role</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#show" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:show</a></b></td>
+                                    <td>restriction of <b>string</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%"><pre><span class="tT">The 'show' attribute is used to communicate the desired presentation </span><span class="tI">
+</span><span class="tT">of the ending resource on traversal from the starting resource; it's </span><span class="tI">
+</span><span class="tT">value should be treated as follows: </span><span class="tI">
+</span><span class="tT">new - load ending resource in a new window, frame, pane, or other </span><span class="tI">
+</span><span class="tT">      presentation context</span><span class="tI">
+</span><span class="tT">replace - load the resource in the same window, frame, pane, or </span><span class="tI">
+</span><span class="tT">          other presentation context</span><span class="tI">
+</span><span class="tT">embed - load ending resource in place of the presentation of the </span><span class="tI">
+</span><span class="tT">        starting resource</span><span class="tI">
+</span><span class="tT">other - behavior is unconstrained; examine other markup in the </span><span class="tI">
+</span><span class="tT">        link for hints </span><span class="tI">
+</span><span class="tT">none - behavior is unconstrained</span></pre></td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#title" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:title</a></b></td>
+                                    <td><b>string</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#simpleLink_type" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:type</a></b></td>
+                                    <td><b>string</b></td>
+                                    <td>simple</td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_CityObjectGroupMemberType" type="image" src="img/btM.gif" value="-" onclick="switchState('source_CityObjectGroupMemberType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_CityObjectGroupMemberType" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%"><pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"CityObjectGroupMemberType"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Denotes the relation of a CityObjectGroup to its members, which are _CityObjects. The CityObjectGroupMemberType element must either carry a reference to a _CityObject object or contain a _CityObject object inline, but neither both nor none.</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> ref=</span><span class="tAV">"core:_CityObject"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:attribute</span><span class="tAN"> name=</span><span class="tAV">"role"</span><span class="tAN"> type=</span><span class="tAV">"xs:string"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:attributeGroup</span><span class="tAN"> ref=</span><span class="tAV">"gml:AssociationAttributeGroup"</span><span class="tEl">/&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table><a id="CityObjectGroupParentType"></a><div class="componentTitle">Complex Type <span class="qname">CityObjectGroupParentType</span></div>
+      <table class="rt">
+         <tr>
+            <td class="rt_cornerTopLeft"></td>
+            <td class="rt_lineTop"></td>
+            <td class="rt_cornerTopRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_lineLeft"></td>
+            <td class="rt_content">
+               <table class="component">
+                  <tbody>
+                     <tr>
+                        <td class="firstColumn"><b>Namespace</b></td>
+                        <td>http://www.opengis.net/citygml/cityobjectgroup/2.0</td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Annotations</b></div>
+                           <div class="floatRight"><input id="button_annotations_CityObjectGroupParentType" type="image" src="img/btM.gif" value="-" onclick="switchState('annotations_CityObjectGroupParentType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="annotations_CityObjectGroupParentType" style="display:block">
+                              <div class="annotation">
+                                 <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                    <tr>
+                                       <td width="100%"><pre><span class="tT">Denotes the relation of a CityObjectGroup to its parent, which is a CityObject. The</span><span class="tI">
+</span><span class="tT">CityObjectGroupParentType element must either carry a reference to a _CityObject object or contain a _CityObject object</span><span class="tI">
+</span><span class="tT">inline, but neither both nor none. The parent association allows for modelling of a generic hierarchical grouping concept.</span><span class="tI">
+</span><span class="tT">Named aggregations of components (CityObjects) can be added to specific CityObjects considered as the parent object. The</span><span class="tI">
+</span><span class="tT">parent association links to the aggregate, while the parts are given by the group members.</span></pre></td>
+                                    </tr>
+                                 </table>
+                              </div>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Diagram</b></div>
+                           <div class="floatRight"><input id="button_diagram_CityObjectGroupParentType" type="image" src="img/btM.gif" value="-" onclick="switchState('diagram_CityObjectGroupParentType');" class="control" /></div>
+                        </td>
+                        <td class="diagram">
+                           <div id="diagram_CityObjectGroupParentType" style="display:block"><img alt="Diagram" border="0" src="img/cityObjectGroup_xsd_Complex_Type_CityObjectGroupParentType.jpeg" usemap="#cityObjectGroup_xsd_Complex_Type_CityObjectGroupParentType" /><map name="cityObjectGroup_xsd_Complex_Type_CityObjectGroupParentType" id="cityObjectGroup_xsd_Complex_Type_CityObjectGroupParentType">
+                                 <area alt="gml.tmp#AssociationAttributeGroup" href="gml.html#AssociationAttributeGroup" coords="250,41,473,67" />
+                                 <area alt="citygml_2_0.tmp#_CityObject" href="citygml_2_0.html#_CityObject" coords="304,93,424,117" /></map></div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Attributes</b></div>
+                           <div class="floatRight"><input id="button_attributes_CityObjectGroupParentType" type="image" src="img/btM.gif" value="-" onclick="switchState('attributes_CityObjectGroupParentType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="attributes_CityObjectGroupParentType" style="display:block">
+                              <table class="attributesTable">
+                                 <thead>
+                                    <tr>
+                                       <th>QName</th>
+                                       <th width="10%">Type</th>
+                                       <th width="5%">Fixed</th>
+                                       <th width="5%">Use</th>
+                                       <th>Annotation</th>
+                                    </tr>
+                                 </thead>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="gml.html#remoteSchema" target="mainFrame" title="http://www.opengis.net/gml" onclick="updatePageTitle('Schema documentation for namespace http://www.opengis.net/gml')">gml:remoteSchema</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%"><pre><span class="tT">Reference to an XML Schema fragment that specifies the content model of the propertys value. This is in conformance with the XML Schema Section 4.14 Referencing Schemas from Elsewhere.</span></pre></td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#actuate" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:actuate</a></b></td>
+                                    <td>restriction of <b>string</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%"><pre><span class="tT">The 'actuate' attribute is used to communicate the desired timing </span><span class="tI">
+</span><span class="tT">of traversal from the starting resource to the ending resource; </span><span class="tI">
+</span><span class="tT">it's value should be treated as follows:</span><span class="tI">
+</span><span class="tT">onLoad - traverse to the ending resource immediately on loading </span><span class="tI">
+</span><span class="tT">         the starting resource </span><span class="tI">
+</span><span class="tT">onRequest - traverse from the starting resource to the ending </span><span class="tI">
+</span><span class="tT">            resource only on a post-loading event triggered for </span><span class="tI">
+</span><span class="tT">            this purpose </span><span class="tI">
+</span><span class="tT">other - behavior is unconstrained; examine other markup in link </span><span class="tI">
+</span><span class="tT">        for hints </span><span class="tI">
+</span><span class="tT">none - behavior is unconstrained</span></pre></td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#arcrole" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:arcrole</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#href" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:href</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#role" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:role</a></b></td>
+                                    <td><b>anyURI</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#show" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:show</a></b></td>
+                                    <td>restriction of <b>string</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation">
+                                          <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                             <tr>
+                                                <td width="100%"><pre><span class="tT">The 'show' attribute is used to communicate the desired presentation </span><span class="tI">
+</span><span class="tT">of the ending resource on traversal from the starting resource; it's </span><span class="tI">
+</span><span class="tT">value should be treated as follows: </span><span class="tI">
+</span><span class="tT">new - load ending resource in a new window, frame, pane, or other </span><span class="tI">
+</span><span class="tT">      presentation context</span><span class="tI">
+</span><span class="tT">replace - load the resource in the same window, frame, pane, or </span><span class="tI">
+</span><span class="tT">          other presentation context</span><span class="tI">
+</span><span class="tT">embed - load ending resource in place of the presentation of the </span><span class="tI">
+</span><span class="tT">        starting resource</span><span class="tI">
+</span><span class="tT">other - behavior is unconstrained; examine other markup in the </span><span class="tI">
+</span><span class="tT">        link for hints </span><span class="tI">
+</span><span class="tT">none - behavior is unconstrained</span></pre></td>
+                                             </tr>
+                                          </table>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#title" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:title</a></b></td>
+                                    <td><b>string</b></td>
+                                    <td></td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="firstColumn"><b><a href="xlink.html#simpleLink_type" target="mainFrame" title="http://www.w3.org/1999/xlink" onclick="updatePageTitle('Schema documentation for namespace http://www.w3.org/1999/xlink')">xlink:type</a></b></td>
+                                    <td><b>string</b></td>
+                                    <td>simple</td>
+                                    <td>optional</td>
+                                    <td>
+                                       <div class="annotation"></div>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="firstColumn">
+                           <div class="floatLeft"><b>Source</b></div>
+                           <div class="floatRight"><input id="button_source_CityObjectGroupParentType" type="image" src="img/btM.gif" value="-" onclick="switchState('source_CityObjectGroupParentType');" class="control" /></div>
+                        </td>
+                        <td>
+                           <div id="source_CityObjectGroupParentType" style="display:block">
+                              <table style="table-layout:fixed;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;_white-space:pre;" class="preWrapContainer">
+                                 <tr>
+                                    <td width="100%"><pre><span class="tEl">&lt;xs:complexType</span><span class="tAN"> name=</span><span class="tAV">"CityObjectGroupParentType"</span><span class="tEl">&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:annotation</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:documentation</span><span class="tEl">&gt;</span><span class="tT" style="white-space:normal">Denotes the relation of a CityObjectGroup to its parent, which is a CityObject. The CityObjectGroupParentType element must either carry a reference to a _CityObject object or contain a _CityObject object inline, but neither both nor none. The parent association allows for modelling of a generic hierarchical grouping concept. Named aggregations of components (CityObjects) can be added to specific CityObjects considered as the parent object. The parent association links to the aggregate, while the parts are given by the group members.</span><span class="tEl">&lt;/xs:documentation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:annotation&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:sequence</span><span class="tAN"> minOccurs=</span><span class="tAV">"0"</span><span class="tEl">&gt;</span><span class="tI">
+    </span><span class="tEl">&lt;xs:element</span><span class="tAN"> ref=</span><span class="tAV">"core:_CityObject"</span><span class="tEl">/&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;/xs:sequence&gt;</span><span class="tI">
+  </span><span class="tEl">&lt;xs:attributeGroup</span><span class="tAN"> ref=</span><span class="tAV">"gml:AssociationAttributeGroup"</span><span class="tEl">/&gt;</span><span class="tI">
+</span><span class="tEl">&lt;/xs:complexType&gt;</span></pre></td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+            <td class="rt_lineRight"></td>
+         </tr>
+         <tr>
+            <td class="rt_cornerBottomLeft"></td>
+            <td class="rt_lineBottom"></td>
+            <td class="rt_cornerBottomRight"></td>
+         </tr>
+      </table>
+      <div class="footer">
+         <hr />
+         <div align="center">XML Schema documentation generated by <a href="http://www.oxygenxml.com" target="_parent"><span class="oXygenLogo"><span class="redX">&lt;</span>o<span class="redX">X</span>ygen<span class="redX">/&gt;</span></span></a><sup>®</sup> XML Editor.
+         </div>
+      </div><script type="text/javascript">
+         <!--
+                     // The namespace is the selected option in the TOC combo.
+                    
+                     // Floats the toolbar.
+                     var globalControls = getElementObject("global_controls"); 
+                     
+                     if(globalControls != null){
+	                     var browser=navigator.appName;
+						 var version = parseFloat(navigator.appVersion.split('MSIE')[1]);
+						 
+						 var IE6 = false;
+						 if ((browser=="Microsoft Internet Explorer") && (version < 7)){
+						 	IE6 = true;
+						 }
+	
+	                     //alert (IE6 + " |V| " + version);
+	                     
+	                     if(IE6){
+	                     	// On IE 6 the 'fixed' property is not supported. We must use javascript. 
+	                         globalControls.style.position='absolute';                         
+	                         // The global controls will do not exist in the TOC frame, when chunking.
+	                         findAndFloat("global_controls", 225, 30);    
+	                     } else {
+	                      	  globalControls.style.position='fixed';                     	
+	                     }
+	                     
+	                     globalControls.style.right='0';                       
+                     }
+                //--></script></body>
+</html>
