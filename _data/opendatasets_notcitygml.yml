@@ -1,0 +1,19 @@
+ 
+- dataset: Cambridge
+  link: http://www.cambridgema.gov/GIS/3D/3ddata/3ddatadownloadmap
+  country: UK
+  building_lod: LOD1
+  # year: 2013
+  texture:  No
+  # notes: Released in 2015
+  formats: DXF, Shapefile, COLLADA
+ 
+
+- dataset: Toronto
+  link: http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=d431d477f9a3a410VgnVCM10000071d60f89RCRD
+  country: Canada
+  building_lod: LOD1
+  year: 2016
+  # texture:  No
+  # notes: Released in 2015
+  formats: Shapefile, Geodatabase, AutoCAD, SketchUp
