@@ -18,3 +18,12 @@
   # notes: Released in 2015
   formats: Shapefile, Geodatabase, AutoCAD, SketchUp
 
+- dataset: Boston
+  link: http://www.bostonplans.org/document-center?doctype=12&sortby=name&sortdirection=asc
+  country: USA
+  building_lod: LOD2
+  year: 2013
+  texture:  No
+  notes : terrain
+  formats: OBJ, DWG, MAX
+
