@@ -7,13 +7,19 @@
 #   - storage
 #   - applications
 
+- name: virtualcitySYSTEMS--BuildingReconstruction
+  webpage: http://www.virtualcitysystems.de/en/products/buildingreconstruction
+  description: The extensive 3D city models can be derived automatically from digital elevation data in CityGML and ESRI-Shape formats.
+  category: generator
+  foss: false
+  starred: true
+
 - name: azul
   webpage: https://itunes.apple.com/nl/app/azul/id1173239678?mt=12
   description: a native and fast CityGML viewer for macOS
   category: viewer
   foss: true
   starred: true
-
 
 - name: citygml4j
   webpage: https://github.com/citygml4j
@@ -24,7 +30,7 @@
 
 - name: OGR
   webpage: http://www.gdal.org/ogr/
-  description: could help in reading 'vanilla' GML
+  description: could help in reading 'vanilla' GML, not support for CityGML objects though
   foss: true
   category: parser
   starred: false
@@ -38,7 +44,7 @@
 
 - name: 3dfier
   webpage: https://github.com/tudelft3d/3dfier
-  description: Takes 2D GIS datasets and "3dfies" them by lifting each polygon to its height (obtained with LiDAR)
+  description: Takes 2D GIS datasets and "3dfies" them by lifting each polygon to its height (obtained with LiDAR). Outputs CityGML.
   foss: true
   category: generator
   starred: true
@@ -52,14 +58,14 @@
 
 - name: FZKViewer
   webpage: http://iai-typo3.iai.fzk.de/www-extern-kit/index.php?id=1134
-  description: The FZKViewer visualises the sematic data models IFC, CityGML and gbXML
+  description: The FZKViewer visualises the sematic data models IFC, CityGML and gbXML. Windows-only.
   foss: true
   category: viewer
   starred: true
 
 - name: FME
   webpage: http://www.safe.com
-  description: 
+  description: Can be used to read, write, process and visualise CityGML. macOS too now!
   foss: false
   category: viewer;parser
   starred: true
