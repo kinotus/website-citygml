@@ -7,6 +7,14 @@
 #   - storage
 #   - applications
 
+- name: azul
+  webpage: https://itunes.apple.com/nl/app/azul/id1173239678?mt=12
+  description: a native and fast CityGML viewer for macOS
+  category: viewer
+  foss: true
+  starred: true
+
+
 - name: citygml4j
   webpage: https://github.com/citygml4j
   description: open source Java class library and API 
@@ -51,7 +59,7 @@
 
 - name: FME
   webpage: http://www.safe.com
-  description: you best bet to visualise CityGML files under MacOS
+  description: 
   foss: false
   category: viewer;parser
   starred: true
