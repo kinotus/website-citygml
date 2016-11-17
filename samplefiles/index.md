@@ -10,12 +10,12 @@ permalink: /samplefiles/
 
 {% for i in ds %}
 
-<div class="media">
-  <div class="media-left">
-    <img class="media-object" width="200px" src="{{ i.image }}" alt="...">
+<div class="row">
+  <div class="col-lg-3 col-md-4 col-sm-6">
+    <img class="img-responsive" src="{{ i.image }}" alt="...">
   </div>
-  <div class="media-body">
-    <h4 class="media-heading">{{ i.dataset }}</h4>
+  <div class="col-lg-9 col-md-8 col-sm-6">
+    <h4>{{ i.dataset }}</h4>
     <p><a href="{{ i.link }}">{{ i.link }}</a></p>
     {{ i.description | markdownify }}
     <p><i class="fa fa-copyright" aria-hidden="true"></i> {{ i.copyright | markdownify | remove: '<p>' | remove: '</p>' }}</p>
