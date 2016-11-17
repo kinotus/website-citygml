@@ -7,10 +7,10 @@ title: CityGML homepage
   <div class="jumbotron">
     <div class="row">
       <div class="col-md-4 col-md-offset-2">
-        <img src="/img/CityGML-Logo-big-transparent-bg_2.png" class="img-responsive center-block">
+        <img src="{{ "/img/CityGML-Logo-big-transparent-bg_2.png" | prepend: site.baseurl }}" class="img-responsive center-block">
       </div>  
       <div class="col-md-4">
-        <a href="http://www.opengeospatial.org"> <img src="/img/OGC_Logo_2D_Blue_x_0_0.png" class="img-responsive center-block"></a>
+        <a href="http://www.opengeospatial.org"> <img src="{{ "/img/OGC_Logo_2D_Blue_x_0_0.png" | prepend: site.baseurl }}" class="img-responsive center-block"></a>
       </div>  
     </div>  
     <p class="text-center">CityGML is a common information model and XML-based encoding for the representation, storage, and exchange of virtual 3D city and landscape models. It is implemented as an application schema for GML3, and it is an official international standards of the OGC.</p>
@@ -31,7 +31,7 @@ title: CityGML homepage
 		    <div class="panel-body">
 		      <div class="firstpost">
 			      <a href="{{ site.posts[0].url | prepend: site.baseurl }}">{{ site.posts[0].title }}</a>
-			      <br><span>{{ site.posts[0].date | post.date | date_to_string }}</span>
+			      <br><span>{{ site.posts[0].date | date_to_string }}</span>
 			      <br />{{ site.posts[0].excerpt | strip_html }}
 			      <br /><a href="{{ site.posts[0].url | prepend: site.baseurl }}">read more</a>
 			      <hr />
@@ -50,7 +50,7 @@ title: CityGML homepage
         {% for i in site.data.covertopics %}
         <div class="col-sm-6 col-md-4">
           <div class="thumbnail text-center">
-            <a href="{{ i.link }}">
+            <a href="{{ i.link | prepend: site.baseurl }}">
             <i class="fa {{ i.icon }} fa-5x" aria-hidden="true"></i>
             <div class="caption">
               <h4>{{ i.name }}</h4>
