@@ -14,6 +14,13 @@
   foss: false
   starred: true
 
+- name: CityEditor (SketchUp extension)
+  webpage: https://extensions.sketchup.com/en/content/cityeditor-2
+  description: CityEditor by 3DIS GmbH allows import, editing and export of CityGML models using SketchUp
+  category: generator
+  foss: false
+  starred: false
+
 - name: azul
   webpage: https://itunes.apple.com/nl/app/azul/id1173239678?mt=12
   description: a native and fast CityGML viewer for macOS
