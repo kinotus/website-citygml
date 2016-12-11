@@ -1,4 +1,3 @@
- 
 - dataset: Berlin
   link: http://www.businesslocationcenter.de/en/downloadportal
   country: Germany
@@ -7,6 +6,15 @@
   year: 2013
   texture:  Yes
   notes: Released in 2015
+
+ 
+- dataset: Helsinki
+  link: http://kartta.hel.fi/3d/
+  country: Finland
+  building_lod: LOD2
+  version: 2.0
+  year: 2016
+  texture:  Yes
 
 - dataset: Dresden
   link: http://www.dresden.de/de/leben/stadtportrait/statistik/geoinformationen/3-d-modell.php?shortcut=3D
