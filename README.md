@@ -1,11 +1,11 @@
 # citygmlgurus.github.io
 
 Source code for the website [citygml.guru](http://www.citygml.guru).
-[Jekyll](http://www.jekyllrb.com) is used to generate static pages, and these are generated *automatically* after some pushes to the repository (it may take ~30s to refresh though).
+[Jekyll](http://www.jekyllrb.com) is used to generate static pages, and these are generated *automatically* after someone pushes to the repository (it may take ~30s to refresh though).
 
 ## Open datasets
 
-Add the details of a new CityGML open datasets in `_data/opendatasets.yml`, it's a YAML (.yml) file and very simple to understand. 
+Add the new CityGML open datasets should be added to `_data/opendatasets.yml`, it's a YAML (.yml) file and very simple to understand. 
 
 The non-CityGML datasets (eg in COLLADA) should go to the file `_data/opendatasets_notcitygml.yml`
 
