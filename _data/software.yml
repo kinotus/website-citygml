@@ -7,44 +7,9 @@
 #   - storage
 #   - applications
 
-- name: virtualcitySYSTEMS--BuildingReconstruction
-  webpage: http://www.virtualcitysystems.de/en/products/buildingreconstruction
-  description: The extensive 3D city models can be derived automatically from digital elevation data in CityGML and ESRI-Shape formats.
-  category: generator
-  foss: false
-  starred: true
-
-- name: CityEditor (SketchUp extension)
-  webpage: https://extensions.sketchup.com/en/content/cityeditor-2
-  description: CityEditor by 3DIS GmbH allows import, editing and export of CityGML models using SketchUp
-  category: generator
-  foss: false
-  starred: false
-
-- name: azul
-  webpage: https://itunes.apple.com/nl/app/azul/id1173239678?mt=12
-  description: a native and fast CityGML viewer for macOS
-  category: viewer
-  foss: true
-  starred: true
-
-- name: citygml4j
-  webpage: https://github.com/citygml4j
-  description: open source Java class library and API 
-  category: parser
-  foss: true
-  starred: true
-
-- name: OGR
-  webpage: http://www.gdal.org/ogr/
-  description: could help in reading 'vanilla' GML, not support for CityGML objects though
-  foss: true
-  category: parser
-  starred: false
-
 - name: 3D City Database
   webpage: http://www.3dcitydb.org
-  description:  free geo database to store, represent, and manage virtual 3D city models on top of a standard spatial relational database (PostGIS and Oracle)
+  description: Free geo database to store, represent, and manage virtual 3D city models on top of a standard spatial relational database (PostGIS and Oracle)
   foss: true
   category: storage
   starred: false
@@ -56,11 +21,39 @@
   category: generator
   starred: true
 
-- name: val3dity
-  webpage: http://geovalidation.bk.tudelft.nl/val3dity/
-  description: Validation of 3D GML primitives according to the international standard ISO19107
+- name: azul
+  webpage: https://itunes.apple.com/nl/app/azul/id1173239678?mt=12
+  description: A native and fast CityGML viewer for macOS
+  category: viewer
   foss: true
-  category: validator
+  starred: true
+
+- name: CityEditor (SketchUp extension)
+  webpage: https://extensions.sketchup.com/en/content/cityeditor-2
+  description: CityEditor by 3DIS GmbH allows import, editing and export of CityGML models using SketchUp
+  category: generator
+  foss: false
+  starred: false
+
+- name: citygml4j
+  webpage: https://github.com/citygml4j
+  description: Open source Java class library and API 
+  category: parser
+  foss: true
+  starred: true
+
+- name: CodeSynthesis XSD
+  webpage: http://www.codesynthesis.com/products/xsd/
+  description: "XML Schema to C++ data binding compiler, see http://wiki.codesynthesis.com/Schemas/CityGML"
+  foss: true
+  category: parser
+  starred: false
+
+- name: FME
+  webpage: http://www.safe.com
+  description: Can be used to read, write, process and visualise CityGML. macOS too now!
+  foss: false
+  category: viewer;parser
   starred: true
 
 - name: FZKViewer
@@ -70,12 +63,26 @@
   category: viewer
   starred: true
 
-- name: FME
-  webpage: http://www.safe.com
-  description: Can be used to read, write, process and visualise CityGML. macOS too now!
-  foss: false
-  category: viewer;parser
-  starred: true
+- name: HUMBOLDT Alignment Editor (HALE)
+  webpage: http://www.dhpanel.eu/humboldt-framework/hale.html
+  description: Can read, write, process CityGML and other GML application schemas (incl. INSPIRE).
+  foss: true
+  category: parser
+  starred: false
+
+- name: ogc-schemas
+  webpage: https://github.com/highsource/ogc-schemas
+  description: Provides JAXB (Java) and Jsonix (JSON) bindings for XML Schemas defined by OGC incl. CityGML 1.0 and 2.0.
+  foss: true
+  category: parser
+  starred: false
+
+- name: OGR
+  webpage: http://www.gdal.org/ogr/
+  description: Could help in reading 'vanilla' GML, not support for CityGML objects though
+  foss: true
+  category: parser
+  starred: false
 
 - name: Random3Dcity
   webpage: https://github.com/tudelft3d/Random3Dcity
@@ -84,9 +91,16 @@
   category: generator
   starred: true
 
-- name: CodeSynthesis XSD
-  webpage: http://www.codesynthesis.com/products/xsd/
-  description: "XML Schema to C++ data binding compiler, see http://wiki.codesynthesis.com/Schemas/CityGML"
+- name: val3dity
+  webpage: http://geovalidation.bk.tudelft.nl/val3dity/
+  description: Validation of 3D GML primitives according to the international standard ISO19107
   foss: true
-  category: parser
-  starred: false
+  category: validator
+  starred: true
+
+- name: virtualcitySYSTEMS--BuildingReconstruction
+  webpage: http://www.virtualcitysystems.de/en/products/buildingreconstruction
+  description: The extensive 3D city models can be derived automatically from digital elevation data in CityGML and ESRI-Shape formats.
+  category: generator
+  foss: false
+  starred: true
