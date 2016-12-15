@@ -47,12 +47,12 @@ The advantage of using the ADE approach are:
 
 <div class="panel panel-warning">
   <div class=panel-heading style="font-weight: bold;">
-    <h4 class="panel-title">
+    <h2 class="panel-title">
       <a data-toggle="collapse" data-parent="#panel" href="#saleitem" class="panel-toggle">
         <span class="glyphicon glyphicon-folder-close"  id="icontoggle"></span>
-        <h2>1. CityGML Noise ADE</h2>
+        CityGML Noise ADE
       </a>
-    </h4>
+    </h2>
   </div>
 
   <div id="saleitem" class="panel-collapse collapse">
@@ -75,28 +75,9 @@ The advantage of using the ADE approach are:
 * Documentation:
 </pre>
 
-      </div>
+    </div>
     </div>
 </div>
-
-* Description: 
-
-* Version:  
-
-* Status:
-
-* Contact Person:
-
-* Contact Organization:
-
-* XML Schema: <a href="http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/" style="text-decoration:none"> Noise ADE XSD</a>
-
-* UML Diagram: <a href="http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/" style="text-decoration:none"> Noise ADE UML</a>
-
-* Documentation:
-
-
-
 
 
 # Modelling a CityGML ADE
