@@ -45,14 +45,15 @@ The advantage of using the ADE approach are:
 
 # CityGML ADEs
 
-<h2>CityGML Noise ADE</h2>
+<h2>1. CityGML Noise ADE</h2>
 
 <a href="#me" data-toggle="collapse">
 <i class="glyphicon-chevron-down"></i>
 </a>
 <div id="me" class="collapse"  tabindex="-1">
 <pre>
-* **Description:** 
+
+* Description: 
 
 * Version:  
 
