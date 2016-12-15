@@ -47,12 +47,12 @@ The advantage of using the ADE approach are:
 
 <div class="panel panel-warning">
  
-    <h2 class="panel-title">
+    <h4 class="panel-title">
       <a data-toggle="collapse" data-parent="#panel" href="#saleitem" class="panel-toggle">
         <span class="glyphicon glyphicon-folder-close"  id="icontoggle"></span>
         CityGML Noise ADE
       </a>
-    </h2>
+    </h4>
   </div>
 
   <div id="saleitem" class="panel-collapse collapse">
