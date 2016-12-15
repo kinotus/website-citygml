@@ -46,7 +46,7 @@ The advantage of using the ADE approach are:
 # CityGML ADEs
 
 <div class="panel panel-warning">
-  <div class=panel-heading style="font-weight: bold;">
+  <div class="panel-heading" style="font-weight: bold;">
     <h2 class="panel-title">
       <a data-toggle="collapse" data-parent="#panel" href="#saleitem" class="panel-toggle">
         <span class="glyphicon glyphicon-folder-close"  id="icontoggle"></span>
