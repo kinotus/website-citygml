@@ -77,6 +77,37 @@ The advantage of using the ADE approach are:
 </div>   
 </div>
 
+<div class="panel panel-warning">
+ 
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#panel" href="#saleitem" class="panel-toggle">
+        <span class="glyphicon glyphicon-folder-close"  id="icontoggle"></span>
+        CityGML Robotics ADE
+      </a>
+    </h4>
+  </div>
+
+  <div id="saleitem" class="panel-collapse collapse">
+     <div class="panel-body">
+ <pre>        
+* Description: 
+
+* Version:  
+
+* Status:
+
+* Contact Person:
+
+* Contact Organization:
+
+* XML Schema: <a href="http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/" style="text-decoration:none"> Robotics ADE XSD</a>
+
+* UML Diagram: <a href="http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/" style="text-decoration:none"> Robotics ADE UML</a>
+
+* Documentation:
+</pre>
+</div>   
+</div>
 
 # CityGML ADE Modelling
 
