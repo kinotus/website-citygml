@@ -45,13 +45,39 @@ The advantage of using the ADE approach are:
 
 # CityGML ADEs
 
-<h2>1. CityGML Noise ADE</h2>
+<div class="panel panel-warning">
+  <div class=panel-heading style="font-weight: bold;">
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#panel" href="#saleitem" class="panel-toggle">
+        <span class="glyphicon glyphicon-folder-close"  id="icontoggle"></span>
+        <h2>1. CityGML Noise ADE</h2>
+      </a>
+    </h4>
+  </div>
 
-<a href="#me" data-toggle="collapse">
-<i class="glyphicon-chevron-down"></i>
-</a>
-<div id="me" class="collapse"  tabindex="-1">
-<pre>
+  <div id="saleitem" class="panel-collapse collapse">
+     <div class="panel-body">
+ <pre>        
+* Description: 
+
+* Version:  
+
+* Status:
+
+* Contact Person:
+
+* Contact Organization:
+
+* XML Schema: <a href="http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/" style="text-decoration:none"> Noise ADE XSD</a>
+
+* UML Diagram: <a href="http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/" style="text-decoration:none"> Noise ADE UML</a>
+
+* Documentation:
+</pre>
+
+      </div>
+    </div>
+</div>
 
 * Description: 
 
@@ -69,7 +95,7 @@ The advantage of using the ADE approach are:
 
 * Documentation:
 
-</pre></div>
+
 
 
 
