@@ -16,7 +16,7 @@ Free and open-source software are marked by <img height="15" src="/img/foss.svg"
 
 - - -
 
-{% assign software = site.data.software | sort: 'name' %}
+{% assign software = site.data.software | bettersort: 'name' %}
 
 ## Viewers
 {% for i in software %}
