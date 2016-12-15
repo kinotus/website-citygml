@@ -4,14 +4,14 @@ title:  Application Domain Extensions (ADE)
 permalink: /ade/
 ---
 
-# Application Domain Extensions (ADE)
-
 - - -
 
 * Table of Content
 {:toc}
 
 - - -
+
+# Application Domain Extensions (ADE)
 
 CityGML represents not only the graphical appearance of 3D city models but also the semantics associated with the city models.
 For this, CityGML has a geometric model and a thematic model.
