@@ -3,6 +3,8 @@ layout: page
 title:  Application Domain Extensions (ADE)
 permalink: /ade/
 ---
+* Table of Content
+{:toc}
 
 # Application Domain Extensions (ADE)
 
@@ -28,6 +30,8 @@ But they have their own limitations, namely:
 CityGML also has the concept of **ADE (Application Domain Extension)** to extend the schema with new classes and attributes which are not explicitly modelled in CityGML.
 The difference between ADEs and generics is that an ADE is defined in an extra XSD (XML Schema Definition) file with its own namespace. 
 This file has to explicitly import the XML Schema definition of the extended CityGML modules.
+ADEs can be defined by information communities which are interested in specific application fields. 
+ADEs are increasingly being used in creating application specific extensions like for energy modelling, modelling topographic data, indoor modelling, noise modelling, etc.
 The advantage of using the ADE approach are:
 
 * The extensions are formally specified. 
@@ -36,249 +40,37 @@ The advantage of using the ADE approach are:
 
 * Extended CityGML instance documents can be validated against the CityGML and the respective ADE schema. 
 
-* ADEs can be defined by information communities which are interested in specific application fields. 
-ADEs are increasingly being used in creating application specific extensions like for energy modelling, modelling topographic data, indoor modelling, noise modelling, etc.
-
 * More than one ADE can be actively used in the same dataset.
 
 
-## CityGML ADEs
+# CityGML ADEs
 
-### CityGML Noise ADE
+<h2>CityGML Noise ADE</h2>
 
+<a href="#me" data-toggle="collapse">
+<i class="glyphicon-chevron-down"></i>
+</a>
+<div id="me" class="collapse"  tabindex="-1">
+<pre>
 * **Description:** 
 
-* **Version:**  
+* Version:  
 
-* **Status:** 
+* Status:
 
-* **Contact Person:** 
+* Contact Person:
 
-* **Contact Organization:**
+* Contact Organization:
 
-* **XML Schema:** [Noise ADE XSD](http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/)
+* XML Schema: <a href="http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/" style="text-decoration:none"> Noise ADE XSD</a>
 
-* **UML Diagram:** [Noise ADE UML](http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/)
+* UML Diagram: <a href="http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/" style="text-decoration:none"> Noise ADE UML</a>
 
-* **Documentation:**
+* Documentation:
 
-### CityGML Robotics ADE
+</pre></div>
 
-* **Description:** 
 
-* **Version:**  
 
-* **Status:** 
-
-* **Contact Person:** 
-
-* **Contact Organization:**
-
-* **XML Schema:** [Robotics ADE XSD](http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/)
-
-* **UML Diagram:** [Robotics ADE UML](http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/)
-
-* **Documentation:**
-
-### CityGML Energy ADE
-
-* **Description:** 
-
-* **Version:**  
-
-* **Status:** 
-
-* **Contact Person:** 
-
-* **Contact Organization:**
-
-* **XML Schema:** [Energy ADE XSD](http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/)
-
-* **UML Diagram:** [Energy ADE UML](http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/)
-
-* **Documentation:**
-
-### CityGML IMGeo ADE
-
-* **Description:** 
-
-* **Version:**  
-
-* **Status:** 
-
-* **Contact Person:** 
-
-* **Contact Organization:**
-
-* **XML Schema:** [IMGeo ADE XSD](http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/)
-
-* **UML Diagram:** [IMGeo ADE UML](http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/)
-
-* **Documentation:**
-
-### CityGML Solar ADE
-
-* **Description:** 
-
-* **Version:**  
-
-* **Status:** 
-
-* **Contact Person:** 
-
-* **Contact Organization:**
-
-* **XML Schema:** [Solar ADE XSD](http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/)
-
-* **UML Diagram:** [Solar ADE UML](http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/)
-
-* **Documentation:**
-
-### CityGML GeoBIM ADE
-
-* **Description:** 
-
-* **Version:**  
-
-* **Status:** 
-
-* **Contact Person:** 
-
-* **Contact Organization:**
-
-* **XML Schema:** [GeoBIM XSD](http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/)
-
-* **UML Diagram:** [GeoBIM UML](http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/)
-
-* **Documentation:**
-
-### CityGML CAFM ADE
-
-* **Description:** 
-
-* **Version:**  
-
-* **Status:** 
-
-* **Contact Person:** 
-
-* **Contact Organization:**
-
-* **XML Schema:** [CAFM ADE XSD](http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/)
-
-* **UML Diagram:** [CAFM ADE UML](http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/)
-
-* **Documentation:**
-
-### CityGML Hydro ADE
-
-* **Description:** 
-
-* **Version:**  
-
-* **Status:** 
-
-* **Contact Person:** 
-
-* **Contact Organization:**
-
-* **XML Schema:** [Hydro ADE XSD](http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/)
-
-* **UML Diagram:** [Hydro ADE UML](http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/)
-
-* **Documentation:**
-
-### CityGML Utility Network ADE
-
-* **Description:** 
-
-* **Version:**  
-
-* **Status:** 
-
-* **Contact Person:** 
-
-* **Contact Organization:**
-
-* **XML Schema:** [Utility Network ADE XSD](http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/)
-
-* **UML Diagram:** [Utility Network ADE UML](http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/)
-
-* **Documentation:**
-
-### CityGML Inclusive Routing ADE
-
-* **Description:** 
-
-* **Version:**  
-
-* **Status:** 
-
-* **Contact Person:** 
-
-* **Contact Organization:**
-
-* **XML Schema:** [Inclusive Routing ADE XSD](http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/)
-
-* **UML Diagram:** [Inclusive Routing ADE UML](http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/)
-
-* **Documentation:**
-
-### CityGML Immovable Property Taxation ADE
-
-* **Description:** 
-
-* **Version:**  
-
-* **Status:** 
-
-* **Contact Person:** 
-
-* **Contact Organization:**
-
-* **XML Schema:** [Immovable Property Taxation ADE XSD](http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/)
-
-* **UML Diagram:** [Immovable Property Taxation ADE UML](http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/)
-
-* **Documentation:**
-
-### CityGML Time Dependent Variables ADE
-
-* **Description:** 
-
-* **Version:**  
-
-* **Status:** 
-
-* **Contact Person:** 
-
-* **Contact Organization:**
-
-* **XML Schema:** [Time Dependent Variables ADE XSD](http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/)
-
-* **UML Diagram:** [Time Dependent Variables ADE UML](http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/)
-
-* **Documentation:**
-
-
-### CityGML Terrain ADE
-
-* **Description:** 
-
-* **Version:**  
-
-* **Status:** 
-
-* **Contact Person:** 
-
-* **Contact Organization:**
-
-* **XML Schema:** Coming soon
-
-* **UML Diagram:** Coming soon
-
-* **Documentation:** 
-
-
-## Modelling a CityGML ADE
+# Modelling a CityGML ADE
 
