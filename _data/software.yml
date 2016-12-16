@@ -84,6 +84,13 @@
   category: parser
   starred: false
 
+- name: osm2citygml
+  webpage: https://github.com/stirringhalo/osm2citygml
+  description: This tool will take XMLs of buildings from OSM using Overpass and convert it to CityGML format with OSM2World and FME for eventual use with 3DCityDB
+  foss: true
+  category: generator
+  starred: false
+
 - name: Random3Dcity
   webpage: https://github.com/tudelft3d/Random3Dcity
   description: A basic procedural modelling engine for generating random (synthetic) buildings and other features in CityGML in multiple levels of detail (LOD)
