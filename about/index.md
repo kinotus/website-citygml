@@ -6,6 +6,9 @@ permalink: /about/
 
 # What is CityGML?
 
+![](Den-Haag-3D.png){: width="800px"}
+*Excerpt of the CityGML model (LOD2) of The Hague, Netherlands (open dataset).*<br/><br/>
+
 CityGML is a common information model and XML-based encoding for the representation, storage, and exchange of virtual 3D city and landscape models. 
 It provides a standard model and mechanisms for describing common 3D objects founds in cities, for instance buildings, roads, bridges, vegetation, etc.
 Their geometry, topology, semantics and appearance can be stored in that model.
