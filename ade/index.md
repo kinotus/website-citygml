@@ -12,21 +12,13 @@ permalink: /ade/
 - - -
 
 # Application Domain Extensions (ADE)
-
-<table border="0">
-  <col width="500">
-  <col width="200">
-  <tr>
-  <td>
-  <pre>
     
-
 CityGML represents not only the graphical appearance of 3D city models but also the semantics associated with the city models.
 For this, CityGML has a geometric model and a thematic model.
-The thematic model of CityGML covers various classes like <i>buildings, relief, transportation, landuse, tunnels, bridges, vegetation, water bodies and city furniture.</i>
-The objects which are not yet specifically modelled in CityGML can be represented using <i>generic objects and attributes.</i>
+The thematic model of CityGML covers various classes like *buildings, relief, transportation, landuse, tunnels, bridges, vegetation, water bodies and city furniture.*
+The objects which are not yet specifically modelled in CityGML can be represented using *generic objects and attributes*.
 This is a semi structured extension mechanism without making any changes in the CityGML schema.
-The generic extensions of CityGML are provided by the CityGML thematic module <i>Generics</i>.
+The generic extensions of CityGML are provided by the CityGML thematic module *Generics*.
 But they have their own limitations, namely:
 
 * There is no formal specification of their names and data types.
@@ -40,7 +32,7 @@ But they have their own limitations, namely:
 * Limits semantic and syntactic interoperability.
 
 
-CityGML also has the concept of <b>ADE (Application Domain Extension)</b> to extend the schema with new classes and attributes which are not explicitly modelled in CityGML.
+CityGML also has the concept of **ADE (Application Domain Extension)** to extend the schema with new classes and attributes which are not explicitly modelled in CityGML.
 The difference between ADEs and generics is that an ADE is defined in an extra XSD (XML Schema Definition) file with its own namespace. 
 This file has to explicitly import the XML Schema definition of the extended CityGML modules.
 ADEs can be defined by information communities which are interested in specific application fields. 
@@ -55,12 +47,7 @@ The advantage of using the ADE approach are:
 
 * More than one ADE can be actively used in the same dataset.
 
-</pre>
-</td>
-<td></td>    
-</tr>
-</table>
-
+- - -
 
 # CityGML ADEs
 
@@ -415,6 +402,8 @@ The advantage of using the ADE approach are:
 </pre>
 </div>   
 </div>
+
+- - -
 
 # CityGML ADE Modelling
 
