@@ -13,9 +13,11 @@ permalink: /ade/
 
 # Application Domain Extensions (ADE)
 
-<table>
+<table border="0">
+  <col width="500">
+  <col width="200">
   <tr>
-  <td width="500">
+  <td>
   <pre>
     
 
@@ -55,7 +57,7 @@ The advantage of using the ADE approach are:
 
 </pre>
 </td>
-<td width="200"></td>    
+<td></td>    
 </tr>
 </table>
 
