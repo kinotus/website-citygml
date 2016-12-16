@@ -49,6 +49,40 @@ The advantage of using the ADE approach are:
 
 - - -
 
+{% assign ades = site.data.ade | bettersort: 'name' %}
+
+
+{% for i in ades %}
+
+<div class="panel panel-warning">
+ 
+    <h4 class="panel-title">
+      <a data-toggle="collapse" data-parent="#panel" href="#saleitem" class="panel-toggle">
+        <span class="glyphicon glyphicon-folder-close"  id="icontoggle"></span>
+        {{ i.name }}
+      </a>
+    </h4>
+  </div>
+
+  <div id="saleitem" class="panel-collapse collapse">
+     <div class="panel-body">
+<ul class="list-group">
+  <li class="list-group-item">Description: </li>
+
+  <li class="list-group-item">version:   </li>
+  <li class="list-group-item">status: </li>
+  <li class="list-group-item">contact-person: </li>
+  <li class="list-group-item">contactorg: </li>
+  <li class="list-group-item">xmlschema: {{ i.xmlschema }} </li>
+  <li class="list-group-item">umlschema: {{ i.umlschema }}</li>
+</ul>
+</div>   
+</div>
+
+{% endfor %}
+
+- - - 
+
 # CityGML ADEs
 
 <div class="panel panel-warning">
@@ -63,23 +97,13 @@ The advantage of using the ADE approach are:
 
   <div id="saleitem" class="panel-collapse collapse">
      <div class="panel-body">
- <pre>        
-* Description: 
-
-* Version:  
-
-* Status:
-
-* Contact Person:
-
-* Contact Organization:
-
-* XML Schema: <a href="http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/" style="text-decoration:none"> Noise ADE XSD</a>
-
-* UML Diagram: <a href="http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/" style="text-decoration:none"> Noise ADE UML</a>
-
-* Documentation:
-</pre>
+<ul class="list-group">
+  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
 </div>   
 </div>
 
