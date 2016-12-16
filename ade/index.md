@@ -13,9 +13,10 @@ permalink: /ade/
 
 # Application Domain Extensions (ADE)
 
-<table style="width:100%">
+<table>
   <tr>
-  <td width="60%"><pre>
+  <td width="500">
+  <pre>
     
 
 CityGML represents not only the graphical appearance of 3D city models but also the semantics associated with the city models.
@@ -37,7 +38,7 @@ But they have their own limitations, namely:
 * Limits semantic and syntactic interoperability.
 
 
-CityGML also has the concept of <b>ADE (Application Domain Extension)</i> to extend the schema with new classes and attributes which are not explicitly modelled in CityGML.
+CityGML also has the concept of <b>ADE (Application Domain Extension)</b> to extend the schema with new classes and attributes which are not explicitly modelled in CityGML.
 The difference between ADEs and generics is that an ADE is defined in an extra XSD (XML Schema Definition) file with its own namespace. 
 This file has to explicitly import the XML Schema definition of the extended CityGML modules.
 ADEs can be defined by information communities which are interested in specific application fields. 
@@ -54,10 +55,10 @@ The advantage of using the ADE approach are:
 
 </pre>
 </td>
-<td width="40%"></td> 
-    
+<td width="200"></td>    
 </tr>
 </table>
+
 
 # CityGML ADEs
 
