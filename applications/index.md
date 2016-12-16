@@ -4,7 +4,9 @@ title: 3D applications
 permalink: /applications/
 ---
 
-3D city models are nowadays used for many different applications.<br/><br/>
+## Use cases of 3D city models
+
+3D city models are nowadays used for many different applications across a multitude of application domains.<br/><br/>
 
 ![](3D_use-cases_B.png){: width="800px"}<br/><br/>
 
@@ -47,6 +49,6 @@ In summary, we have found 29 use cases in which 3D city models provide added val
 | Forest management | Predicting tree growth |
 | Archaeology | Visualising ancient sites |
 
-
+<br/>
 
 For the full description and references please [read the paper](http://doi.org/10.3390/ijgi4042842).
