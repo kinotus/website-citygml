@@ -1,5 +1,6 @@
 
 - name: Noise ADE
+  no: 1
   description: a
   version:  b
   status: c
@@ -9,6 +10,7 @@
   umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
 
 - name: Robotics ADE
+  no: 2
   description: e
   version:  f
   status: g
@@ -18,6 +20,7 @@
   umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
 
 - name: Energy ADE
+  no: 3
   description: 
   version:  
   status:
@@ -27,6 +30,7 @@
   umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
 
 - name: Solar ADE
+  no: 4
   description: 
   version:  
   status:
@@ -36,6 +40,7 @@
   umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
 
 - name: IMGeo ADE
+  no: 5
   description: 
   version:  
   status:
@@ -45,6 +50,7 @@
   umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
 
 - name: GeoBIM ADE
+  no: 6
   description: 
   version:  
   status:
@@ -54,6 +60,7 @@
   umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
 
 - name: CAFM ADE
+  no: 7
   description: 
   version:  
   status:
@@ -63,6 +70,7 @@
   umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
 
 - name: Hydro ADE
+  no: 8
   description: 
   version:  
   status:
@@ -72,6 +80,7 @@
   umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
 
 - name: Utility Network ADE
+  no: 9
   description: 
   version:  
   status:
@@ -81,6 +90,7 @@
   umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
 
 - name: Immovable Property Taxation ADE
+  no: 10
   description: 
   version:  
   status:
@@ -90,6 +100,7 @@
   umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
 
 - name: Inclusive Routing ADE
+  no: 11
   description: 
   version:  
   status:
@@ -99,6 +110,7 @@
   umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
 
 - name: Time Dependent Variables ADE
+  no: 12
   description: 
   version:  
   status:
