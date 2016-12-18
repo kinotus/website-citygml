@@ -1,0 +1,108 @@
+
+- name: Noise ADE
+  description: 
+  version:  
+  status:
+  contact-person:
+  contactorg:
+  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+
+- name: Robotics ADE
+  description: 
+  version:  
+  status:
+  contact-person:
+  contactorg:
+  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+
+- name: Energy ADE
+  description: 
+  version:  
+  status:
+  contact-person:
+  contactorg:
+  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+
+- name: Solar ADE
+  description: 
+  version:  
+  status:
+  contact-person:
+  contactorg:
+  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+
+- name: IMGeo ADE
+  description: 
+  version:  
+  status:
+  contact-person:
+  contactorg:
+  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+
+- name: GeoBIM ADE
+  description: 
+  version:  
+  status:
+  contact-person:
+  contactorg:
+  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+
+- name: CAFM ADE
+  description: 
+  version:  
+  status:
+  contact-person:
+  contactorg:
+  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+
+- name: Hydro ADE
+  description: 
+  version:  
+  status:
+  contact-person:
+  contactorg:
+  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+
+- name: Utility Network ADE
+  description: 
+  version:  
+  status:
+  contact-person:
+  contactorg:
+  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+
+- name: Immovable Property Taxation ADE
+  description: 
+  version:  
+  status:
+  contact-person:
+  contactorg:
+  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+
+- name: Inclusive Routing ADE
+  description: 
+  version:  
+  status:
+  contact-person:
+  contactorg:
+  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+
+- name: Time Dependent Variables ADE
+  description: 
+  version:  
+  status:
+  contact-person:
+  contactorg:
+  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
