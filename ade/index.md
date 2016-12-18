@@ -69,14 +69,14 @@ The advantage of using the ADE approach are:
   <div id="saleitem" class="panel-collapse collapse">
      <div class="panel-body">
 <ul class="list-group">
-  <li class="list-group-item">Description: </li>
+  <li class="list-group-item">Description: {{ i.description }}</li>
 
-  <li class="list-group-item">version:   </li>
-  <li class="list-group-item">status: </li>
-  <li class="list-group-item">contact-person: </li>
-  <li class="list-group-item">contactorg: </li>
-  <li class="list-group-item">xmlschema: <a href="{{ i.xmlschema }}">ADE XSD</a> </li>
-  <li class="list-group-item">umlschema: <a href="{{ i.umlschema }}">ADE UML</a></li>
+  <li class="list-group-item">Version:  {{ i.version }} </li>
+  <li class="list-group-item">Status: {{ i.status }}</li>
+  <li class="list-group-item">Contact Person: {{ i.contact-person }}</li>
+  <li class="list-group-item">Contact Organization: {{ i.contactorg }}</li>
+  <li class="list-group-item">XML Schema: <a href="{{ i.xmlschema }}">ADE XSD</a> </li>
+  <li class="list-group-item">UML Schema: <a href="{{ i.umlschema }}">ADE UML</a></li>
 </ul>
 </div>   
 </div>

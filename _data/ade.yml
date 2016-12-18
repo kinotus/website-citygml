@@ -1,19 +1,19 @@
 
 - name: Noise ADE
-  description: 
-  version:  
-  status:
-  contact-person:
-  contactorg:
+  description: a
+  version:  b
+  status: c
+  contact-person: d
+  contactorg: z
   xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
   umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
 
 - name: Robotics ADE
-  description: 
-  version:  
-  status:
-  contact-person:
-  contactorg:
+  description: e
+  version:  f
+  status: g
+  contact-person: h
+  contactorg: i
   xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
   umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
 
