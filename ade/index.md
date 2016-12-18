@@ -59,7 +59,7 @@ The advantage of using the ADE approach are:
 <div class="panel panel-warning">
  
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#panel" href="#{{i.no}}" class="panel-toggle">
+      <a data-toggle="collapse" data-parent="#panel" href="{{i.no}}" class="panel-toggle">
         <span class="glyphicon glyphicon-folder-close"  id="icontoggle"></span>
         {{ i.name }}
       </a>
