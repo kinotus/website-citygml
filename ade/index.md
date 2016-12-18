@@ -57,16 +57,16 @@ The advantage of using the ADE approach are:
 {% for i in ades %}
 
 <div class="panel panel-warning">
-
+ <% href_id = "#saleitem_#{i.no}" -%>
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#panel" href="saleitem_#{{ i.no }}" class="panel-toggle">
+      <a data-toggle="collapse" data-parent="#panel" href="<%= href_id -%>" class="panel-toggle">
         <span class="glyphicon glyphicon-folder-close"  id="icontoggle"></span>
         {{ i.name }}
       </a>
     </h4>
   </div>
-
-  <div id= "saleitem_#{{ i.no }}" class="panel-collapse collapse">
+ <% div_id = "saleitem_#{i.no}" -%>
+  <div id= "<%= div_id -%>" class="panel-collapse collapse">
      <div class="panel-body">
 <ul class="list-group">
   <li class="list-group-item">Description: {{ i.description }}</li>
