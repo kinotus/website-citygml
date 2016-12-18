@@ -56,8 +56,6 @@ The advantage of using the ADE approach are:
 
 {% for i in ades %}
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
-</script>
 <div ng-app="" class="panel panel-warning">
  
     <h4 class="panel-title">
