@@ -65,7 +65,7 @@ The advantage of using the ADE approach are:
     </h4>
   </div>
 
-<div ng-app="{{i.no}}" id= "saleitem" class="panel-collapse collapse">
+<div ng-app='' id= "{{i.no}}" class="panel-collapse collapse">
 <div class="panel-body">
 <ul class="list-group">
   <li class="list-group-item">Description: {{ i.description }}</li>
