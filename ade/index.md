@@ -58,14 +58,14 @@ The advantage of using the ADE approach are:
 
 <div ng-app="" class="panel panel-warning">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#panel" ng-href='#{{i.no}}' class="panel-toggle">
+      <a data-toggle="collapse" data-parent="#panel" href='#adenumber' class="panel-toggle">
         <span class="glyphicon glyphicon-folder-close"  id="icontoggle"></span>
         {{ i.name }}
       </a>
     </h4>
   </div>
 
-<div ng-app='' id= "{{i.no}}" class="panel-collapse collapse">
+<div id= "adenumber" class="panel-collapse collapse">
 <div class="panel-body">
 <ul class="list-group">
   <li class="list-group-item">Description: {{ i.description }}</li>
