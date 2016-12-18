@@ -60,7 +60,7 @@ $counter= {{ i.no }}
 <div class="panel panel-warning">
  
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#panel" href="#saleitem$counter}" class="panel-toggle">
+      <a data-toggle="collapse" data-parent="#panel" href="#saleitem$counter" class="panel-toggle">
         <span class="glyphicon glyphicon-folder-close"  id="icontoggle"></span>
         {{ i.name }}
       </a>
