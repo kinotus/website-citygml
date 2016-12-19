@@ -11,7 +11,7 @@
 - name: Robotics ADE
   no: 2
   description: CityGML extension for modelling Ubiquitous Network Robots services.
-  version: -
+  version:
   status: Implemented.
   contactorg: Hitachi Ltd., Central Research Laboratory, Kokubunji-shi, Tokyo, Japan.
   xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/
