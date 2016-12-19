@@ -1,23 +1,21 @@
 
 - name: Noise ADE
   no: 1
-  description: a
-  version:  b
-  status: c
-  contact-person: d
-  contactorg: z
+  description: CityGML extension for modelling noise in 3D.
+  version: -
+  status: Implemented.
+  contactorg: Institute of Geodesy and Geoinformation University of Bonn and SIG3D (Special Interest Group 3D). 
   xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
-  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  umlschema: http://www.citygml.org/fileadmin/citygml/docs/CityGML_1_0_0_UML_diagrams.pdf
 
 - name: Robotics ADE
   no: 2
-  description: e
-  version:  f
-  status: g
-  contact-person: h
-  contactorg: i
-  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
-  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  description: CityGML extension for modelling Ubiquitous Network Robots services.
+  version: -
+  status: Implemented.
+  contactorg: Hitachi Ltd., Central Research Laboratory, Kokubunji-shi, Tokyo, Japan.
+  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/
+  umlschema: https://mediatum.ub.tum.de/doc/1145731/973311.pdf#page=319
 
 - name: Energy ADE
   no: 3

@@ -48,9 +48,13 @@ The advantage of using the ADE approach are:
 
 {% for i in ades %}
 
+<<<<<<< Updated upstream
 {% assign adeid = i.name | split: " " %}
 
 <div ng-app="" class="panel panel-warning">
+=======
+<div class="panel panel-warning">
+>>>>>>> Stashed changes
     <h4 class="panel-title">
       <a data-toggle="collapse" data-parent="#panel" href='#{{ adeid.first }}' class="panel-toggle">
         <span class="glyphicon glyphicon-folder-close"  id="icontoggle"></span>
@@ -84,11 +88,11 @@ The advantage of using the ADE approach are:
   </tr>  
   <tr>
     <td><b>XML Schema:</b></td>
-    <td><a href="{{ i.xmlschema }}">{{ i.xmlschema }}</a></td>
+    <td><a href="{{ i.name }} XSD">{{ i.xmlschema }}</a></td>
   </tr>  
   <tr>
     <td><b>UML Schema:</b></td>
-    <td><a href="{{ i.umlschema }}">{{ i.umlschema }}</a></td>
+    <td><a href="{{ i.name }} UML">{{ i.umlschema }}</a></td>
   </tr>  
 </table>
 </div>
