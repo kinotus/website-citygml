@@ -6,15 +6,15 @@ permalink: /applications/
 
 ## Use cases of 3D city models
 
-3D city models are nowadays used for many different applications across a multitude of application domains.<br/><br/>
+3D city models are nowadays used for many different applications, across a multitude of application domains.<br/><br/>
 
 ![](3D_use-cases_B.png){: width="800px"}<br/><br/>
 
-We have researched the state of the art of the application of 3D city models, and published it in the following paper (open access):
+The following article gives an thorough overview of the state of the art of the application of 3D city models (it is open access):
 
 Biljecki F, Stoter J, Ledoux H, Zlatanova S, and Çöltekin A (2015). Applications of 3D City Models: State of the Art Review. *ISPRS International Journal of Geo-Information*, 4(4): 2842-2889. DOI: [10.3390/ijgi4042842](http://doi.org/10.3390/ijgi4042842)
 
-In summary, we have found 29 use cases in which 3D city models provide added value:
+In summary, 29 use cases, in which 3D city models provide added value, were found:
 
 
 | Use case | Example of an application |
@@ -48,7 +48,3 @@ In summary, we have found 29 use cases in which 3D city models provide added val
 | Volumetric density studies | Urban studies |
 | Forest management | Predicting tree growth |
 | Archaeology | Visualising ancient sites |
-
-<br/>
-
-For the full description and references please [read the paper](http://doi.org/10.3390/ijgi4042842).
