@@ -1,0 +1,94 @@
+
+- id: Brink13a
+  type: article-journal
+  author:
+  - family: Brink
+    given: Linda
+    dropping-particle: van den
+  - family: Stoter
+    given: Jantien
+  - family: Zlatanova
+    given: Sisi
+  year: '2013'
+  title: UML-Based approach to developing a CityGML Application Domain
+  container-title: Transactions in GIS
+  page: '920-942'
+  volume: '17'
+  issue: '6'
+  DOI: http://dx.doi.org/10.1111/tgis.12026
+
+- id: Stadler07
+  type: paper-conference
+  author:
+  - family: Stadler
+    given: A.
+  - family: Kolbe
+    given: T. H.
+  editor:
+  - family: Stein
+    given: Alfred
+  year: '2007'
+  img: Stadler07.png
+  title: Spatio-semantic coherence in the integration of 3D city models
+  container-title: 'International archives of photogrammetry, remote sensing and
+    spatial information sciences. Proceedings of the WG II/7 5th international symposium
+    spatial data quality 2007 with the theme: Modelling qualities in space and time'
+  publisher-place: Enschede, the Netherlands
+  DOI: http://www.isprs.org/proceedings/XXXVI/2-C43/Session1/paper_Stadler.pdf
+  page: '8'
+
+- id: Groger12
+  type: article-journal
+  author:
+  - family: Gröger
+    given: Gerhard
+  - family: Plümer
+    given: Lutz
+  year: '2012'
+  title: CityGML—Interoperable semantic 3D city models
+  container-title: ISPRS Journal of Photogrammetry and Remote Sensing
+  page: '12-33'
+  volume: '71'
+  DOI: http://dx.doi.org/10.1016/j.isprsjprs.2012.04.004
+
+- id: 15_ijgi_3dapps
+  type: article-journal
+  author:
+  - family: Biljecki
+    given: Filip
+  - family: Stoter
+    given: Jantien
+  - family: Ledoux
+    given: Hugo
+  - family: Zlatanova
+    given: Sisi
+  - family: Çöltekin
+    given: Arzu
+  year: '2015'
+  title: 'Applications of 3D city models: State of the art review'
+  title-short: Applications of 3D city models
+  container-title: ISPRS International Journal of Geo-Information
+  page: '2842-2889'
+  volume: '4'
+  issue: '4'
+  img: 15_ijgi_3dapps.png
+  DOI: http://dx.doi.org/10.3390/ijgi4042842
+
+- id: Kolbe08
+  type: chapter
+  author:
+  - family: Kolbe
+    given: Thomas H.
+  editor:
+  - family: Zlatanova
+    given: S.
+  - family: Lee
+    given: J.
+  year: '2008'
+  title: Representing and exchanging 3D city models with CityGML
+  container-title: 3D geo-information sciences
+  publisher: Springer
+  page: '15-31'
+  chapter-number: '2'
+  DOI: http://dx.doi.org/10.1007/978-3-540-87395-2_2
+
