@@ -77,11 +77,7 @@ The advantage of using the ADE approach are:
   <tr>
     <td><b>Status:</b></td>
     <td>{{ i.status }}</td>
-  </tr>  
-  <tr>
-    <td><b>Contact Person:</b></td>
-    <td>{{ i.contact-person }}</td>
-  </tr>  
+  </tr>    
   <tr>
     <td><b>Contact Organization:</b></td>
     <td>{{ i.contactorg }}</td>
