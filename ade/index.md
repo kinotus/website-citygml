@@ -53,23 +53,23 @@ The advantage of using the ADE approach are:
 
 {% assign ades = site.data.ade | bettersort: 'name' %}
 
-
 {% for i in ades %}
+
+{% assign adeid = i.name | split: " " %}
 
 <div ng-app="" class="panel panel-warning">
     <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#panel" href='#adenumber' class="panel-toggle">
+      <a data-toggle="collapse" data-parent="#panel" href='#{{ adeid.first }}' class="panel-toggle">
         <span class="glyphicon glyphicon-folder-close"  id="icontoggle"></span>
         {{ i.name }}
       </a>
     </h4>
   </div>
 
-<div id= "adenumber" class="panel-collapse collapse">
+<div id="{{ adeid.first }}" class="panel-collapse collapse">
 <div class="panel-body">
 <ul class="list-group">
   <li class="list-group-item">Description: {{ i.description }}</li>
-
   <li class="list-group-item">Version:  {{ i.version }} </li>
   <li class="list-group-item">Status: {{ i.status }}</li>
   <li class="list-group-item">Contact Person: {{ i.contact-person }}</li>
