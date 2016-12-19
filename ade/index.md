@@ -21,15 +21,11 @@ This is a semi structured extension mechanism without making any changes in the 
 The generic extensions of CityGML are provided by the CityGML thematic module *Generics*.
 But they have their own limitations, namely:
 
-* There is no formal specification of their names and data types.
-
-* Such CityGML files cannot be validated against the schema.
-
-* Name conflicts of the generic attributes and objects may occur.
-
-* Limited number of data types for generic attributes and objects.
-
-* Limits semantic and syntactic interoperability.
+  * There is no formal specification of their names and data types.
+  * Such CityGML files cannot be validated against the schema.
+  * Name conflicts of the generic attributes and objects may occur.
+  * Limited number of data types for generic attributes and objects.
+  * Limits semantic and syntactic interoperability.
 
 
 CityGML also has the concept of **ADE (Application Domain Extension)** to extend the schema with new classes and attributes which are not explicitly modelled in CityGML.
@@ -39,13 +35,10 @@ ADEs can be defined by information communities which are interested in specific 
 ADEs are increasingly being used in creating application specific extensions like for energy modelling, modelling topographic data, indoor modelling, noise modelling, etc.
 The advantage of using the ADE approach are:
 
-* The extensions are formally specified. 
-
-* This ensure semantic and syntactic interoperability for the exchange of application specific information.
-
-* Extended CityGML instance documents can be validated against the CityGML and the respective ADE schema. 
-
-* More than one ADE can be actively used in the same dataset.
+  * The extensions are formally specified. 
+  * This ensure semantic and syntactic interoperability for the exchange of application specific information.
+  * Extended CityGML instance documents can be validated against the CityGML and the respective ADE schema. 
+  * More than one ADE can be actively used in the same dataset.
 
 - - -
 
@@ -68,22 +61,43 @@ The advantage of using the ADE approach are:
 
 <div id="{{ adeid.first }}" class="panel-collapse collapse">
 <div class="panel-body">
-<ul class="list-group">
-  <li class="list-group-item">Description: {{ i.description }}</li>
-  <li class="list-group-item">Version:  {{ i.version }} </li>
-  <li class="list-group-item">Status: {{ i.status }}</li>
-  <li class="list-group-item">Contact Person: {{ i.contact-person }}</li>
-  <li class="list-group-item">Contact Organization: {{ i.contactorg }}</li>
-  <li class="list-group-item">XML Schema: <a href="{{ i.xmlschema }}">ADE XSD</a> </li>
-  <li class="list-group-item">UML Schema: <a href="{{ i.umlschema }}">ADE UML</a></li>
-</ul>
-</div>   
+<table class="table table-condensed table-hover table-responsive">
+  <tr>
+    <td><b>Description:</b></td>
+    <td>{{ i.description }}</td>
+  </tr>
+  <tr>
+    <td><b>Version:</b></td>
+    <td>{{ i.version }}</td>
+  </tr>  
+  <tr>
+    <td><b>Status:</b></td>
+    <td>{{ i.status }}</td>
+  </tr>  
+  <tr>
+    <td><b>Contact Person:</b></td>
+    <td>{{ i.contact-person }}</td>
+  </tr>  
+  <tr>
+    <td><b>Contact Organization:</b></td>
+    <td>{{ i.contactorg }}</td>
+  </tr>  
+  <tr>
+    <td><b>XML Schema:</b></td>
+    <td><a href="{{ i.xmlschema }}">{{ i.xmlschema }}</a></td>
+  </tr>  
+  <tr>
+    <td><b>UML Schema:</b></td>
+    <td><a href="{{ i.umlschema }}">{{ i.umlschema }}</a></td>
+  </tr>  
+</table>
+</div>
 </div>
 
 {% endfor %}
 
-- - - 
+<!-- - - - 
 
 
-# CityGML ADE Modelling
+# CityGML ADE Modelling -->
 
