@@ -1,12 +1,12 @@
 ---
 layout: page
-title:  Open data initiatives
-permalink: /opendatasets/
+title:  Cities around the world with open datasets
+permalink: /3dcities/
 ---
 
-# Open CityGML datasets
+# Cities around the world with open CityGML datasets
 
-{% assign ds = site.data.opendatasets | sort: 'dataset' %}
+{% assign ds = site.data.3dcities | sort: 'dataset' %}
 
 <table class="table table-striped">
 
@@ -42,9 +42,9 @@ permalink: /opendatasets/
 
 - - - 
 
-# Open datasets not in CityGML (but should in our opinion be!)
+<h1>Cities around the world with open 3D datasets <u>not</u> in CityGML</h1>
 
-{% assign ds = site.data.opendatasets_notcitygml | sort: 'dataset' %}
+{% assign ds = site.data.3dcities_notcitygml | sort: 'dataset' %}
 
 <table class="table table-striped">
 
