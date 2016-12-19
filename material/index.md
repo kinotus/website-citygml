@@ -5,14 +5,32 @@ permalink: /material/
 ---
 
 
-## Videos
+# Videos
 
-  - [Webminar: How the OGC’s CityGML Standard Supports 3D Innovation for Business and Government](http://www.directionsmag.com/webinars/view/ogc-placeholder/216618)
-  - [Course "100% CityGML", offered at TU Delft on 2011/03/14](http://collegerama.tudelft.nl/mediasite/SilverlightPlayer/Default.aspx?peid=7b440617cd1342b0b5b006fc0f6563ef1d)
+{% assign videos = site.data.videos | sort: 'year' %}
 
+{% for i in videos reversed %}
 
-## Presentations, keynotes, slides
+<div class="row">
+  <div class="col-lg-3 col-md-4 col-sm-6">
+    {% if i.img %}
+      <a href="{{ i.link }}"><img class="img-responsive" src="/img/material/{{ i.img }}" alt="..."></a>
+    {% else %}  
+      <img class="img-responsive" src="http://placehold.it/350x150" alt="...">
+    {% endif %}
+  </div>
+  <div class="col-lg-9 col-md-8 col-sm-6">
+    <p><b>{{ i.title }}</b> ({{ i.year }}).<br></p>
+    {% if i.info %}
+      <p>{{ i.info }}</p>
+    {% endif %}
+  </div>
+</div>
+<br>
 
+{% endfor %}
+
+- - - 
   
 ## Scientific articles
 
@@ -23,7 +41,7 @@ permalink: /material/
 <div class="row">
   <div class="col-lg-3 col-md-4 col-sm-6">
     {% if i.img %}
-      <a href="{{ i.DOI }}"><img class="img-responsive" src="/img/articles/{{ i.img }}" alt="..."></a>
+      <a href="{{ i.DOI }}"><img class="img-responsive" src="/img/material/{{ i.img }}" alt="..."></a>
     {% else %}  
       <img class="img-responsive" src="http://placehold.it/350x150" alt="...">
     {% endif %}
@@ -41,7 +59,7 @@ permalink: /material/
     {% if i.page %}p.{{ i.page }}.{% endif %}
     {% if i.publisher %}{{ i.publisher }}.{% endif %}
     {% if i.DOI %}
-      <a href="{{ i.DOI }}"><i class="fa fa-external-link"></i></a>
+      <a href="{{ i.DOI }}">[DOI]</a>
     {% endif %}
     </p>
   </div>
@@ -49,3 +67,9 @@ permalink: /material/
 <br>
 
 {% endfor %}
+
+- - -
+
+## Presentations, keynotes, slides
+
+todo
