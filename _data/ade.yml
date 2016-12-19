@@ -2,7 +2,7 @@
 - name: Noise ADE
   no: 1
   description: CityGML extension for modelling noise in 3D.
-  version: -
+  version:
   status: Implemented.
   contactorg: Institute of Geodesy and Geoinformation University of Bonn and SIG3D (Special Interest Group 3D). 
   xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
