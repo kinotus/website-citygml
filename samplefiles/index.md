@@ -17,7 +17,7 @@ permalink: /samplefiles/
   <div class="col-lg-9 col-md-8 col-sm-6">
     <h4>{{ i.dataset }}</h4>
     <p><a href="{{ i.link }}">{{ i.link }}</a></p>
-    {{ i.description | markdownify }}
+    {{ i.description | markdownify | remove: '<p>' | remove: '</p>' }}
     {% if i.copyright %}
     <p><i class="fa fa-copyright" aria-hidden="true"></i> {{ i.copyright | markdownify | remove: '<p>' | remove: '</p>' }}</p>
     {% endif %}

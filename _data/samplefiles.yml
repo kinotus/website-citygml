@@ -6,6 +6,13 @@
   image: Random3dcity.jpg
   year: 2016
 
+- dataset: Several Dutch cities
+  description: "All the urban features (terrain, water, roads, buildings, vegetations, etc.) are present. Datasets were reconstructed with [3dfier](https://github.com/tudelft3d/3dfier) by combining the [2D topographic dataset](http://www.kadaster.nl/bgt) with [LiDAR altimetry datasets](https://www.pdok.nl/nl/ahn3-downloads)"
+  link: https://3d.bk.tudelft.nl/opendata/3dfier/
+  copyright: "The software and the generated data are free to use."
+  image: 3dfier.jpg
+  year: 2016
+
  
 - dataset: First v2.0 CityGML file
   description: "This is the first publicly available CityGML v2.0 data set. It is a 3D model demonstrating nearly all CityGML feature classes from the CityGML 2.0 specification. Especially instances of the classes from the new thematic modules Bridge and Tunnel are included. SolitaryVegetationObjects (the trees) are using ImplicitGeometries with local coordinates to allow for reuse of the geometry definitions. The features also have old and new thematic attributes. Please note that the dataset has been created manually and represents an artificial scenery. Coordinates are not georeferenced and the scene is downscaled to around 1:220. The dataset is decomposed into 6 separate files."

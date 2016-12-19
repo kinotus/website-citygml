@@ -1,0 +1,12 @@
+
+- name: CityGML Wiki
+  link: http://www.citygmlwiki.org
+  info: Alternative page to the official CityGML page, with more recent information.
+
+- name: SIG 3D Quality Working Group
+  link: http://en.wiki.quality.sig3d.org/
+  info: Very useful information, especially the page about [how to model a building in CityGML](http://en.wiki.quality.sig3d.org/index.php/Modeling_Guide_for_3D_Objects_-_Part_2:_Modeling_of_Buildings_(LoD1,_LoD2,_LoD3)).
+
+- name: Dutch government page about 3D geoinformation (in Dutch)
+  link: http://www.geonovum.nl/onderwerpen/3d-geo-informatie
+  info: Many links to the many activities related to 3D in the Netherlands. 
