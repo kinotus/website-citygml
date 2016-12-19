@@ -17,4 +17,5 @@ permalink: /material/
 
 ## Papers
 
-(put the Top10 papers in the field... let's fight to decide which ones!)
+{% imbiber material/top10.bib idswithprefix:type_ %}
+
