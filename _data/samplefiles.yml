@@ -3,7 +3,7 @@
   description: "A basic procedural modelling engine for generating random (synthetic) buildings and other features in CityGML in multiple LODs. The engine is composed of two modules. The first one is procedural: it randomly generates buildings and their elements according to a set of rules and constraints. The buildings are realised through parameters which are stored in an XML form. The second part of the engine reads this data and constructs CityGML data in multiple LODs."
   link: https://github.com/tudelft3d/Random3Dcity
   copyright: "The software and the generated data are free to use, but read [this notice](https://github.com/tudelft3d/Random3Dcity#conditions-for-use-and-citation)"
-  image: Random3dcity.jpg
+  image: random3dcity.jpg
   year: 2016
 
 - dataset: Several Dutch cities
