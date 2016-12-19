@@ -1,3 +1,11 @@
+
+- dataset: Random3Dcity
+  description: "A basic procedural modelling engine for generating random (synthetic) buildings and other features in CityGML in multiple LODs. The engine is composed of two modules. The first one is procedural: it randomly generates buildings and their elements according to a set of rules and constraints. The buildings are realised through parameters which are stored in an XML form. The second part of the engine reads this data and constructs CityGML data in multiple LODs."
+  link: https://github.com/tudelft3d/Random3Dcity
+  copyright: "The software and the generated data are free to use, but read [this notice](https://github.com/tudelft3d/Random3Dcity#conditions-for-use-and-citation)"
+  image: Random3dcity.jpg
+  year: 2016
+
  
 - dataset: First v2.0 CityGML file
   description: "This is the first publicly available CityGML v2.0 data set. It is a 3D model demonstrating nearly all CityGML feature classes from the CityGML 2.0 specification. Especially instances of the classes from the new thematic modules Bridge and Tunnel are included. SolitaryVegetationObjects (the trees) are using ImplicitGeometries with local coordinates to allow for reuse of the geometry definitions. The features also have old and new thematic attributes. Please note that the dataset has been created manually and represents an artificial scenery. Coordinates are not georeferenced and the scene is downscaled to around 1:220. The dataset is decomposed into 6 separate files."

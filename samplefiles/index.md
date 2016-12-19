@@ -8,7 +8,7 @@ permalink: /samplefiles/
 
 {% assign ds = site.data.samplefiles | sort: 'year' %}
 
-{% for i in ds %}
+{% for i in ds reversed %}
 
 <div class="row">
   <div class="col-lg-3 col-md-4 col-sm-6">
@@ -18,8 +18,11 @@ permalink: /samplefiles/
     <h4>{{ i.dataset }}</h4>
     <p><a href="{{ i.link }}">{{ i.link }}</a></p>
     {{ i.description | markdownify }}
+    {% if i.copyright %}
     <p><i class="fa fa-copyright" aria-hidden="true"></i> {{ i.copyright | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    {% endif %}
   </div>
 </div>
+<br>
 
 {% endfor %}
