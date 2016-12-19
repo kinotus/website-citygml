@@ -13,7 +13,7 @@
   description: CityGML extension for modelling Ubiquitous Network Robots services.
   version:
   status: Implemented.
-  contactorg: Hitachi Ltd., Central Research Laboratory, Kokubunji-shi, Tokyo, Japan.
+  contactorg: Hitachi Ltd., Central Research Laboratory, Tokyo, Japan.
   xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/
   umlschema: https://mediatum.ub.tum.de/doc/1145731/973311.pdf#page=319
 
