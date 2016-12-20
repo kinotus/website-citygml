@@ -1,0 +1,25 @@
+
+- dataset: b1_lod1_s
+  description: "One building modelled in LoD1 with one `gml:Solid`."
+  info: "Observer that semantic information is not possible with a LoD1 building."
+
+- dataset: b1_lod2_s
+  description: "One building modelled in LoD2 with one `gml:Solid`."
+  info: "No semantics is used for the faces."
+
+- dataset: b1_lod2_s_w_sem
+  description: "One building modelled in LoD2 with one `gml:Solid` and 9 bounding surfaces."
+  info: "`xlink` are used to reuse the surface and have both representations."
+
+- dataset: b1_lod2_ms_w_sem
+  description: "One building modelled in LoD2 with only 9 bounding surfaces and no `gml:Solid`."
+  info: "This is *not* recommended, because the volume of the building cannot be computed for instance."
+
+- dataset: b1_lod2_s_oh_w_sem
+  description: "One building modelled in LoD2 with one `gml:Solid` and 11 bounding surfaces since the roof overhangs are modelled"
+  info: "Observe that the roof overhangs are modelled as boundary surfaces, and are *not* part of the `gml:Solid` since that would create an invalid one (non-manifold case)."
+
+- dataset: b1_lod2_cs_w_sem
+  description: "One building modelled in LoD2 with one `gml:CompositeSolid`."
+  info: "The volume of the building has been subdivided into 2 by adding the ceiling of the ground floor. The boundary surfaces with semantics are present."
+
