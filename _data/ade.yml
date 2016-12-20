@@ -110,7 +110,7 @@
   umlschema: none
 
 - name: Inclusive Routing ADE
-  no: 11
+  no: 12
   description: CityGML extension for routing differentialy abled individuals (a smart-city service initiative for urban ecosystems).
   adeversion: 0.7b
   cityversion: 2.0.0
@@ -120,7 +120,7 @@
   umlschema: http://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XL-4-W1/87/2013/isprsarchives-XL-4-W1-87-2013.pdf
 
 - name: Time Dependent Variables ADE
-  no: 12
+  no: 13
   description: CityGML extension for enriching CityGML objects with one or more dynamic phenomenon for a specified reference time.
   adeversion: 0.7b
   cityversion:  2.0.0
