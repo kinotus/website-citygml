@@ -49,16 +49,6 @@
   xmlschema: https://code.google.com/archive/p/geobim/source/default/source
   umlschema:
 
-- name: Indoor ADE
-  no: 7
-  description: Computer Aided Facility Management or CAFM is a CityGML extension for modelling the geometry and semantics of building facades.
-  adeversion: 1.0
-  cityversion: 1.0.0
-  status: Implemented (draft)
-  contactorg: Technische Universität München, Germany.
-  xmlschema:
-  umlschema:
-
 - name: CAFM (facade) ADE
   no: 7
   description: Computer Aided Facility Management or CAFM is a CityGML extension for modelling the geometry and semantics of building facades.
