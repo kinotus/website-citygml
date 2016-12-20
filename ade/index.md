@@ -85,11 +85,11 @@ The advantage of using the ADE approach are:
   </tr>  
   <tr>
     <td><b>XML Schema:</b></td>
-    <td>{% if i.xmlschema == none %} Not available {% else %}<a href="{{ i.xmlschema }}">{{ i.name }} XSD</a>{% endif %}</td>
+    <td>{% if i.xmlschema == none %} <b>Not available</b> {% else %}<a href="{{ i.xmlschema }}">{{ i.name }} XSD</a>{% endif %}</td>
   </tr>  
   <tr>
     <td><b>UML Schema:</b></td>
-    <td>{% if i.umlschema == none %} Not available {% else %<a href="{{ i.umlschema }}">{{ i.name }} UML</a>{% endif %}</td>
+    <td>{% if i.umlschema == none %} <b>Not available</b> {% else %}<a href="{{ i.umlschema }}">{{ i.name }} UML</a>{% endif %}</td>
   </tr>  
 </table>
 </div>
