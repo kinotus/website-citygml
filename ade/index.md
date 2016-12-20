@@ -12,7 +12,10 @@ permalink: /ade/
 - - -
 
 # Application Domain Extensions (ADE)
-    
+
+<table width="600px">  
+<tr>
+<td width="400px"> 
 CityGML represents not only the graphical appearance of 3D city models but also the semantics associated with the city models.
 For this, CityGML has a geometric model and a thematic model.
 The thematic model of CityGML covers various classes like *buildings, relief, transportation, landuse, tunnels, bridges, vegetation, water bodies and city furniture.*
@@ -39,7 +42,9 @@ The advantage of using the ADE approach are:
   * This ensure semantic and syntactic interoperability for the exchange of application specific information.
   * Extended CityGML instance documents can be validated against the CityGML and the respective ADE schema. 
   * More than one ADE can be actively used in the same dataset.
-
+</td>
+<td width="200px"></td>
+</table>  
 - - -
 
 # CityGML ADEs
@@ -85,11 +90,11 @@ The advantage of using the ADE approach are:
   </tr>  
   <tr>
     <td><b>XML Schema:</b></td>
-    <td>{% if i.xmlschema == none %} <b>Not available</b> {% else %}<a href="{{ i.xmlschema }}">{{ i.name }} XSD</a>{% endif %}</td>
+    <td>{% if i.xmlschema %} <a href="{{ i.xmlschema }}">{{ i.name }} XSD</a>{% endif %}</td>
   </tr>  
   <tr>
     <td><b>UML Schema:</b></td>
-    <td>{% if i.umlschema == none %} <b>Not available</b> {% else %}<a href="{{ i.umlschema }}">{{ i.name }} UML</a>{% endif %}</td>
+    <td>{% if i.umlschema %} <a href="{{ i.umlschema }}">{{ i.name }} UML</a>{% endif %}</td>
   </tr>  
 </table>
 </div>

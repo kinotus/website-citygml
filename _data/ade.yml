@@ -47,7 +47,7 @@
   status: Implemented (draft)
   contactorg: Netherlands organisation for Applied Scientific research TNO, the Netherlands.
   xmlschema: https://code.google.com/archive/p/geobim/source/default/source
-  umlschema: none
+  umlschema:
 
 - name: Indoor ADE
   no: 7
@@ -56,8 +56,8 @@
   cityversion: 1.0.0
   status: Implemented (draft)
   contactorg: Technische Universität München, Germany.
-  xmlschema: none
-  umlschema: none
+  xmlschema:
+  umlschema:
 
 - name: CAFM (facade) ADE
   no: 7
@@ -66,8 +66,8 @@
   cityversion: 1.0.0
   status: Implemented (draft)
   contactorg: Technische Universität München, Germany.
-  xmlschema: none
-  umlschema: none
+  xmlschema:
+  umlschema:
 
 - name: Hydro ADE
   no: 8
@@ -76,8 +76,8 @@
   cityversion: 0.4.0
   status: Implemented (draft)
   contactorg: University of Applied Sciences Stuttgart, Germany.
-  xmlschema: none
-  umlschema: none
+  xmlschema:
+  umlschema:
 
 - name: Utility Network ADE
   no: 9
@@ -106,8 +106,8 @@
   cityversion: 2.0.0
   status: Draft (under testing in i-SCOPE Project)
   contactorg: Ordnance Survey, Great Britain
-  xmlschema: none
-  umlschema: none
+  xmlschema:
+  umlschema:
 
 - name: Inclusive Routing ADE
   no: 12
@@ -116,7 +116,7 @@
   cityversion: 2.0.0
   status: Draft (under testing in i-SCOPE Project)
   contactorg: Ordnance Survey, Great Britain
-  xmlschema: none
+  xmlschema:
   umlschema: http://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XL-4-W1/87/2013/isprsarchives-XL-4-W1-87-2013.pdf
 
 - name: Time Dependent Variables ADE
@@ -126,5 +126,5 @@
   cityversion:  2.0.0
   status: Draft (under testing in i-SCOPE Project)
   contactorg: Ordnance Survey, Great Britain
-  xmlschema: none
-  umlschema: none
+  xmlschema:
+  umlschema:
