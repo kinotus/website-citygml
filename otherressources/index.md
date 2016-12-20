@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Other useful CityGML ressources
-permalink: /otherressources/
+title: Other useful CityGML resources
+permalink: /otherresources/
 ---
 
-# Other useful CityGML ressources
+# Other useful CityGML resources
 
-{% assign ressources = site.data.ressources | sort: 'name' %}
-{% for i in ressources %}
+{% assign resources = site.data.resources | sort: 'name' %}
+{% for i in resources %}
 <div class="panel panel-default">
   <div class="panel-heading"><a href="{{ i.link }}">{{ i.name }}</a></div>
   <div class="panel-body">
