@@ -13,7 +13,7 @@ CityGML is an open standardised data model and exchange format to store digital 
 It defines ways to describe all common 3D features and objects found in cities, such as buildings, roads, rivers, bridges, vegetation and city furniture.
 It also defines different standard levels of detail (LoDs) for the 3D objets.
 
-By using CityGML, you can build on the extensive expertise on 3D city modelling that has accumulated over the years. There is now a growing community, a body of [research and material]({{ site.baseurl }}/material/), plenty of [software tools]({{ site.baseurl }}/software/) that support the format, and a long list of potential [applications]({{ site.baseurl }}applications/).
+By using CityGML, you can build on the extensive expertise on 3D city modelling that has accumulated over the years. There is now a growing community, a body of [research and material]({{ site.baseurl }}/material/), plenty of [software tools]({{ site.baseurl }}/software/) that support the format, and a long list of potential [applications]({{ site.baseurl }}/applications/).
 
 ## What can be stored in CityGML?
 
