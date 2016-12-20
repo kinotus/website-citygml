@@ -4,6 +4,9 @@ title: Validation of CityGML files
 permalink: /validation/
 ---
 
+Validation means ensuring that a given CityGML dataset/file respect the definitions and rules.
+
+
 
 Validation is important, very important!
 

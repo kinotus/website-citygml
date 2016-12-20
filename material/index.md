@@ -4,8 +4,9 @@ title:  Papers, videos and presentations about CityGML
 permalink: /material/
 ---
 
+# Papers, videos and presentations about CityGML
 
-# Videos
+## Videos
 
 {% assign videos = site.data.videos | sort: 'year' %}
 
