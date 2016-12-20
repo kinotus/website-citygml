@@ -68,8 +68,12 @@ The advantage of using the ADE approach are:
     <td>{{ i.description }}</td>
   </tr>
   <tr>
-    <td><b>Version:</b></td>
-    <td>{{ i.version }}</td>
+    <td><b>ADE Version:</b></td>
+    <td>{{ i.adeversion }}</td>
+  </tr>
+  <tr>
+    <td><b>CityGML Version:</b></td>
+    <td>{{ i.cityversion }}</td>
   </tr>  
   <tr>
     <td><b>Status:</b></td>
@@ -81,11 +85,11 @@ The advantage of using the ADE approach are:
   </tr>  
   <tr>
     <td><b>XML Schema:</b></td>
-    <td><a href="{{ i.xmlschema }}">{{ i.name }} XSD</a></td>
+    <td>{% if i.xmlschema == none %} Not available {% else %}<a href="{{ i.xmlschema }}">{{ i.name }} XSD</a>{% endif %}</td>
   </tr>  
   <tr>
     <td><b>UML Schema:</b></td>
-    <td><a href="{{ i.umlschema }}">{{ i.name }} UML</a></td>
+    <td>{% if i.umlschema == none %} Not available {% else %<a href="{{ i.umlschema }}">{{ i.name }} UML</a>{% endif %}</td>
   </tr>  
 </table>
 </div>

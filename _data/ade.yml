@@ -2,8 +2,9 @@
 - name: Noise ADE
   no: 1
   description: CityGML extension for modelling noise in 3D.
-  version:
-  status: Implemented.
+  adeversion:
+  cityversion: 2.0.0
+  status: Implemented
   contactorg: Institute of Geodesy and Geoinformation University of Bonn and SIG3D (Special Interest Group 3D). 
   xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
   umlschema: http://www.citygml.org/fileadmin/citygml/docs/CityGML_1_0_0_UML_diagrams.pdf
@@ -11,108 +12,119 @@
 - name: Robotics ADE
   no: 2
   description: CityGML extension for modelling Ubiquitous Network Robots services.
-  version:
-  status: Implemented.
+  adeversion:
+  cityversion: 2.0.0
+  status: Implemented
   contactorg: Hitachi Ltd., Central Research Laboratory, Tokyo, Japan.
   xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/
   umlschema: https://mediatum.ub.tum.de/doc/1145731/973311.pdf#page=319
 
 - name: Energy ADE
   no: 3
-  description: 
-  version:  
-  status:
-  contact-person:
-  contactorg:
-  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
-  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
-
-- name: Solar ADE
-  no: 4
-  description: 
-  version:  
-  status:
-  contact-person:
-  contactorg:
-  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
-  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  description: CityGML extension for urban energy modelling.
+  adeversion: 0.6.0
+  cityversion: 2.0.0
+  status: Implemented (draft)
+  contactorg: SIG3D (Special Interest Group 3D)
+  xmlschema: https://github.com/cstb/citygml-energy/blob/master/xsd/energy.xsd
+  umlschema: https://github.com/cstb/citygml-energy/blob/master/doc/UML-Diagrams_Energy-ADE.pdf
 
 - name: IMGeo ADE
   no: 5
-  description: 
-  version:  
-  status:
-  contact-person:
-  contactorg:
-  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
-  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  description: Information Model Geography or IMGeo is a CityGML extension for large scale topography modelling of Netherlands.
+  adeversion: 2.1.1
+  cityversion: 2.0.0
+  status: Implemented
+  contactorg: Geonovum, the Netherlands.
+  xmlschema: http://register.geostandaarden.nl/gmlapplicatieschema/imgeo/2.1.1/
+  umlschema: http://register.geostandaarden.nl/informatiemodel/imgeo/2.1.1/
 
-- name: GeoBIM ADE
+- name: GeoBIM (IFC) ADE
   no: 6
-  description: 
-  version:  
-  status:
-  contact-person:
-  contactorg:
-  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
-  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  description: CityGML extension for integrationg semantic IFC data in CityGML.
+  adeversion: 0.6
+  cityversion: 2.0.0
+  status: Implemented (draft)
+  contactorg: Netherlands organisation for Applied Scientific research TNO, the Netherlands.
+  xmlschema: https://code.google.com/archive/p/geobim/source/default/source
+  umlschema: none
 
-- name: CAFM ADE
+- name: Indoor ADE
   no: 7
-  description: 
-  version:  
-  status:
-  contact-person:
-  contactorg:
-  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
-  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  description: Computer Aided Facility Management or CAFM is a CityGML extension for modelling the geometry and semantics of building facades.
+  adeversion: 1.0
+  cityversion: 1.0.0
+  status: Implemented (draft)
+  contactorg: Technische Universität München, Germany.
+  xmlschema: none
+  umlschema: none
+
+- name: CAFM (facade) ADE
+  no: 7
+  description: Computer Aided Facility Management or CAFM is a CityGML extension for modelling the geometry and semantics of building facades.
+  adeversion: 1.0
+  cityversion: 1.0.0
+  status: Implemented (draft)
+  contactorg: Technische Universität München, Germany.
+  xmlschema: none
+  umlschema: none
 
 - name: Hydro ADE
   no: 8
-  description: 
-  version:  
-  status:
-  contact-person:
-  contactorg:
-  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
-  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  description: CityGML extension for a web based 3D flood information service.
+  adeversion:
+  cityversion: 0.4.0
+  status: Implemented (draft)
+  contactorg: University of Applied Sciences Stuttgart, Germany.
+  xmlschema: none
+  umlschema: none
 
 - name: Utility Network ADE
   no: 9
-  description: 
-  version:  
-  status:
-  contact-person:
-  contactorg:
-  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
-  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  description: CityGML extension for modelling utility networks in 3D city models.
+  adeversion: 0.9.0
+  cityversion: 2.0.0
+  status: Implemented
+  contactorg: Insitute for Geodesy and Geoinformation Science, Technische Universität Berlin, Germany
+  xmlschema: http://www.citygmlwiki.org/images/2/25/Schema.zip
+  umlschema: http://www.citygmlwiki.org/images/c/cb/UtilityNetworkADE_prefinal_2012_08_30.zip
 
 - name: Immovable Property Taxation ADE
   no: 10
-  description: 
-  version:  
-  status:
-  contact-person:
-  contactorg:
-  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
-  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  description: CityGML extension for the immovable property taxation system in Turkey. It integrates physical objects specified by CityGML with the legal and administrative concepts defined in Turkish law.
+  adeversion: 1.0
+  cityversion:  2.0.0
+  status: Implemented
+  contactorg: Department of Surveying Engineering, Yildiz Technical University, Turkey.
+  xmlschema: http://cadastralvocabulary.org/citygml/tax_ade/1.0/
+  umlschema: http://cadastralvocabulary.org/citygml/tax_ade/1.0/CityGML_TaxADE_UML.png
+
+- name: Solar ADE
+  no: 11
+  description: CityGML extension for modelling solar irradiance over buildings for encouraging the adoption of solar energy (a smart-city service initiative for urban ecosystems).
+  adeversion: 0.7b
+  cityversion: 2.0.0
+  status: Draft (under testing in i-SCOPE Project)
+  contactorg: Ordnance Survey, Great Britain
+  xmlschema: none
+  umlschema: none
 
 - name: Inclusive Routing ADE
   no: 11
-  description: 
-  version:  
-  status:
-  contact-person:
-  contactorg:
-  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
-  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  description: CityGML extension for routing differentialy abled individuals (a smart-city service initiative for urban ecosystems).
+  adeversion: 0.7b
+  cityversion: 2.0.0
+  status: Draft (under testing in i-SCOPE Project)
+  contactorg: Ordnance Survey, Great Britain
+  xmlschema: none
+  umlschema: http://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XL-4-W1/87/2013/isprsarchives-XL-4-W1-87-2013.pdf
 
 - name: Time Dependent Variables ADE
   no: 12
-  description: 
-  version:  
-  status:
-  contact-person:
-  contactorg:
-  xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
-  umlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
+  description: CityGML extension for enriching CityGML objects with one or more dynamic phenomenon for a specified reference time.
+  adeversion: 0.7b
+  cityversion:  2.0.0
+  status: Draft (under testing in i-SCOPE Project)
+  contactorg: Ordnance Survey, Great Britain
+  xmlschema: none
+  umlschema: none
