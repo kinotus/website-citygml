@@ -68,6 +68,9 @@ The following software allows one to validate the primitives of CityGML:
   - [val3dity](https://github.com/tudelft3d/val3dity): TU Delft free and open-source validator for 3D primitives. It is ISO 19017 compliant, but composites and aggregates are not handled. There is also a [simple-to-use web application](http://geovalidation.bk.tudelft.nl/val3dity/)
   - [CityDoctor](http://www.citydoctor.eu) can validate 3D primitives, but inner rings and inner shells in 3D primitives are not handled, and neither are composites and aggregates. It however allows us to perform some automatic repair operations when a primitive is invalid.
 
+To verify whether an implementation is ISO 19107 compliant, the QIE has developed different "unit tests", that is files that contain one 3D primitive with one error.
+The unit test files are freely available [on this website](https://github.com/tudelft3d/CityGML-QIE-3Dvalidation).
+
 
 - - - 
 
@@ -77,7 +80,7 @@ The objects in CityGML can have semantics attached to them, for instance each of
 Depending on the LOD, a `BoundarySurface` in a building can be one of nine classes.
 For LOD2 buildings, the 5 possible ones are shown in below.
 
-![](semantics.png){: width="400px"}
+![](semantics.png){: width="300px"}
 
 While it is impossible to validate with 100% certainty the semantic of the surfaces of a building, it is possible to infer it from the orientation of a surface.
 The QIE used that methodology, and the software [CityDoctor](http://www.citydoctor.eu) implements that method.
@@ -87,7 +90,13 @@ The QIE used that methodology, and the software [CityDoctor](http://www.citydoct
 
 ## 4. Conformance requirements 
 
-This means: the translation of requirements stated in natural language into verifiable functions.
+Conformance requirements in the CityGML standard describe necessary conditions or restrictions for rules of standard definitions.
+One example is the following (p.78 of the CityGML v2.0.0 document):
+
+  If a building only consists of one (homogeneous) part, it shall be represented by the element *Building*. However, if a building is composed of individual structural segments, it shall be modelled as a Building element having one or more additional *BuildingPart* elements
+
+The QIE explored ways to translate such a requirement--stated in natural language--into verifiable functions.
+
 
 
 - - - 
@@ -96,10 +105,8 @@ This means: the translation of requirements stated in natural language into veri
 
 XLinks are extensively used in CityGML files, since they allow us to reuse surfaces.
 See for instance the [page about examples of buildings](/exampleclasses/building/), and for instance [this example](/exampleclasses/building/b1_lod2_s_w_sem.gml).
-
 We have noticed that several tools and XML parsers do not resolve XLinks, and thus a valid file could be misinterpreted.
 
-All tools above should be able to do this, but unfortunately it is not the case.
 
 
 - - - 
@@ -115,7 +122,6 @@ models for national and regional mapping including visualization, and analysis s
 * Aggregation of floorspace for buildings/sites;
 * Energy demand simulation; and
 * Scenario evaluation in urban planning.
-
 
 One example is that a building is required to have a ground floor to form a volume (which is, surprisingly, not mandatory in CityGML)
 
