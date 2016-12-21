@@ -11,7 +11,7 @@ permalink: /about/
 
 CityGML is an open standardised data model and exchange format to store digital 3D models of cities and landscapes.
 It defines ways to describe most of the common 3D features and objects found in cities (such as buildings, roads, rivers, bridges, vegetation and city furniture) and the relationships between them.
-It also defines different standard levels of detail (LoDs) for the 3D objects, which allows us to represent objects for different applications and purposes.
+It also defines different standard levels of detail (LODs) for the 3D objects, which allows us to represent objects for different applications and purposes.
 
 By using CityGML, you can build on the extensive expertise on 3D city modelling that has accumulated over the years. 
 There is now a growing community, a body of [research and material]({{ site.baseurl }}/material/), plenty of [software tools]({{ site.baseurl }}/software/) that support the format, and a long list of potential [applications]({{ site.baseurl }}/applications/).
@@ -46,7 +46,7 @@ There are already several ADEs, e.g. for representing the 3D topographic objects
 ## How are objects stored in CityGML?
 
 In its most common implementation, which is the one generally used to disseminate and exchange data, CityGML datasets consist of a set of plain text files (XML files) and possibly some accompanying image files that are used as textures. 
-Each text file can represent a part of the dataset, such as a specific region, a specific type of object (such as a set of roads), or a predefined LoD.
+Each text file can represent a part of the dataset, such as a specific region, a specific type of object (such as a set of roads), or a predefined LOD.
 
 The structure of a CityGML file is a hierarchy that ultimately reaches down to individual objects and their attributes. 
 These objects have a geometry that is described using [GML](https://en.wikipedia.org/wiki/Geography_Markup_Language).
