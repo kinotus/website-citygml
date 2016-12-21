@@ -46,6 +46,9 @@ Free and open-source software are marked by <img height="15" src="/img/foss.svg"
 - - -
 
 ## Validators of different aspects of CityGML
+
+(look at the [validation page](/validation/) where more details are available)
+
 {% for i in software %}
 {% if i.category contains 'validator' %}
 <p><a href="{{ i.webpage }}">{{ i.name }}</a> {% if i.foss == true %}<img height="15" src="/img/foss.svg"> {% endif %}<br/> {{ i.description }} </p>
