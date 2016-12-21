@@ -113,6 +113,7 @@ We have noticed that several tools and XML parsers do not resolve XLinks, and th
 
 ## 6. Application-specific rules 
 
+[Applications of 3D city models](aplications/) may be affected by inconsistencies in the data. 
 The generic use cases to be explored are the creation and maintenance of CityGML
 models for national and regional mapping including visualization, and analysis such as:
 
@@ -123,6 +124,7 @@ models for national and regional mapping including visualization, and analysis s
 * Energy demand simulation; and
 * Scenario evaluation in urban planning.
 
-One example is that a building is required to have a ground floor to form a volume (which is, surprisingly, not mandatory in CityGML)
+One example is that a building is required to have a ground floor to form a solid (which is, surprisingly, not mandatory in CityGML) in order to compute its volume. 
+Another example is to have consistent attributes (e.g. codes) of buildings when estimating their energy demand. Such inconsistency may propagate in errors when the data is used across different software packages.
 
 
