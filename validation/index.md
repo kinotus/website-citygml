@@ -113,7 +113,7 @@ We have noticed that several tools and XML parsers do not resolve XLinks, and th
 
 ## 6. Application-specific rules 
 
-[Applications of 3D city models](aplications/) may be affected by inconsistencies in the data. 
+[Applications of 3D city models]({{ site.baseurl }}/applications/) may be affected by inconsistencies in the data. 
 The generic use cases to be explored are the creation and maintenance of CityGML
 models for national and regional mapping including visualization, and analysis such as:
 
