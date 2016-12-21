@@ -4,7 +4,7 @@ title: 3D applications
 permalink: /applications/
 ---
 
-## Use cases of 3D city models
+# Use cases of 3D city models
 
 3D city models are nowadays used for many different applications, across a multitude of application domains.<br/><br/>
 

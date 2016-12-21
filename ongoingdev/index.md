@@ -4,6 +4,8 @@ title: Ongoing development
 permalink: /ongoingdev/
 ---
 
+# Ongoing developments 
+
 {% assign z = site.data.ongoingdev %}
 
 {% for i in z %}
