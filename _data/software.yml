@@ -15,7 +15,6 @@
   category: validator
 
 
-
 - name: CityDoctor
   webpage: http://www.citydoctor.eu
   description: Implements methods and metrics for analysis, testing and correction of syntax, geometry and semantics

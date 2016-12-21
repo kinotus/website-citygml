@@ -1,0 +1,22 @@
+
+- name: CityGML v3.0
+  info: "Information about the upcoming version of CityGML: version 3.0"
+  link: v3
+  img: CityGML-Logo-v3.jpg
+
+- name: TU Delft improved LODs for buildings
+  info: "To avoid ambiguities when referring to LODs, TU Delft developed a more refined version"
+  link: tudelft-lods
+  img: tudelft-lods-small.jpg
+
+- name: Dynamizers
+  info: ""
+  link: #
+  # img: citygmlv3.jpg
+
+- name: Utility Networks
+  info: "work by TUM"
+  link: #
+  # img: citygmlv3.jpg
+
+
