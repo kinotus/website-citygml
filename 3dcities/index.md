@@ -8,6 +8,8 @@ permalink: /3dcities/
 
 {% assign ds = site.data.3dcities | sort: 'dataset' %}
 
+<div class="table-responsive">
+
 <table class="table table-striped">
 
   <tr class="info">
@@ -39,13 +41,14 @@ permalink: /3dcities/
   {% endfor %}
 
 </table>
-
+</div>
 - - - 
 
 <h1>Cities around the world with open 3D datasets <u>not</u> in CityGML</h1>
 
 {% assign ds = site.data.3dcities_notcitygml | sort: 'dataset' %}
 
+<div class="table-responsive">
 <table class="table table-striped">
 
   <tr class="info">
@@ -77,3 +80,4 @@ permalink: /3dcities/
   {% endfor %}
 
 </table>
+</div> 
