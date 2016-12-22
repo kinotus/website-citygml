@@ -19,6 +19,10 @@
   icon: fa-hospital-o
   link: /applications/
 
-- name: Ongoing developments
-  icon: fa-fast-forward
-  link: /ongoingdev/
+- name: browse schema
+  icon: fa-search
+  link: /schemas/doc-complete/CityGML.html
+
+# - name: Ongoing work
+#   icon: fa-fast-forward
+#   link: /ongoingdev/

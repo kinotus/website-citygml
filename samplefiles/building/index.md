@@ -1,11 +1,10 @@
 ---
 layout: page
 title:  CityGML Buildings
-permalink: /exampleclasses/building/
+permalink: /samplefiles/building/
 ---
 
 # How to represent a Building in CityGML, some examples
-
 
 {% assign ds = site.data.exampleclasses.building %}
 

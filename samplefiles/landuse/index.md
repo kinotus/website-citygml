@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Land use
-permalink: /exampleclasses/landuse/
+permalink: /samplefiles/landuse/
 ---
 
 # Land use

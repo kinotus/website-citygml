@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  Terrain
-permalink: /exampleclasses/terrain/
+permalink: /samplefiles/terrain/
 ---
 
 # Example of relief
