@@ -20,16 +20,35 @@ img {
   max-width: 100%;
 }
 
+.thumbnail i {
+  padding-top: 10px;
+}
 
 ul.posts {
   padding-left: 0;
 }
 
-
-.thumbnail i {
-  padding-top: 10px;
-
+.posts li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 2em;
 }
+
+.posts span {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
+  margin-right: 1em;
+}
+
+.firstpost span {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 75%;
+  margin-right: 1em;
+}
+
 
 
 
