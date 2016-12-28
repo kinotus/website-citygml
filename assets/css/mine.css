@@ -35,6 +35,10 @@ ul.posts {
   line-height: 2em;
 }
 
+footer .text-muted {
+  font-size: 90%;
+}
+
 .posts span {
   color: #aaa;
   font-family: Monaco, "Courier New", monospace;
