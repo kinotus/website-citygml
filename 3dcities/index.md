@@ -34,9 +34,7 @@ permalink: /3dcities/
       <td>{{ i.texture }}</td>
       <td>{{ i.acquisition }}</td>
       <td>{{ i.version }}</td>
-      {% if i.notes %}
       <td>{{ i.notes | markdownify | remove: '<p>' | remove: '</p>' }}</td>
-      {% endif %}
     </tr>
   {% endfor %}
 
@@ -73,9 +71,7 @@ permalink: /3dcities/
       <td>{{ i.texture }}</td>
       <td>{{ i.acquisition }}</td>
       <td>{{ i.formats }}</td>
-      {% if i.notes %}
       <td>{{ i.notes | markdownify | remove: '<p>' | remove: '</p>' }}</td>
-      {% endif %}
     </tr>
   {% endfor %}
 
