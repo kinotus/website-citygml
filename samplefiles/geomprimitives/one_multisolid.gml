@@ -5,7 +5,7 @@
 	<cityObjectMember>
 		<gen:GenericCityObject>
 			<gen:lod2Geometry>
-				<gml:CompositeSolid>
+				<gml:MultiSolid>
 					<gml:solidMember>
 						<gml:Solid>
 							<gml:exterior>
@@ -100,11 +100,11 @@
 										<gml:Polygon>
 											<gml:exterior>
 												<gml:LinearRing>
-													<gml:pos>100.00 0.00 0.00</gml:pos>
-													<gml:pos>100.00 100.00 0.00</gml:pos>
+													<gml:pos>120.00 0.00 0.00</gml:pos>
+													<gml:pos>120.00 100.00 0.00</gml:pos>
 													<gml:pos>200.00 100.00 0.00</gml:pos>
 													<gml:pos>200.00 0.00 0.00</gml:pos>
-													<gml:pos>100.00 0.00 0.00</gml:pos>
+													<gml:pos>120.00 0.00 0.00</gml:pos>
 												</gml:LinearRing>
 											</gml:exterior>
 										</gml:Polygon>
@@ -113,11 +113,11 @@
 										<gml:Polygon>
 											<gml:exterior>
 												<gml:LinearRing>
-													<gml:pos>100.00 0.00 100.00</gml:pos>
+													<gml:pos>120.00 0.00 100.00</gml:pos>
 													<gml:pos>200.00 0.00 100.00</gml:pos>
 													<gml:pos>200.00 100.00 100.00</gml:pos>
-													<gml:pos>100.00 100.00 100.00</gml:pos>
-													<gml:pos>100.00 0.00 100.00</gml:pos>
+													<gml:pos>120.00 100.00 100.00</gml:pos>
+													<gml:pos>120.00 0.00 100.00</gml:pos>
 												</gml:LinearRing>
 											</gml:exterior>
 										</gml:Polygon>
@@ -126,11 +126,11 @@
 										<gml:Polygon>
 											<gml:exterior>
 												<gml:LinearRing>
-													<gml:pos>100.00 0.00 0.00</gml:pos>
+													<gml:pos>120.00 0.00 0.00</gml:pos>
 													<gml:pos>200.00 0.00 0.00</gml:pos>
 													<gml:pos>200.00 0.00 100.00</gml:pos>
-													<gml:pos>100.00 0.00 100.00</gml:pos>
-													<gml:pos>100.00 0.00 0.00</gml:pos>
+													<gml:pos>120.00 0.00 100.00</gml:pos>
+													<gml:pos>120.00 0.00 0.00</gml:pos>
 												</gml:LinearRing>
 											</gml:exterior>
 										</gml:Polygon>
@@ -153,8 +153,8 @@
 											<gml:exterior>
 												<gml:LinearRing>
 													<gml:pos>200.00 100.00 0.00</gml:pos>
-													<gml:pos>100.00 100.00 0.00</gml:pos>
-													<gml:pos>100.00 100.00 100.00</gml:pos>
+													<gml:pos>120.00 100.00 0.00</gml:pos>
+													<gml:pos>120.00 100.00 100.00</gml:pos>
 													<gml:pos>200.00 100.00 100.00</gml:pos>
 													<gml:pos>200.00 100.00 0.00</gml:pos>
 												</gml:LinearRing>
@@ -165,11 +165,11 @@
 										<gml:Polygon>
 											<gml:exterior>
 												<gml:LinearRing>
-													<gml:pos>100.00 100.00 0.00</gml:pos>
-													<gml:pos>100.00 0.00 0.00</gml:pos>
-													<gml:pos>100.00 0.00 100.00</gml:pos>
-													<gml:pos>100.00 100.00 100.00</gml:pos>
-													<gml:pos>100.00 100.00 0.00</gml:pos>
+													<gml:pos>120.00 100.00 0.00</gml:pos>
+													<gml:pos>120.00 0.00 0.00</gml:pos>
+													<gml:pos>120.00 0.00 100.00</gml:pos>
+													<gml:pos>120.00 100.00 100.00</gml:pos>
+													<gml:pos>120.00 100.00 0.00</gml:pos>
 												</gml:LinearRing>
 											</gml:exterior>
 										</gml:Polygon>
@@ -178,7 +178,7 @@
 							</gml:exterior>
 						</gml:Solid>
 					</gml:solidMember>
-				</gml:CompositeSolid>
+				</gml:MultiSolid>
 			</gen:lod2Geometry>
 		</gen:GenericCityObject>
 	</cityObjectMember>

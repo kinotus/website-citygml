@@ -1,0 +1,28 @@
+
+===== Validating Primitive #0 =====
+Number shells: 1
+Number faces: 6
+Number vertices: 8
+----- Shell validation (#0) -----
+--2D validation of each surface
+--Triangulation of each surface
+--Planarity of surfaces (with normals deviation)
+--Combinatorial consistency
+--Geometrical consistency
+----- Solid validation -----
+--Global orientation of normals
+===== VALID =====
+
+===== Validating Primitive #1 =====
+Number shells: 1
+Number faces: 6
+Number vertices: 8
+----- Shell validation (#0) -----
+--2D validation of each surface
+--Triangulation of each surface
+--Planarity of surfaces (with normals deviation)
+--Combinatorial consistency
+--Geometrical consistency
+----- Solid validation -----
+--Global orientation of normals
+===== VALID =====
