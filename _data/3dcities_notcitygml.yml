@@ -27,3 +27,12 @@
   notes : terrain
   formats: OBJ, DWG, MAX
 
+- dataset: Philadelphia
+  link: http://www.pasda.psu.edu/uci/DataSummary.aspx?dataset=7146
+  country: USA
+  building_lod: LOD2
+  year: 2015
+  texture:  Yes
+  notes : 
+  formats: GDB
+  
