@@ -16,16 +16,16 @@ Six aspects of data quality were identified:
 <div class="row">
   <div class="col-md-6 col-sm-12">
     <div class="list-group">
-      <a href="#schema-conformance" class="list-group-item list-group-item-info text-center">Schema conformance</a>
-      <a href="#geometry" class="list-group-item list-group-item-info text-center">Geometry</a>
-      <a href="#semantics" class="list-group-item list-group-item-info text-center">Semantics</a>
+      <a href="#1-schema-conformance" class="list-group-item list-group-item-info text-center">1. Schema conformance</a>
+      <a href="#2-geometry" class="list-group-item list-group-item-info text-center">2. Geometry</a>
+      <a href="#3-semantics" class="list-group-item list-group-item-info text-center">3. Semantics</a>
     </div>
   </div>
   <div class="col-md-6 col-sm-12">
     <div class="list-group">
-      <a href="#conformance-requirements" class="list-group-item list-group-item-info text-center">Conformance requirements</a>
-      <a href="#resolvability-of-xlinks" class="list-group-item list-group-item-info text-center">Resolvability of XLinks</a>
-      <a href="#application-specific-rules" class="list-group-item list-group-item-info text-center">Application-specific rules</a>
+      <a href="#4-conformance-requirements" class="list-group-item list-group-item-info text-center">4. Conformance requirements</a>
+      <a href="#5-resolvability-of-xlinks" class="list-group-item list-group-item-info text-center">5. Resolvability of XLinks</a>
+      <a href="#6-application-specific-rules" class="list-group-item list-group-item-info text-center">6. Application-specific rules</a>
     </div>
   </div>
 </div>
@@ -104,7 +104,7 @@ The QIE explored ways to translate such a requirement--stated in natural languag
 ## 5. Resolvability of XLinks
 
 XLinks are extensively used in CityGML files, since they allow us to reuse surfaces.
-See for instance the [page about examples of buildings](/exampleclasses/building/), and for instance [this example](/exampleclasses/building/b1_lod2_s_w_sem.gml).
+See for instance the [page about examples of buildings](/samplefiles/building/), and for instance [this example](/samplefiles/building/b1_lod2_s_w_sem.gml).
 We have noticed that several tools and XML parsers do not resolve XLinks, and thus a valid file could be misinterpreted.
 
 

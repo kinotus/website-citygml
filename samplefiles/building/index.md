@@ -6,7 +6,7 @@ permalink: /samplefiles/building/
 
 # How to represent a Building in CityGML, some examples
 
-{% assign ds = site.data.exampleclasses.building %}
+{% assign ds = site.data.samplefiles.building %}
 
 {% for i in ds %}
 
