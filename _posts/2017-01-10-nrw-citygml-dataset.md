@@ -12,4 +12,4 @@ Our only concern is that the files are CityGML v1.0, while v2.0 has been out sin
 
 [Download here the CityGML files](https://www.opengeodata.nrw.de/produkte/geobasis/3d-gm/), but watch out, it's enormous: more than 286GB of zipped GML!
 
-
+![]({{ site.url }}/img/2017/nrw-website.png)
