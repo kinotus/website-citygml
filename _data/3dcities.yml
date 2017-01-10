@@ -87,6 +87,16 @@
   texture: no
   notes: buildings are modeled with thematic surfaces in LOD2, however, for most buildings the geometric shape is LOD1
   
+- dataset: North Rhine-Westphalia
+  link: https://www.opengeodata.nrw.de/produkte/geobasis/3d-gm/3d-gm_lod2/
+  country: Germany
+  building_lod: LOD2 
+  version: 2.0
+  year: 2016
+  acquisition: 
+  texture: no
+  notes: Covers several cities (NRW is the most populous state of Germany)
+
 - dataset: Rotterdam
   link: http://www.rotterdamopendata.nl/dataset/rotterdam-3d-bestanden
   country: Netherlands
