@@ -4,7 +4,7 @@
   building_lod: LOD1+LOD2 
   version: 1.0
   year: 2016
-  acquisition: "Cadastre footprints, LiDAR, aerial images. LOD1 is derived from LOD2 models with average roof height ([details here](http://www.bezreg-koeln.nrw.de/brk_internet/geobasis/hoehenmodelle/3d_gebaeudemodelle/index.html)"
+  acquisition: "Cadastre footprints, LiDAR, aerial images. LOD1 is derived from LOD2 models with average roof height ([details here](http://www.bezreg-koeln.nrw.de/brk_internet/geobasis/hoehenmodelle/3d_gebaeudemodelle/index.html))"
   texture: no
   notes: "Enormous datasets that covers whole NRW (NRW is the most populated state in Germany) Cities included: Düsseldorf, Essen, Oberhausen, Köln, Bonn and more"
 
