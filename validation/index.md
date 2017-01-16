@@ -76,7 +76,7 @@ The unit test files are freely available [on this website](https://github.com/tu
 
 ## 3. Semantics
 
-The objects in CityGML can have semantics attached to them, for instance each of the surfaces used to represent a building can be a semantic class (`BoundarySurface`}), which defines its real-world meaning.
+The objects in CityGML can have semantics attached to them, for instance each of the surfaces used to represent a building can be a semantic class (`BoundarySurface`), which defines its real-world meaning.
 Depending on the LOD, a `BoundarySurface` in a building can be one of nine classes.
 For LOD2 buildings, the 5 possible ones are shown in below.
 
