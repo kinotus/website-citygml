@@ -5,7 +5,7 @@
 	<cityObjectMember>
 		<gen:GenericCityObject>
 			<gen:lod2Geometry>
-				<gml:CompositeSolid>
+				<gml:CompositeSolid gml:id="elvisisalive">
 					<gml:solidMember>
 						<gml:Solid>
 							<gml:exterior>
