@@ -125,3 +125,15 @@
   classes:  Terrain
   texture:   No
   notes: It contains terrain intersection curves!
+
+- dataset: Dutch cities
+  link:    https://3d.bk.tudelft.nl/opendata/3dfier/
+  country: Netherlands
+  building_lod: LOD1
+  version: 2.0
+  year: 2016
+  classes:  Terrain and many other
+  texture:   No
+  notes: A few Dutch cities generated with 3dfier
+
+  

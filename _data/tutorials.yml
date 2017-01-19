@@ -1,0 +1,6 @@
+
+- name: Generating LOD1 models with 3dfier
+  info: "Leaning to use 3dfier, an open software to generate 3D city models in CityGML from open data."
+  link: 3dfier
+  img: 3dfier.jpg
+
