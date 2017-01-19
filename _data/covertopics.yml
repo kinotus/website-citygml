@@ -19,7 +19,7 @@
   icon: fa-hospital-o
   link: /applications/
 
-- name: browse schema
+- name: Browse schema
   icon: fa-search
   link: /schemas/doc-complete/CityGML.html
 
