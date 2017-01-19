@@ -6,7 +6,7 @@ permalink: /validation/
 
 # Validation of CityGML files
 
-Validation of a CityGML dataset means that one must ensure that it respects the standardised specifications and definitions as given in the [OGC City Geography Markup Language (CityGML) En- coding Standard (OGC document 12-019)](https://portal.opengeospatial.org/files/?artifact_id=47842).
+Validation of a CityGML dataset means that one must ensure that it respects the standardised specifications and definitions as given in the [OGC City Geography Markup Language (CityGML) Encoding Standard (OGC document 12-019)](https://portal.opengeospatial.org/files/?artifact_id=47842).
 
 In 2014-2015, The OGC ran the the *CityGML Quality Interoperability Experiment*, whose main goals were to define data quality requirements for a general CityGML data specification, to provide recommended implementation guidance for 3D data, and to provide a suite of essential quality checking tools to carry out quality assurance on CityGML data.
 Its [final report is available online](https://portal.opengeospatial.org/files/?artifact_id=68821).
