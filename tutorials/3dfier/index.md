@@ -153,7 +153,7 @@ An OBJ is composed of triangles, so the result will look like this:
 
 CityGML looks similar, but it offers an advanced data structure focusing on semantics and structuring of objects:
 
-![](leiden-azul.png){: width="1400px"}
+![](leiden-azul.png){: width="700px"}
 
 Congratulations, you have created a 3D city model!
 
