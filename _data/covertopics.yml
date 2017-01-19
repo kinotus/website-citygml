@@ -11,9 +11,9 @@
   icon: fa-cog
   link: /software/
 
-- name: Validation tools
-  icon: fa-wrench
-  link: /validation/
+- name: Tutorials
+  icon: fa-book
+  link: /tutorials/
 
 - name: 3D applications
   icon: fa-hospital-o
@@ -23,6 +23,14 @@
   icon: fa-search
   link: /schemas/doc-complete/CityGML.html
 
-# - name: Ongoing work
-#   icon: fa-fast-forward
-#   link: /ongoingdev/
+- name: 3D cities
+  icon: fa-globe
+  link: /3dcities/
+
+- name: Ongoing work
+  icon: fa-fast-forward
+  link: /ongoingdev/
+
+- name: Validation tools
+  icon: fa-wrench
+  link: /validation/
