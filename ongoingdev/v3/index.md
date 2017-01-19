@@ -4,7 +4,7 @@ title: CityGML v3.0
 permalink: /ongoingdev/v3/
 ---
 
-# CityGmL v3.0
+# CityGML v3.0
 
 Summary of what CityGML v3.0 will contain, eg:
 
