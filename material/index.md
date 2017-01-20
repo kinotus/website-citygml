@@ -57,7 +57,7 @@ permalink: /material/
     <i>{{ i.container-title }}</i>,
     {% if i.volume %}{{ i.volume }}{% endif %}{% if i.issue %}({{ i.issue }}),{% endif %}
     {% if i.chapter-number %}chapter {{ i.chapter-number }},{% endif %}
-    {% if i.page %}p.{{ i.page }}.{% endif %}
+    {% if i.page %}pp. {{ i.page }}.{% endif %}
     {% if i.publisher %}{{ i.publisher }}.{% endif %}
     {% if i.DOI %}
       <a href="{{ i.DOI }}">[DOI]</a>
