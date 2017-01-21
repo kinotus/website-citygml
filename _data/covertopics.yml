@@ -27,10 +27,10 @@
   icon: fa-globe
   link: /3dcities/
 
-- name: Ongoing work
-  icon: fa-fast-forward
-  link: /ongoingdev/
-
 - name: Validation tools
   icon: fa-wrench
   link: /validation/
+
+- name: Ongoing work
+  icon: fa-fast-forward
+  link: /ongoingdev/
