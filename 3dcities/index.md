@@ -40,6 +40,7 @@ permalink: /3dcities/
 
 </table>
 </div>
+
 - - - 
 
 <h1>Cities around the world with open 3D datasets <u>not</u> in CityGML</h1>
@@ -77,6 +78,8 @@ permalink: /3dcities/
 
 </table>
 </div> 
+
+- - -
 
 <h1>Open LiDAR datasets</h1>
 
