@@ -8,7 +8,7 @@ permalink: /validation/
 
 Validation of a CityGML dataset means that one must ensure that it respects the standardised specifications and definitions as given in the [OGC City Geography Markup Language (CityGML) Encoding Standard (OGC document 12-019)](https://portal.opengeospatial.org/files/?artifact_id=47842).
 
-In 2014-2015, The OGC ran the the *CityGML Quality Interoperability Experiment*, whose main goals were to define data quality requirements for a general CityGML data specification, to provide recommended implementation guidance for 3D data, and to provide a suite of essential quality checking tools to carry out quality assurance on CityGML data.
+In 2014-2015, the OGC ran the *CityGML Quality Interoperability Experiment*, whose main goals were to define data quality requirements for a general CityGML data specification, to provide recommended implementation guidance for 3D data, and to provide a suite of essential quality checking tools to carry out quality assurance on CityGML data.
 Its [final report is available online](https://portal.opengeospatial.org/files/?artifact_id=68821).
 
 Six aspects of data quality were identified:
@@ -55,7 +55,7 @@ While the ISO19107 primitives do not need to be linear or planar, i.e. curves de
 ![](geomprimitives.png){: width="400px"}
 
 Geometric primitives can be combined into either *aggregates* or *composites*.
-An aggregate is an arbitrary collection of primitives of same dimensionality that is simply used to bundle together geometries, it does not prescribe any topological relationships between the primitives.
+An aggregate is an arbitrary collection of primitives of the same dimensionality that is simply used to bundle together geometries, it does not prescribe any topological relationships between the primitives.
 The `Multi*` in CityGML are an example.
 A composite of dimension *d* is a collection of *d*-dimensional primitives that form a *d*-manifold, which is a topological space that is locally like a *d*-dimensional Euclidean space. 
 The most relevant example is `CompositeSurface`: it is a 2-manifold, or, in other words, a surface embedded in 3D space.
@@ -76,7 +76,7 @@ The unit test files are freely available [on this website](https://github.com/tu
 
 ## 3. Semantics
 
-The objects in CityGML can have semantics attached to them, for instance each of the surfaces used to represent a building can be a semantic class (`BoundarySurface`), which defines its real-world meaning.
+The objects in CityGML can have semantics, for instance each of the surfaces used to represent a building can be a semantic class (`BoundarySurface`), which defines its real-world meaning.
 Depending on the LOD, a `BoundarySurface` in a building can be one of nine classes.
 For LOD2 buildings, the 5 possible ones are shown in below.
 
@@ -115,7 +115,7 @@ We have noticed that several tools and XML parsers do not resolve XLinks, and th
 
 [Applications of 3D city models]({{ site.baseurl }}/applications/) may be affected by inconsistencies in the data. 
 The generic use cases to be explored are the creation and maintenance of CityGML
-models for national and regional mapping including visualization, and analysis such as:
+models for national and regional mapping including visualisation, and spatial analysis such as:
 
 * Line of sight;
 * Shading;
