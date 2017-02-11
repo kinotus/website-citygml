@@ -11,17 +11,21 @@
   icon: fa-cog
   link: /software/
 
-- name: Tutorials
-  icon: fa-book
-  link: /tutorials/
-
-- name: 3D applications
-  icon: fa-hospital-o
-  link: /applications/
+# - name: Tutorials
+#   icon: fa-book
+#   link: /tutorials/
 
 - name: Browse schema
   icon: fa-search
   link: /schemas/doc-complete/CityGML.html
+
+- name: Forum
+  icon: fa-users
+  link: /forum/
+
+- name: 3D applications
+  icon: fa-hospital-o
+  link: /applications/
 
 - name: 3D cities
   icon: fa-globe
