@@ -53,11 +53,11 @@
   texture:   No
   
 - dataset: Hamburg
-  link: http://suche.transparenz.hamburg.de/dataset/3d-stadtmodell-hamburg
+  link: http://suche.transparenz.hamburg.de/dataset/3d-stadtmodell-lod2-de-hamburg1
   country: Germany
   building_lod: LOD1 and LOD2
-  version: 1.0
-  year: 2015
+  version: 2.0
+  year: 2017
   acquisition: Cadastre footprints + LiDAR
   
 - dataset: Linz
