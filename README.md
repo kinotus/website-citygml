@@ -1,6 +1,6 @@
-# www.citygml.guru
+# www.citygml.org
 
-Source code for the website [citygml.guru](https://www.citygml.guru).
+Source code for the website [citygml.org](https://www.citygml.org).
 [Jekyll](http://www.jekyllrb.com) is used to generate static pages, and these are generated *automatically* after someone pushes to the repository (it may take ~30s to refresh though).
 
 ## Open datasets
