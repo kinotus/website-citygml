@@ -1,10 +1,16 @@
 ---
 layout: default
 ---
+
 <div class="container">
 
   <h1>{{ page.title }}<br><span>{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} (from: {{ page.author }}){% endif %}</span></h1>
 
   {{ content }}
 
+  <hr>
+
+  <span class="grey"><a href="{{ site.baseurl }}/news"><i class="fa fa-arrow-left"></i> All news</a></span>
+  <br>
+  
 </div>
