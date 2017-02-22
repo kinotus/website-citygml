@@ -50,6 +50,12 @@
   description: Open source Java class library and API 
   category: parser
   foss: true
+  
+- name: libcitygml
+  webpage: https://github.com/jklimke/libcitygml
+  description: Open source C++ class library for reading CityGML. Supports most CityGML elements. Also provides a plugin for the OpenSceneGraph library for CityGML visualization. 
+  category: parser
+  foss: true
 
 - name: CodeSynthesis XSD
   webpage: http://www.codesynthesis.com/products/xsd/
