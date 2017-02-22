@@ -18,7 +18,7 @@ To add a news or a public datasets for instance, see the [README](https://github
 If you spotted an error or want to add content, let us know by either: 
 
   - [adding an issue](https://github.com/tudelft3d/website-citygml/issues);
-  - fixing the error yourself and open a [pull request](https://help.github.com/articles/about-pull-requests/).
+  - fixing the error yourself and opening a [pull request](https://help.github.com/articles/about-pull-requests/).
 
 
 
