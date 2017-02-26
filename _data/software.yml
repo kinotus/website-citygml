@@ -10,7 +10,7 @@
 
 - name: schemaCityGML
   webpage: http://geovalidation.bk.tudelft.nl/schemacitygml/
-  description: Easy web application to validate your CityGML file against the XSD schemas.
+  description: Web-application to validate your CityGML file against the XSD schemas
   foss: true
   category: validator
 
@@ -29,7 +29,7 @@
 
 - name: 3dfier
   webpage: https://github.com/tudelft3d/3dfier
-  description: Takes 2D GIS datasets and "3dfies" them by lifting each polygon to its height (obtained with LiDAR). Outputs CityGML.
+  description: Takes 2D GIS datasets and "3dfies" them by lifting each polygon to its height (obtained with LiDAR). Outputs CityGML
   foss: true
   category: generator
 
@@ -53,37 +53,37 @@
   
 - name: libcitygml
   webpage: https://github.com/jklimke/libcitygml
-  description: Open source C++ class library for reading CityGML. Supports most CityGML elements. Also provides a plugin for the OpenSceneGraph library for CityGML visualization. 
+  description: Open source C++ class library for reading CityGML. Supports most CityGML elements; also provides a plugin for the OpenSceneGraph library for CityGML visualization
   category: parser
   foss: true
 
 - name: CodeSynthesis XSD
   webpage: http://www.codesynthesis.com/products/xsd/
-  description: "XML Schema to C++ data binding compiler, see http://wiki.codesynthesis.com/Schemas/CityGML"
+  description: "XML Schema to C++ data binding compiler, see [the CityGML specificities](http://wiki.codesynthesis.com/Schemas/CityGML)"
   foss: true
   category: parser
 
 - name: FME
   webpage: http://www.safe.com
-  description: Can be used to read, write, process and visualise CityGML. macOS too now!
+  description: Can be used to read, write, process and visualise CityGML; macOS too now!
   foss: false
   category: viewer;parser
 
 - name: FZKViewer
   webpage: http://iai-typo3.iai.fzk.de/www-extern-kit/index.php?id=1134
-  description: The FZKViewer visualises the sematic data models IFC, CityGML and gbXML. Windows-only.
+  description: Visualises the semantic data models IFC, CityGML and gbXML; Windows-only
   foss: true
   category: viewer
 
 - name: HUMBOLDT Alignment Editor (HALE)
   webpage: http://www.dhpanel.eu/humboldt-framework/hale.html
-  description: Can read, write, process CityGML and other GML application schemas (incl. INSPIRE).
+  description: Can read, write, process CityGML and other GML application schemas (incl. INSPIRE)
   foss: true
   category: parser
 
 - name: ogc-schemas
   webpage: https://github.com/highsource/ogc-schemas
-  description: Provides JAXB (Java) and Jsonix (JSON) bindings for XML Schemas defined by OGC incl. CityGML 1.0 and 2.0.
+  description: Provides JAXB (Java) and Jsonix (JSON) bindings for XML Schemas defined by OGC incl; CityGML v1.0 and v2.0
   foss: true
   category: parser
 
