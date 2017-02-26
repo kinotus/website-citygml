@@ -18,12 +18,12 @@ Free and open-source software are marked by <img height="15" src="/img/foss.svg"
 
 - - -
 
-{% assign software = site.data.software | bettersort: 'name' %}
+{% assign software = site.data.software | better_sort: 'name' %}
 
 ## Viewers
 {% for i in software %}
 {% if i.category contains 'viewer' %}
-<p><a href="{{ i.webpage }}">{{ i.name }}</a> {% if i.foss == true %}<img height="15" src="/img/foss.svg"> {% endif %}<br/> {{ i.description }} </p>
+<p><a href="{{ i.webpage }}"><b>{{ i.name }}</b></a> {% if i.foss == true %}<img height="15" src="/img/foss.svg"> {% endif %}<br/> {{ i.description | markdownify | remove: '<p>' | remove: '</p>' }} </p>
 {% endif %}
 {% endfor %}
 
@@ -32,7 +32,7 @@ Free and open-source software are marked by <img height="15" src="/img/foss.svg"
 ## Generators of 3D city models in CityGML
 {% for i in software %}
 {% if i.category contains 'generator' %}
-<p><a href="{{ i.webpage }}">{{ i.name }}</a> {% if i.foss == true %}<img height="15" src="/img/foss.svg"> {% endif %}<br/> {{ i.description }} </p>
+<p><a href="{{ i.webpage }}"><b>{{ i.name }}</b></a> {% if i.foss == true %}<img height="15" src="/img/foss.svg"> {% endif %}<br/> {{ i.description | markdownify | remove: '<p>' | remove: '</p>' }} </p>
 {% endif %}
 {% endfor %}
 
@@ -41,9 +41,10 @@ Free and open-source software are marked by <img height="15" src="/img/foss.svg"
 ## Parsers and API for programmers
 {% for i in software %}
 {% if i.category contains 'parser' %}
-<p><a href="{{ i.webpage }}">{{ i.name }}</a> {% if i.foss == true %}<img height="15" src="/img/foss.svg"> {% endif %}<br/> {{ i.description }} </p>
+<p><a href="{{ i.webpage }}"><b>{{ i.name }}</b></a> {% if i.foss == true %}<img height="15" src="/img/foss.svg"> {% endif %}<br/> {{ i.description | markdownify | remove: '<p>' | remove: '</p>' }} </p>
 {% endif %}
 {% endfor %}
+
 
 - - -
 
@@ -53,7 +54,7 @@ Free and open-source software are marked by <img height="15" src="/img/foss.svg"
 
 {% for i in software %}
 {% if i.category contains 'validator' %}
-<p><a href="{{ i.webpage }}">{{ i.name }}</a> {% if i.foss == true %}<img height="15" src="/img/foss.svg"> {% endif %}<br/> {{ i.description }} </p>
+<p><a href="{{ i.webpage }}"><b>{{ i.name }}</b></a> {% if i.foss == true %}<img height="15" src="/img/foss.svg"> {% endif %}<br/> {{ i.description | markdownify | remove: '<p>' | remove: '</p>' }} </p>
 {% endif %}
 {% endfor %}
 
@@ -62,7 +63,7 @@ Free and open-source software are marked by <img height="15" src="/img/foss.svg"
 ## Storage in DBMS
 {% for i in software %}
 {% if i.category contains 'storage' %}
-<p><a href="{{ i.webpage }}">{{ i.name }}</a> {% if i.foss == true %}<img height="15" src="/img/foss.svg"> {% endif %}<br/> {{ i.description }} </p>
+<p><a href="{{ i.webpage }}"><b>{{ i.name }}</b></a> {% if i.foss == true %}<img height="15" src="/img/foss.svg"> {% endif %}<br/> {{ i.description | markdownify | remove: '<p>' | remove: '</p>' }} </p>
 {% endif %}
 {% endfor %}
 
@@ -71,7 +72,7 @@ Free and open-source software are marked by <img height="15" src="/img/foss.svg"
 ## Software that uses CityGML as input 
 {% for i in software %}
 {% if i.category contains 'applications' %}
-<p><a href="{{ i.webpage }}">{{ i.name }}</a> {% if i.foss == true %}<img height="15" src="/img/foss.svg"> {% endif %}<br/> {{ i.description }} </p>
+<p><a href="{{ i.webpage }}"><b>{{ i.name }}</b></a> {% if i.foss == true %}<img height="15" src="/img/foss.svg"> {% endif %}<br/> {{ i.description | markdownify | remove: '<p>' | remove: '</p>' }} </p>
 {% endif %}
 {% endfor %}
 
