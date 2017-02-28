@@ -27,6 +27,12 @@
   foss: true
   category: storage
 
+- name: GeoRocket
+  webpage: https://georocket.io
+  description: High-performance data store for geospatial files (ready for the cloud). Supports CityGML, GML, GeoJSON, and more.
+  foss: true
+  category: storage
+
 - name: 3dfier
   webpage: https://github.com/tudelft3d/3dfier
   description: Takes 2D GIS datasets and "3dfies" them by lifting each polygon to its height (obtained with LiDAR). Outputs CityGML
