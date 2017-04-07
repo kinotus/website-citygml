@@ -36,3 +36,11 @@
   notes : 
   formats: GDB
   
+  - dataset: Vancouver
+  link: http://data.vancouver.ca/datacatalogue/buildingFootprints.htm
+  country: Canada
+  building_lod: LOD1
+  year: 2009
+  texture:  No
+  notes : 
+  formats: Shapefile, DWG, KML
