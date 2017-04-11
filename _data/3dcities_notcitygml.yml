@@ -36,7 +36,7 @@
   notes : 
   formats: GDB
   
-  - dataset: Vancouver
+- dataset: Vancouver
   link: http://data.vancouver.ca/datacatalogue/buildingFootprints.htm
   country: Canada
   building_lod: LOD1
