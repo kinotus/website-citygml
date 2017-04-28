@@ -82,8 +82,10 @@
   building_lod: LOD2
   version: 1.0
   year: 2009
+  classes: terrain (but in landXML format only)
   acquisition: Photogrammetry
   texture:  Yes
+  notes: "The [LiDAR dataset of the same area](http://donnees.ville.montreal.qc.ca/dataset/lidar-aerien-2015) is also available"
 
 - dataset: New York City (by TUM)
   link: http://www.gis.bgu.tum.de/en/projects/new-york-city-3d/
