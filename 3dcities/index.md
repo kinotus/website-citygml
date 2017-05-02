@@ -30,8 +30,8 @@ permalink: /3dcities/
       <td>{{ i.country }}</td>
       <td>{{ i.year }}</td>
       <td>{{ i.building_lod }}</td>
-      <td>{{ i.classes }}</td>
-      <td>{{ i.texture }}</td>
+      <td>{{ i.classes | markdownify | remove: '<p>' | remove: '</p>' }}</td>
+      <td>{{ i.texture | markdownify | remove: '<p>' | remove: '</p>'}}</td>
       <td>{{ i.acquisition | markdownify | remove: '<p>' | remove: '</p>' }}</td>
       <td>{{ i.version | markdownify | remove: '<p>' | remove: '</p>' }}</td>
       <td>{{ i.notes | markdownify | remove: '<p>' | remove: '</p>' }}</td>

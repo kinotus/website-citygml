@@ -82,7 +82,7 @@
   building_lod: LOD2
   version: 1.0
   year: 2009
-  classes: terrain (but in landXML format only)
+  classes: "[terrain (TIN in CityGML format)](http://donnees.ville.montreal.qc.ca/dataset/modele-numerique-de-terrain-mnt)"
   acquisition: Photogrammetry
   texture:  Yes
   notes: "The [LiDAR dataset of the same area](http://donnees.ville.montreal.qc.ca/dataset/lidar-aerien-2015) is also available"
