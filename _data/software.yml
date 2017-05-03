@@ -7,13 +7,17 @@
 #   - storage
 #   - applications
 
+- name: RhinoCity
+  webpage: http://www.rhinoterrain.com/en/rhinocity-3.html
+  description: "Plugin for Rhinoceros to easily create 3D textured models from data such as roof vectors, aerial imagery, point clouds or cadastral files."
+  foss: false
+  category: generator
 
 - name: schemaCityGML
   webpage: http://geovalidation.bk.tudelft.nl/schemacitygml/
   description: Web-application to validate your CityGML file against the XSD schemas
   foss: true
   category: validator
-
 
 - name: CityDoctor
   webpage: http://www.citydoctor.eu
