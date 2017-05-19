@@ -44,3 +44,12 @@
   texture:  No
   notes : 
   formats: Shapefile, DWG, KML
+
+- dataset: Adelaide
+  link: https://data.sa.gov.au/data/dataset/3d-model
+  country: Australia
+  building_lod: LOD1/LOD2
+  year: 2015
+  texture:  Yes
+  notes : terrain
+  formats: .3DS with JPEG textures, Blender, FBX
