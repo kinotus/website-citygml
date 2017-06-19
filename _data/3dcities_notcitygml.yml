@@ -53,3 +53,12 @@
   texture:  Yes
   notes : terrain
   formats: .3DS with JPEG textures, Blender, FBX
+
+- dataset: Greater Geelong
+  link: http://www.geelongaustralia.com.au/data/item/central-geelong-3d-massing-model.aspx
+  country: Australia
+  building_lod: LOD1/LOD2
+  year: 2016
+  texture:  No
+  notes : terrain
+  formats: KML
