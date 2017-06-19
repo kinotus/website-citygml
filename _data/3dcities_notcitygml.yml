@@ -62,3 +62,12 @@
   texture:  No
   notes : terrain
   formats: KML
+
+- dataset: San Francisco
+  link: https://data.sfgov.org/Housing-and-Buildings/Building-Footprints/72ai-zege
+  country: USA
+  building_lod: LOD1
+  year: 2017
+  texture:  No
+  notes : 
+  formats: KML, KMZ, Shapefile, GeoJSON
