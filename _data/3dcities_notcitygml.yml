@@ -71,3 +71,12 @@
   texture:  No
   notes : 
   formats: KML, KMZ, Shapefile, GeoJSON
+  
+- dataset: Fredericton
+  link: http://data.fredericton.ca/en/dataset/3d-building-models
+  country: Canada
+  building_lod: LOD2
+  year: 2016
+  texture:  Yes
+  notes : 
+  formats: KMZ
