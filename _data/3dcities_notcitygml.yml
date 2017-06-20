@@ -80,3 +80,12 @@
   texture:  Yes
   notes : 
   formats: KMZ
+
+- dataset: Austin
+  link: ftp://ftp.ci.austin.tx.us/GIS-Data/Regional/coa_gis.html
+  country: USA
+  building_lod: LOD2
+  year: 2013
+  texture:  No
+  notes : 
+  formats: KMZ, Shapefile
