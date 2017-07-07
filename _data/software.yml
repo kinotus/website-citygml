@@ -7,6 +7,12 @@
 #   - storage
 #   - applications
 
+- name: Elyx 3D Viewer (1Spatial)
+  webpage: https://1spatial.com/products/elyx/elyx-gis-platform/elyx-3d/
+  description: CityGML viewer (Windows-only)
+  category: viewer
+  foss: false
+
 - name: RhinoCity
   webpage: http://www.rhinoterrain.com/en/rhinocity-3.html
   description: "Plugin for Rhinoceros to easily create 3D textured models from data such as roof vectors, aerial imagery, point clouds or cadastral files."
