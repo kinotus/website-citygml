@@ -65,7 +65,7 @@ A valid primitive of dimension 3 means that all the lower-dimensional primitives
 
 The following software allows one to validate the primitives of CityGML:
 
-  - [val3dity](https://github.com/tudelft3d/val3dity): TU Delft free and open-source validator for 3D primitives. It is ISO 19017 compliant, but composites and aggregates are not handled. There is also a [simple-to-use web application](http://geovalidation.bk.tudelft.nl/val3dity/)
+  - [val3dity](https://github.com/tudelft3d/val3dity): TU Delft free and open-source validator for 3D primitives. It is ISO 19017 compliant, but composites and aggregates are not handled (except `MultiSurfaces`). There is also a [simple-to-use web application](http://geovalidation.bk.tudelft.nl/val3dity/)
   - [CityDoctor](http://www.citydoctor.eu) can validate 3D primitives, but inner rings and inner shells in 3D primitives are not handled, and neither are composites and aggregates. It however allows us to perform some automatic repair operations when a primitive is invalid.
 
 To verify whether an implementation is ISO 19107 compliant, the QIE has developed different "unit tests", that is files that contain one 3D primitive with one error.
