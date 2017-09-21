@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Our logo, in different forms
+title:  CityGmL logos, in different forms
 permalink: /logos/
 ---
 
