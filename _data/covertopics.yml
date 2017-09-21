@@ -23,9 +23,13 @@
   icon: fa-users
   link: /forum/
 
-- name: 3D applications
-  icon: fa-hospital-o
-  link: /applications/
+# - name: 3D applications
+#   icon: fa-hospital-o
+#   link: /applications/
+
+- name: ADEs
+  icon: fa-plug
+  link: /ade/
 
 - name: 3D cities
   icon: fa-globe
