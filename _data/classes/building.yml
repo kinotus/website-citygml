@@ -1,7 +1,7 @@
 
 - dataset: b1_lod1_s
   description: "One building modelled in LoD1 with one `gml:Solid`."
-  info: "Observer that semantic information is not possible with a LoD1 building."
+  info: "Observe that semantic information cannot be stored with a LoD1 building."
 
 - dataset: b1_lod2_s
   description: "One building modelled in LoD2 with one `gml:Solid`."
