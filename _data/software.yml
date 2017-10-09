@@ -81,7 +81,7 @@
 
 - name: FME
   webpage: http://www.safe.com
-  description: Can be used to read, write, process and visualise CityGML; macOS too now!
+  description: Can be used to read, write, process and visualise CityGML; Windows, macOS, Linux
   foss: false
   category: viewer;parser
 
