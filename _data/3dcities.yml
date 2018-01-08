@@ -1,3 +1,15 @@
+
+- dataset: Vienna
+  link: https://www.data.gv.at/katalog/dataset/86d88cae-ad97-4476-bae5-73488a12776d
+  country: Austria
+  building_lod: LOD2 
+  version: 1.0
+  year: 2018
+  # acquisition: "Cadastre footprints, LiDAR, aerial images. LOD1 is derived from LOD2 models with average roof height ([details here](http://www.bezreg-koeln.nrw.de/brk_internet/geobasis/hoehenmodelle/3d_gebaeudemodelle/index.html))"
+  texture: no
+  notes: "From the building footprints of the area multipurpose map and a surface model semi-automatically derived prototypical roof forms."
+
+
 - dataset: North Rhine-Westphalia (state)
   link: https://www.opengeodata.nrw.de/produkte/geobasis/3d-gm/
   country: Germany
