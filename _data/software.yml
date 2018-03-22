@@ -86,7 +86,7 @@
   category: viewer;parser
 
 - name: FZKViewer
-  webpage: http://iai-typo3.iai.fzk.de/www-extern-kit/index.php?id=1134
+  webpage: https://www.iai.kit.edu/1302.php
   description: Visualises the semantic data models IFC, CityGML and gbXML; Windows-only
   foss: true
   category: viewer
