@@ -6,7 +6,7 @@ permalink: /3dcities/
 
 # Cities around the world with open CityGML datasets
 
-{% assign ds = site.data.3dcities | sort: 'dataset' %}
+{% assign ds = site.data.cities | sort: 'dataset' %}
 
 <div class="table-responsive">
 
@@ -45,7 +45,7 @@ permalink: /3dcities/
 
 <h1>Cities around the world with open 3D datasets <u>not</u> in CityGML</h1>
 
-{% assign ds = site.data.3dcities_notcitygml | sort: 'dataset' %}
+{% assign ds = site.data.cities_notcitygml | sort: 'dataset' %}
 
 <div class="table-responsive">
 <table class="table table-striped">
