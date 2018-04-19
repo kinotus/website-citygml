@@ -8,6 +8,7 @@
   contactorg: Institute of Geodesy and Geoinformation University of Bonn and SIG3D (Special Interest Group 3D). 
   xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/noise-ade/
   umlschema: http://www.citygml.org/fileadmin/citygml/docs/CityGML_1_0_0_UML_diagrams.pdf
+  publication: https://portal.opengeospatial.org/files/?artifact_id=47842
 
 - name: Robotics ADE
   no: 2
@@ -18,6 +19,7 @@
   contactorg: Hitachi Ltd., Central Research Laboratory, Tokyo, Japan.
   xmlschema: http://schemas.opengis.net/citygml/examples/2.0/ade/robotics-ade/
   umlschema: https://mediatum.ub.tum.de/doc/1145731/973311.pdf#page=319
+  publication: https://portal.opengeospatial.org/files/?artifact_id=47842
 
 - name: Energy ADE
   no: 3
@@ -28,6 +30,18 @@
   contactorg: SIG3D (Special Interest Group 3D)
   xmlschema: https://github.com/cstb/citygml-energy/blob/master/xsd/energy.xsd
   umlschema: https://github.com/cstb/citygml-energy/blob/master/doc/UML-Diagrams_Energy-ADE.pdf
+  publication: https://opengeospatialdata.springeropen.com/articles/10.1186/s40965-018-0042-y
+
+- name: CityGML iTINs ADE 
+  no: 4
+  description: CityGML extension for modelling massive TIN terrains.
+  adeversion: 0.1
+  cityversion:  2.0.0
+  status: Implemented 
+  contactorg: 3D Geoinformation, Delft University of Technology, the Netherlands
+  xmlschema: https://github.com/tudelft3d/CityGML_iTINs_ADE/tree/master/XSD
+  umlschema: https://github.com/tudelft3d/CityGML_iTINs_ADE/tree/master/UML
+  publication: https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/IV-2-W1/137/2016/
 
 - name: IMGeo ADE
   no: 5
@@ -38,16 +52,18 @@
   contactorg: Geonovum, the Netherlands.
   xmlschema: http://register.geostandaarden.nl/gmlapplicatieschema/imgeo/2.1.1/
   umlschema: http://register.geostandaarden.nl/informatiemodel/imgeo/2.1.1/
+  publication: https://onlinelibrary.wiley.com/doi/pdf/10.1111/tgis.12026
 
 - name: GeoBIM (IFC) ADE
   no: 6
   description: CityGML extension for integrationg semantic IFC data in CityGML.
   adeversion: 0.6
   cityversion: 2.0.0
-  status: Implemented (draft)
+  status: Implemented 
   contactorg: Netherlands organisation for Applied Scientific research TNO, the Netherlands.
   xmlschema: https://code.google.com/archive/p/geobim/source/default/source
   umlschema:
+  publication: https://link.springer.com/chapter/10.1007/978-3-642-12670-3_13
 
 - name: CAFM (facade) ADE
   no: 7
@@ -58,16 +74,18 @@
   contactorg: Technische Universität München, Germany.
   xmlschema:
   umlschema:
+  publication: http://www.dgpf.de/src/tagung/jt2015/proceedings/papers/16_DGPF2015_Moshrefzadeh_et_al.pdf
 
 - name: Hydro ADE
   no: 8
   description: CityGML extension for a web based 3D flood information service.
   adeversion:
   cityversion: 0.4.0
-  status: Implemented (draft)
+  status: 
   contactorg: University of Applied Sciences Stuttgart, Germany.
   xmlschema:
   umlschema:
+  publication:
 
 - name: Utility Network ADE
   no: 9
@@ -78,6 +96,7 @@
   contactorg: Insitute for Geodesy and Geoinformation Science, Technische Universität Berlin, Germany
   xmlschema: http://www.citygmlwiki.org/images/2/25/Schema.zip
   umlschema: http://www.citygmlwiki.org/images/c/cb/UtilityNetworkADE_prefinal_2012_08_30.zip
+  publication: https://mediatum.ub.tum.de/doc/1304227/file.pdf
 
 - name: Immovable Property Taxation ADE
   no: 10
@@ -88,6 +107,7 @@
   contactorg: Department of Surveying Engineering, Yildiz Technical University, Turkey.
   xmlschema: http://cadastralvocabulary.org/citygml/tax_ade/1.0/
   umlschema: http://cadastralvocabulary.org/citygml/tax_ade/1.0/CityGML_TaxADE_UML.png
+  publication: https://www.sciencedirect.com/science/article/pii/S0303243412001511
 
 - name: Solar ADE
   no: 11
@@ -98,7 +118,8 @@
   contactorg: Ordnance Survey, Great Britain
   xmlschema:
   umlschema:
-
+  publication: http://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XL-4-W1/87/2013/isprsarchives-XL-4-W1-87-2013.pdf
+  
 - name: Inclusive Routing ADE
   no: 12
   description: CityGML extension for routing differentialy abled individuals (a smart-city service initiative for urban ecosystems).
@@ -107,7 +128,9 @@
   status: Draft (under testing in i-SCOPE Project)
   contactorg: Ordnance Survey, Great Britain
   xmlschema:
-  umlschema: http://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XL-4-W1/87/2013/isprsarchives-XL-4-W1-87-2013.pdf
+  umlschema:
+  publication: http://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XL-4-W1/87/2013/isprsarchives-XL-4-W1-87-2013.pdf
+
 
 - name: Time Dependent Variables ADE
   no: 13
@@ -118,3 +141,193 @@
   contactorg: Ordnance Survey, Great Britain
   xmlschema:
   umlschema:
+  publication: http://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XL-4-W1/87/2013/isprsarchives-XL-4-W1-87-2013.pdf
+  
+
+- name: Heritage ADE
+  no: 14
+  description: CityGML extension for the conceptual and logical modelling of architectural heritage features.
+  adeversion: 
+  cityversion:  2.0.0
+  status: Draft 
+  contactorg: Politecnico di Torino, viale Mattioli 39 10125 Torino, Italy
+  xmlschema:
+  umlschema: 
+  publication: https://link.springer.com/chapter/10.1007/978-3-642-36379-5_14
+
+- name: IR & P ADE (Indoor Routing and Positioning)
+  no: 15
+  description: CityGML extension for routing and positioning inside the buildings.
+  adeversion: 
+  cityversion:  2.0.0
+  status: Draft 
+  contactorg: Indian Institute of Remote Sensing, Dehradun, India
+  xmlschema:
+  umlschema: 
+  publication: https://link.springer.com/article/10.1007/s12524-017-0665-y
+
+- name: Topo ADE 
+  no: 16
+  description: Extension to enrich the CityGML data model with topological relationships i.e. relationships between geometric primitives and between semantic features.
+  adeversion: 
+  cityversion:  2.0.0
+  status: Draft 
+  contactorg: Wuhan University, China
+  xmlschema:
+  umlschema: 
+  publication: https://www.sciencedirect.com/science/article/pii/S019897151630045X
+
+- name: ACRoof ADE 
+  no: 17
+  description: CityGML extension for modelling ancient Chinese-style architectural roofs.
+  adeversion: 
+  cityversion:  2.0.0
+  status: Draft 
+  contactorg: Wuhan University, China
+  xmlschema:
+  umlschema: 
+  publication: http://www.mdpi.com/2220-9964/6/5/132/htm
+
+- name: Vegetation objects ADE
+  no: 18
+  description: CityGML extension for the inclusion of geometric and semantic prop- erties of tree roots in Solitary Vegetation Objects at different levels of details..
+  adeversion: 
+  cityversion:  2.0.0
+  status: Proposed 
+  contactorg: Centro de Investigacion en Geografia y Geomatica, Mexico
+  xmlschema:
+  umlschema: 
+  publication: https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/IV-4-W3/29/2017/isprs-annals-IV-4-W3-29-2017.pdf
+
+- name: Dynamizer ADE 
+  no: 19
+  description: CityGML extension for the modeling and representation of time-dependent variations of arbitrary CityGML object attributes, relations, and appearances.
+  adeversion: 1.0
+  cityversion:  2.0.0
+  status: Draft 
+  contactorg: Technical University of Munich, Germany
+  xmlschema: https://github.com/yaozhihang/3dcitydb-Extensions-for-CityGML-ADEs/tree/master/Dynamizer-ADE-1.0
+  umlschema: 
+  publication: https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/IV-2-W1/31/2016/isprs-annals-IV-2-W1-31-2016.pdf
+
+- name: BCH Management ADE 
+  no: 20
+  description: CityGML extension for Built Cultural Heritage (BCH) management.
+  adeversion: 
+  cityversion:  2.0.0
+  status: Draft 
+  contactorg: KU Leuven, Belgium
+  xmlschema:
+  umlschema: 
+  publication: https://agile-online.org/conference_paper/cds/agile_2016/shortpapers/165_Paper_in_PDF.pdf
+
+- name: LADM ADE (Land Administration Domain Model)
+  no: 21
+  description: CityGML extension with legal concepts from LADM for describing the ownership structure of condominium units.
+  adeversion: 
+  cityversion:  2.0.0
+  status: Draft 
+  contactorg: Wuhan University, China
+  xmlschema:
+  umlschema: 
+  publication: http://www.sciencedirect.com/science/article/pii/S0198971516300709
+
+- name: Indoor ADE 
+  no: 22
+  description: CityGML extension for indoor space and indoor facility management applications.
+  adeversion: 
+  cityversion:  2.0.0
+  status: Draft 
+  contactorg: University of Seoul, Seoul, South Korea
+  xmlschema:
+  umlschema: 
+  publication: https://link.springer.com/chapter/10.1007/978-3-319-00515-7_15
+
+- name: ENC ADE (Electronic Nautical Charts)
+  no: 23
+  description: CityGML extension for modelling 3D representation of ENC objects and the corresponding electrical information.
+  adeversion: 
+  cityversion:  1.0.0
+  status: Draft 
+  contactorg:  Christian-Albrechts-University of Kiel, Germany
+  xmlschema:
+  umlschema: 
+  publication: http://data.mip.informatik.uni-kiel.de:555/wwwadmin/Publica/2010/Extension-of-Electronical-Nautical-Charts-for-3D-interactive-Visualization-via-CityGML.pdf
+  
+
+- name: AR ADE (Augmented Reality)
+  no: 24
+  description: CityGML extension for enriching AR-oriented data models with 3D features.
+  adeversion: 
+  cityversion:  2.0.0
+  status: Draft 
+  contactorg: 
+  xmlschema:
+  umlschema: 
+  publication: https://link.springer.com/chapter/10.1007/978-3-642-29793-9_15
+
+- name: SCM ADE (Semantic City Model)
+  no: 25
+  description: Extension for mapping the semantic information in BIM models to CityGML.
+  adeversion: 
+  cityversion:  2.0.0
+  status: Draft 
+  contactorg: Hong Kong University of Science and Technology, Hong Kong
+  xmlschema:
+  umlschema: 
+  publication: http://itc.scix.net/data/works/att/convr-2013-50.pdf
+
+- name: Traffic Sign ADE 
+  no: 26
+  description: CityGML extension for modelling traffic signs on roads.
+  adeversion: 
+  cityversion:  2.0.0
+  status: Draft 
+  contactorg: University of Vigo, Spain
+  xmlschema:
+  umlschema: 
+  publication: https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XL-1/415/2014/isprsarchives-XL-1-415-2014.pdf
+
+- name: AQ ADE (Air Quality)
+  no: 27
+  description: CityGML extension to characterize the existing city objects with air quality values around them so as to identify the main sources of air pollution and the affected areas.
+  adeversion: 
+  cityversion:  2.0.0
+  status: Draft 
+  contactorg: UPolitecnico di Torino, Italy
+  xmlschema:
+  umlschema: 
+  publication: http://porto.polito.it/2648667/1/isprs_annals_IV_4_W1_67_2016.pdf
+
+- name: Geodata Join ADE
+  no: 28
+  description: CityGML extension to enrich the data model with additional information about the relationship between the adjacent city objects (e.g. a building and a road) in order to remove geometric inconsistencies.
+  adeversion: 
+  cityversion:  2.0.0
+  status: Draft 
+  contactorg: Technical University of Berlin, Germany
+  xmlschema:
+  umlschema: 
+  publication: https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/I-4/215/2012/isprsannals-I-4-215-2012.pdf
+
+- name: Cultural Heritage ADE
+  no: 29
+  description: CityGML extension for interactive 3D cultural heritage documentation.
+  adeversion: 
+  cityversion:  1.0.0
+  status: Draft 
+  contactorg: University of Valladolid, Spain
+  xmlschema:
+  umlschema: 
+  publication: http://www.isprs.org/proceedings/XXXVIII/4-W15/Paper_ISPRS/Poster/6_3DGeoInfo2010_122_Finat_Cultural_Heritage.pdf
+
+- name: TRKBIS (Turkish Urban Information System )
+  no: 30
+  description: CityGML extension for enhancing building and transportation modules for the 3D national geo-data model of Turkey.
+  adeversion: 
+  cityversion:  2.0.0
+  status: Draft 
+  contactorg: Istanbul Technical University, Turkey
+  xmlschema:
+  umlschema: 
+  publication: https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLI-B2/79/2016/isprs-archives-XLI-B2-79-2016.pdf

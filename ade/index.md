@@ -10,46 +10,86 @@ permalink: /ade/
 {:toc}
 
 - - -
-
-# Application Domain Extensions (ADE)
-
-CityGML represents not only the graphical appearance of 3D city models but also the semantics associated with the city models.
-For this, CityGML has a geometric model and a thematic model.
-The thematic model of CityGML covers various classes like *buildings, relief, transportation, landuse, tunnels, bridges, vegetation, water bodies and city furniture.*
-The objects which are not yet specifically modelled in CityGML can be represented using *generic objects and attributes*.
-This is a semi structured extension mechanism without making any changes in the CityGML schema.
-The generic extensions of CityGML are provided by the CityGML thematic module *Generics*.
-But they have their own limitations, namely:
-
-  * There is no formal specification of their names and data types.
-  * Such CityGML files cannot be validated against the schema.
-  * Name conflicts of the generic attributes and objects may occur.
-  * Limited number of data types for generic attributes and objects.
-  * Limits semantic and syntactic interoperability.
+<div>
+  <b><h2>Application Domain Extensions (ADEs)</h2></b><br/><br/>
+</div>
 
 
-CityGML also has the concept of **ADE (Application Domain Extension)** to extend the schema with new classes and attributes which are not explicitly modelled in CityGML.
-The difference between ADEs and generics is that an ADE is defined in an extra XSD (XML Schema Definition) file with its own namespace. 
-This file has to explicitly import the XML Schema definition of the extended CityGML modules.
+<div class="container">
+<div class="row">
+<div class="col-md-7">
+<p align="justify">
+<font size="3">
+CityGML is an XML based 3D data standard for the representation, storage and exchange of 3D city models. 
+CityGML represents the geometry, graphical appearance and semantics associated with the 3D city models.
+CityGML has a geometric model and a thematic model.
+The thematic model of CityGML covers various classes like <i>buildings, relief, transportation, landuse, tunnels, bridges, vegetation, water bodies and city furniture.</i>
+<br/>
+<br/>
+Sometimes, users may want to model objects and attributes of 3D city models which are not covered in the data model of CityGML.
+CityGML has the concept of <i>ADEs (Application Domain Extensions)</i> to model user defined objects and attributes.
+An ADE is defined in an extra XSD (XML Schema Definition) file with its own namespace. 
+This file has to explicitly import the XML schema definition of the extended CityGML modules.
 ADEs can be defined by information communities which are interested in specific application fields. 
 ADEs are increasingly being used in creating application specific extensions like for energy modelling, modelling topographic data, indoor modelling, noise modelling, etc.
 The advantage of using the ADE approach are:
+<ul>
+<li>The extensions are formally specified.</li>
+<li>Semantic and syntactic interoperability for the exchange of application specific information.</li>
+<li>Extended CityGML instance documents can be validated against the ADE schema. </li>
+<li>More than one ADE can be actively used in the same dataset.</li>
+<li>ADEs can have their own codelist. </li>
+</ul>  
+</font>
+</p>
+<p align="justify">
+<font size="3">
 
-  * The extensions are formally specified. 
-  * This ensure semantic and syntactic interoperability for the exchange of application specific information.
-  * Extended CityGML instance documents can be validated against the CityGML and the respective ADE schema. 
-  * More than one ADE can be actively used in the same dataset.
+Another approach is to use <i>Generic objects and attributes.</i>
+This is a semi structured extension mechanism of adding application specific attributes and objects to city objects without making any changes in the CityGML schema.
+The generic extensions of CityGML are provided by the CityGML thematic module <i>Generics</i>.
+But they have their own limitations, namely:
+<ul>
+<li>There is no formal specification of the names and data types of generic attributes/objects.</li>
+<li>CityGML datasets with generic atttributes/objects cannot be validated against the schema.</li>
+<li>Name conflicts of the generic attributes and objects may occur.</li>
+<li>Using Generics limits semantic and syntactic interoperability.</li>
+</ul>
+</font>
+</p> 
+<br /><br />
+</div>
 
-- - -
+<div class="col-md-5">
+<div>
+     <br />
+      <br />
+      <br/>
+      <br />
+      <p align="center">
+      <br/>
+      <img src="ade.jpg" alt="" class="img-rounded pull-center" />
+      <br/>
+      <font size="4">
+      CityGML ADE Modelling
+    </font>
+    </p>
+    </div>
+    <div>
 
-# CityGML ADEs
+    </div>
+  </div>
 
-{% assign ades = site.data.ade | bettersort: 'name' %}
+
+ <div>
+  <b><h2>CityGML ADEs</h2></b><br/><br/>
+</div>
+
+{% assign ades = site.data.ade | bettersort: 'no' %}
 
 {% for i in ades %}
 
 {% assign adeid = i.name | split: " " %}
-
 
 <div class="panel panel-warning">
     <h4 class="panel-title">
@@ -90,12 +130,17 @@ The advantage of using the ADE approach are:
   <tr>
     <td><b>UML Schema:</b></td>
     <td>{% if i.umlschema %} <a href="{{ i.umlschema }}">{{ i.name }} UML</a>{% endif %}</td>
+  </tr> 
+  <tr>
+    <td><b>Publication:</b></td>
+    <td>{% if i.publication %} <a href="{{ i.umlschema }}">{{ i.name }} Publication</a>{% endif %}</td>
   </tr>  
 </table>
 </div>
 </div>
 
 {% endfor %}
+
 
 <!-- - - - 
 
