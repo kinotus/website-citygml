@@ -85,7 +85,7 @@ But they have their own limitations, namely:
   <b><h2>CityGML ADEs</h2></b><br/><br/>
 </div>
 
-{% assign ades = site.data.ade | bettersort: 'no' %}
+{% assign ades = site.data.ade | sort: 'name' %}
 
 {% for i in ades %}
 
@@ -133,7 +133,7 @@ But they have their own limitations, namely:
   </tr> 
   <tr>
     <td><b>Publication:</b></td>
-    <td>{% if i.publication %} <a href="{{ i.umlschema }}">{{ i.name }} Publication</a>{% endif %}</td>
+    <td>{% if i.publication %} <a href="{{ i.publication }}">{{ i.name }} Publication</a>{% endif %}</td>
   </tr>  
 </table>
 </div>
