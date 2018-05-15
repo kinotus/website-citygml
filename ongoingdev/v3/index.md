@@ -4,6 +4,8 @@ title: CityGML v3.0
 permalink: /ongoingdev/v3/
 ---
 
+# CityGML v3.0
+
 **Copied from an email on the OGC-CityGML mailing list, it's certainly useful for most involved to have it here.**
 
 After having done a lot of fundamental work on CityGML ranging from the UML model to dynamizers and from other constructions to a new LoD model we, the chairs of the CityGML SWG, are now focusing on the journey towards planned publication of CityGML v3.0 in Spring 2019. We have taken the liberty to involve both Thomas and Tatjana in a planning towards finishing CityGML 3.0 as TUM is committed to sponsor the creation of the specifications with a very significant amount of effort and time.
