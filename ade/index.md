@@ -68,7 +68,7 @@ But they have their own limitations, namely:
       <br />
       <p align="center">
       <br/>
-      <img src="ade.jpg" alt="" class="img-rounded pull-center" />
+      <img src="ade.png" alt="" class="img-rounded pull-center" />
       <br/>
       <font size="4">
       CityGML ADE Modelling
