@@ -331,3 +331,14 @@
   xmlschema:
   umlschema: 
   publication: https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLI-B2/79/2016/isprs-archives-XLI-B2-79-2016.pdf
+
+- name: 3D Metadata ADE
+  no: 30
+  description: CityGML extension for storing metadata related to 3D city models.
+  adeversion: 0.1
+  cityversion:  2.0.0
+  status: Implemented 
+  contactorg: 3D Geoinformation, Delft University of Technology, the Netherlands
+  xmlschema: https://github.com/tudelft3d/3D_Metadata_ADE/tree/master/XSD
+  umlschema: https://github.com/tudelft3d/3D_Metadata_ADE/blob/master/UML
+  publication: 
