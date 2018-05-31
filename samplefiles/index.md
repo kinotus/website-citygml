@@ -11,14 +11,8 @@ permalink: /samplefiles/
     <div class="list-group">
       <a href="building" class="list-group-item list-group-item-info text-center">Building</a>
       <a href="terrain" class="list-group-item list-group-item-info text-center">Terrain</a>
-      <a href="landuse" class="list-group-item list-group-item-info text-center">Land Use</a>
-    </div>
-  </div>
-  <div class="col-md-4 col-sm-12">
-    <div class="list-group">
+<!--       <a href="landuse" class="list-group-item list-group-item-info text-center">Land Use</a> -->
       <a href="geomprimitives" class="list-group-item list-group-item-info text-center">3D geometric primitives</a>
-      <!-- <a href="#resolvability-of-xlinks" class="list-group-item list-group-item-info text-center">Resolvability of XLinks</a> -->
-      <!-- <a href="#application-specific-rules" class="list-group-item list-group-item-info text-center">Application-specific rules</a> -->
     </div>
   </div>
 </div>
