@@ -51,6 +51,16 @@ title: CityGML homepage
       <div class="row">
         {% for i in site.data.covertopics %}
         <div class="col-sm-6 col-md-4">
+          {% if i.icon == 'cityjson' %}
+          <div class="thumbnail text-center">
+            <a href="http://www.cityjson.org">
+              <img src="{{ "/img/cityjson_logo.svg" | prepend: site.baseurl }}" class="img-responsive center-block" alt="CityJSON">  
+<!--               <div class="caption">
+              <h4>JSON encoding?</h4>
+            </div>  -->        
+            </a>
+          </div>
+          {% else %}
           <div class="thumbnail text-center">
             <a href="{{ i.link | prepend: site.baseurl }}">
             <i class="fa {{ i.icon }} fa-5x" aria-hidden="true"></i>
@@ -59,6 +69,7 @@ title: CityGML homepage
             </div>
             </a>
           </div>
+          {% endif %}
         </div>
         {% endfor %}
       </div>  
