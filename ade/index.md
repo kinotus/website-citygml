@@ -55,6 +55,9 @@ But they have their own limitations, namely:
 <li>Name conflicts of the generic attributes and objects may occur.</li>
 <li>Using Generics limits semantic and syntactic interoperability.</li>
 </ul>
+<br />
+A paper (open access) has been published giving an overview of the ADE concept and currently available ADEs: 
+<i class="fa fa-file-pdf-o"></i> Biljecki F, Kumar K, Nagel C (2018). CityGML Application Domain Extension (ADE): overview of developments. *Open Geospatial Data, Software and Standards*, 3: 13. [[DOI]](http://doi.org/10.1186/s40965-018-0055-6) [[PDF]](https://opengeospatialdata.springeropen.com/track/pdf/10.1186/s40965-018-0055-6)
 </font>
 </p> 
 <br /><br />
