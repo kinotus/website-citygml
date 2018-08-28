@@ -131,7 +131,7 @@
   texture:  Yes
   
 - dataset: The Hague
-  link:    https://data.overheid.nl/data/dataset/3d-model-den-haag
+  link:    https://data.overheid.nl/data/dataset/ngr-3d-model-den-haag
   country: Netherlands
   building_lod: LOD2
   version: 1.0
